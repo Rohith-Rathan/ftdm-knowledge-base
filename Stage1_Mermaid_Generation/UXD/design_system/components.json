@@ -1,0 +1,60 @@
+{
+  "buttons": {
+    "primary": {
+      "background": "var(--color-primary-main)",
+      "color": "var(--color-primary-contrastText)",
+      "padding": "var(--spacing-sm) var(--spacing-md)",
+      "border_radius": "var(--border-radius-md)",
+      "font_weight": "var(--font-weight-medium)",
+      "hover": {
+        "background": "var(--color-primary-dark)",
+        "transform": "translateY(-1px)",
+        "box_shadow": "var(--shadow-md)"
+      }
+    },
+    "secondary": {
+      "background": "transparent",
+      "color": "var(--color-primary-main)",
+      "border": "1px solid var(--color-primary-main)",
+      "padding": "var(--spacing-sm) var(--spacing-md)",
+      "border_radius": "var(--border-radius-md)",
+      "font_weight": "var(--font-weight-medium)"
+    }
+  },
+  "inputs": {
+    "default": {
+      "padding": "var(--spacing-sm) var(--spacing-md)",
+      "border": "1px solid var(--color-text-disabled)",
+      "border_radius": "var(--border-radius-md)",
+      "font_size": "var(--font-size-body)",
+      "focus": {
+        "border_color": "var(--color-primary-main)",
+        "outline": "none",
+        "box_shadow": "0 0 0 3px rgba(25, 118, 210, 0.1)"
+      }
+    }
+  },
+  "cards": {
+    "default": {
+      "background": "var(--color-background-paper)",
+      "border_radius": "var(--border-radius-lg)",
+      "padding": "var(--spacing-lg)",
+      "box_shadow": "var(--shadow-sm)",
+      "border": "1px solid rgba(0, 0, 0, 0.05)"
+    }
+  },
+  "modals": {
+    "overlay": {
+      "background": "rgba(0, 0, 0, 0.5)",
+      "backdrop_filter": "blur(4px)"
+    },
+    "content": {
+      "background": "var(--color-background-paper)",
+      "border_radius": "var(--border-radius-lg)",
+      "padding": "var(--spacing-xl)",
+      "box_shadow": "var(--shadow-xl)",
+      "max_width": "500px",
+      "width": "90%"
+    }
+  }
+}

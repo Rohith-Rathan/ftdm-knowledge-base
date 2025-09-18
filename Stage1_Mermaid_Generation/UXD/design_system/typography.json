@@ -1,0 +1,38 @@
+{
+  "font_family": {
+    "heading": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    "body": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    "monospace": "'Fira Code', 'Monaco', 'Consolas', monospace"
+  },
+  "font_sizes": {
+    "h1": "2.5rem",
+    "h2": "2rem",
+    "h3": "1.75rem",
+    "h4": "1.5rem",
+    "h5": "1.25rem",
+    "h6": "1rem",
+    "body_large": "1.125rem",
+    "body": "1rem",
+    "body_small": "0.875rem",
+    "caption": "0.75rem"
+  },
+  "font_weights": {
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700
+  },
+  "line_heights": {
+    "tight": 1.2,
+    "normal": 1.5,
+    "relaxed": 1.6,
+    "loose": 1.8
+  },
+  "letter_spacing": {
+    "tight": "-0.025em",
+    "normal": "0em",
+    "wide": "0.025em",
+    "wider": "0.05em"
+  }
+}
