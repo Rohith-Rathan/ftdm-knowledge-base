@@ -11,8 +11,8 @@ echo "🚀 EFTDM Practical Issues Fixer - Starting..."
 mkdir -p UXD/design_system
 mkdir -p UXD/screens
 mkdir -p UXD/figma_links
-mkdir -p Stage4_RTSD_Creation/figma_assets/screens
-mkdir -p Stage4_RTSD_Creation/figma_assets/icons_centralized
+mkdir -p Stage5_RTSD_Creation/figma_assets/screens
+mkdir -p Stage5_RTSD_Creation/figma_assets/icons_centralized
 mkdir -p Stage1_Mermaid_Generation/diagrams
 
 echo "✅ Created UXD folder structure"
@@ -82,32 +82,32 @@ analyze_figma_links() {
                 fi
                 
                 # Create screen directory
-                mkdir -p "Stage4_RTSD_Creation/figma_assets/screens/$screen_id"
+                mkdir -p "Stage5_RTSD_Creation/figma_assets/screens/$screen_id"
                 
                 # Download icons (mandatory)
                 echo "📥 Downloading icons for $screen_id..."
-                figma-mcp download-assets --url "$url" --type icons --output "Stage4_RTSD_Creation/figma_assets/screens/$screen_id/icons" --format svg --raw-files --no-wrappers 2>/dev/null || echo "⚠️  Icon download failed for $screen_id"
+                figma-mcp download-assets --url "$url" --type icons --output "Stage5_RTSD_Creation/figma_assets/screens/$screen_id/icons" --format svg --raw-files --no-wrappers 2>/dev/null || echo "⚠️  Icon download failed for $screen_id"
                 
                 # Download images (mandatory)
                 echo "📥 Downloading images for $screen_id..."
-                figma-mcp download-assets --url "$url" --type images --output "Stage4_RTSD_Creation/figma_assets/screens/$screen_id/images" --format png,jpg --raw-files --no-wrappers 2>/dev/null || echo "⚠️  Image download failed for $screen_id"
+                figma-mcp download-assets --url "$url" --type images --output "Stage5_RTSD_Creation/figma_assets/screens/$screen_id/images" --format png,jpg --raw-files --no-wrappers 2>/dev/null || echo "⚠️  Image download failed for $screen_id"
                 
                 # Download components (mandatory)
                 echo "📥 Downloading components for $screen_id..."
-                figma-mcp download-assets --url "$url" --type components --output "Stage4_RTSD_Creation/figma_assets/screens/$screen_id/components" --format svg,png --raw-files --no-wrappers 2>/dev/null || echo "⚠️  Component download failed for $screen_id"
+                figma-mcp download-assets --url "$url" --type components --output "Stage5_RTSD_Creation/figma_assets/screens/$screen_id/components" --format svg,png --raw-files --no-wrappers 2>/dev/null || echo "⚠️  Component download failed for $screen_id"
                 
                 # Extract design tokens (optional)
                 echo "🎨 Extracting design tokens for $screen_id..."
-                figma-mcp extract-design-tokens --url "$url" --output "Stage4_RTSD_Creation/figma_assets/screens/$screen_id/design_tokens.json" 2>/dev/null || echo "⚠️  Design tokens extraction failed for $screen_id"
+                figma-mcp extract-design-tokens --url "$url" --output "Stage5_RTSD_Creation/figma_assets/screens/$screen_id/design_tokens.json" 2>/dev/null || echo "⚠️  Design tokens extraction failed for $screen_id"
                 
                 # Extract colors (optional)
-                figma-mcp extract-colors --url "$url" --output "Stage4_RTSD_Creation/figma_assets/screens/$screen_id/colors.json" 2>/dev/null || echo "⚠️  Colors extraction failed for $screen_id"
+                figma-mcp extract-colors --url "$url" --output "Stage5_RTSD_Creation/figma_assets/screens/$screen_id/colors.json" 2>/dev/null || echo "⚠️  Colors extraction failed for $screen_id"
                 
                 # Extract typography (optional)
-                figma-mcp extract-typography --url "$url" --output "Stage4_RTSD_Creation/figma_assets/screens/$screen_id/typography.json" 2>/dev/null || echo "⚠️  Typography extraction failed for $screen_id"
+                figma-mcp extract-typography --url "$url" --output "Stage5_RTSD_Creation/figma_assets/screens/$screen_id/typography.json" 2>/dev/null || echo "⚠️  Typography extraction failed for $screen_id"
                 
                 # Extract spacing (optional)
-                figma-mcp extract-spacing --url "$url" --output "Stage4_RTSD_Creation/figma_assets/screens/$screen_id/spacing.json" 2>/dev/null || echo "⚠️  Spacing extraction failed for $screen_id"
+                figma-mcp extract-spacing --url "$url" --output "Stage5_RTSD_Creation/figma_assets/screens/$screen_id/spacing.json" 2>/dev/null || echo "⚠️  Spacing extraction failed for $screen_id"
             done
         else
             echo "⚠️  No Figma URLs found in figma_links.md"
@@ -122,7 +122,7 @@ cleanup_icon_names() {
     echo "🧹 Cleaning up icon names..."
     
     # Find all SVG files and clean names
-    find Stage4_RTSD_Creation/figma_assets -name "*.svg" -type f | while read -r file; do
+    find Stage5_RTSD_Creation/figma_assets -name "*.svg" -type f | while read -r file; do
         # Get directory and filename
         dir=$(dirname "$file")
         filename=$(basename "$file")
@@ -143,18 +143,18 @@ manage_icon_reuse() {
     echo "🔄 Managing icon reuse..."
     
     # Create centralized icons directory
-    mkdir -p Stage4_RTSD_Creation/figma_assets/icons_centralized
+    mkdir -p Stage5_RTSD_Creation/figma_assets/icons_centralized
     
     # Find all unique icons by content hash
-    find Stage4_RTSD_Creation/figma_assets -name "*.svg" -type f | while read -r file; do
+    find Stage5_RTSD_Creation/figma_assets -name "*.svg" -type f | while read -r file; do
         # Calculate MD5 hash
         hash=$(md5sum "$file" | cut -d' ' -f1)
         filename=$(basename "$file")
         
         # Check if this hash already exists
-        if [ ! -f "Stage4_RTSD_Creation/figma_assets/icons_centralized/${hash}.svg" ]; then
+        if [ ! -f "Stage5_RTSD_Creation/figma_assets/icons_centralized/${hash}.svg" ]; then
             # Copy unique icon to centralized location
-            cp "$file" "Stage4_RTSD_Creation/figma_assets/icons_centralized/${hash}.svg"
+            cp "$file" "Stage5_RTSD_Creation/figma_assets/icons_centralized/${hash}.svg"
             echo "✅ Added unique icon: $filename (hash: $hash)"
         else
             # Replace with symlink to centralized icon
@@ -166,25 +166,25 @@ manage_icon_reuse() {
     
     # Generate icon inventory
     echo "📊 Generating icon inventory..."
-    cat > Stage4_RTSD_Creation/figma_icon_inventory.json << EOF
+    cat > Stage5_RTSD_Creation/figma_icon_inventory.json << EOF
 {
-  "total_icons": $(find Stage4_RTSD_Creation/figma_assets/icons_centralized -name "*.svg" | wc -l),
-  "unique_icons": $(find Stage4_RTSD_Creation/figma_assets/icons_centralized -name "*.svg" | wc -l),
-  "duplicate_icons": $(find Stage4_RTSD_Creation/figma_assets -name "*.svg" -type l | wc -l),
+  "total_icons": $(find Stage5_RTSD_Creation/figma_assets/icons_centralized -name "*.svg" | wc -l),
+  "unique_icons": $(find Stage5_RTSD_Creation/figma_assets/icons_centralized -name "*.svg" | wc -l),
+  "duplicate_icons": $(find Stage5_RTSD_Creation/figma_assets -name "*.svg" -type l | wc -l),
   "icons_by_screen": {
 EOF
     
     # Add screen-specific icon counts
-    for screen_dir in Stage4_RTSD_Creation/figma_assets/screens/*/; do
+    for screen_dir in Stage5_RTSD_Creation/figma_assets/screens/*/; do
         if [ -d "$screen_dir" ]; then
             screen_name=$(basename "$screen_dir")
             icon_count=$(find "$screen_dir" -name "*.svg" | wc -l)
-            echo "    \"$screen_name\": $icon_count," >> Stage4_RTSD_Creation/figma_icon_inventory.json
+            echo "    \"$screen_name\": $icon_count," >> Stage5_RTSD_Creation/figma_icon_inventory.json
         fi
     done
     
-    echo "  }" >> Stage4_RTSD_Creation/figma_icon_inventory.json
-    echo "}" >> Stage4_RTSD_Creation/figma_icon_inventory.json
+    echo "  }" >> Stage5_RTSD_Creation/figma_icon_inventory.json
+    echo "}" >> Stage5_RTSD_Creation/figma_icon_inventory.json
 }
 
 # Function to extract pixel-perfect measurements
@@ -203,13 +203,13 @@ extract_pixel_measurements() {
             echo "📏 Extracting measurements for $screen_id..."
             
             # Extract layout measurements
-            figma-mcp extract-layout --url "$url" --output "Stage4_RTSD_Creation/figma_assets/screens/$screen_id/layout.json" 2>/dev/null || echo "⚠️  Layout extraction failed for $screen_id"
+            figma-mcp extract-layout --url "$url" --output "Stage5_RTSD_Creation/figma_assets/screens/$screen_id/layout.json" 2>/dev/null || echo "⚠️  Layout extraction failed for $screen_id"
             
             # Extract component measurements
-            figma-mcp extract-components --url "$url" --output "Stage4_RTSD_Creation/figma_assets/screens/$screen_id/component_measurements.json" 2>/dev/null || echo "⚠️  Component measurements extraction failed for $screen_id"
+            figma-mcp extract-components --url "$url" --output "Stage5_RTSD_Creation/figma_assets/screens/$screen_id/component_measurements.json" 2>/dev/null || echo "⚠️  Component measurements extraction failed for $screen_id"
             
             # Extract spacing measurements
-            figma-mcp extract-spacing --url "$url" --output "Stage4_RTSD_Creation/figma_assets/screens/$screen_id/spacing_measurements.json" 2>/dev/null || echo "⚠️  Spacing measurements extraction failed for $screen_id"
+            figma-mcp extract-spacing --url "$url" --output "Stage5_RTSD_Creation/figma_assets/screens/$screen_id/spacing_measurements.json" 2>/dev/null || echo "⚠️  Spacing measurements extraction failed for $screen_id"
         done
     fi
 }
@@ -223,41 +223,41 @@ generate_css_variables() {
         echo "🎨 Processing color palette..."
         
         # Generate CSS variables for light mode
-        cat > Stage4_RTSD_Creation/figma_assets/css_variables.css << EOF
+        cat > Stage5_RTSD_Creation/figma_assets/css_variables.css << EOF
 /* Design System CSS Variables */
 :root {
   /* Light Mode Colors */
 EOF
         
         # Extract light mode colors
-        jq -r '.light_mode | to_entries[] | "  --color-\(.key)-main: \(.value.main);"' UXD/design_system/color_palette.json >> Stage4_RTSD_Creation/figma_assets/css_variables.css 2>/dev/null || echo "⚠️  Color extraction failed"
+        jq -r '.light_mode | to_entries[] | "  --color-\(.key)-main: \(.value.main);"' UXD/design_system/color_palette.json >> Stage5_RTSD_Creation/figma_assets/css_variables.css 2>/dev/null || echo "⚠️  Color extraction failed"
         
-        echo "}" >> Stage4_RTSD_Creation/figma_assets/css_variables.css
-        echo "" >> Stage4_RTSD_Creation/figma_assets/css_variables.css
+        echo "}" >> Stage5_RTSD_Creation/figma_assets/css_variables.css
+        echo "" >> Stage5_RTSD_Creation/figma_assets/css_variables.css
         
         # Generate dark mode variables
-        echo "  /* Dark Mode Colors */" >> Stage4_RTSD_Creation/figma_assets/css_variables.css
-        echo "  @media (prefers-color-scheme: dark) {" >> Stage4_RTSD_Creation/figma_assets/css_variables.css
+        echo "  /* Dark Mode Colors */" >> Stage5_RTSD_Creation/figma_assets/css_variables.css
+        echo "  @media (prefers-color-scheme: dark) {" >> Stage5_RTSD_Creation/figma_assets/css_variables.css
         
-        jq -r '.dark_mode | to_entries[] | "    --color-\(.key)-main: \(.value.main);"' UXD/design_system/color_palette.json >> Stage4_RTSD_Creation/figma_assets/css_variables.css 2>/dev/null || echo "⚠️  Dark mode color extraction failed"
+        jq -r '.dark_mode | to_entries[] | "    --color-\(.key)-main: \(.value.main);"' UXD/design_system/color_palette.json >> Stage5_RTSD_Creation/figma_assets/css_variables.css 2>/dev/null || echo "⚠️  Dark mode color extraction failed"
         
-        echo "  }" >> Stage4_RTSD_Creation/figma_assets/css_variables.css
+        echo "  }" >> Stage5_RTSD_Creation/figma_assets/css_variables.css
     fi
     
     # Process typography
     if [ -f "UXD/design_system/typography.json" ]; then
         echo "📝 Processing typography..."
         
-        jq -r '.font_family | to_entries[] | "  --font-\(.key): \(.value);"' UXD/design_system/typography.json >> Stage4_RTSD_Creation/figma_assets/css_variables.css 2>/dev/null || echo "⚠️  Typography extraction failed"
+        jq -r '.font_family | to_entries[] | "  --font-\(.key): \(.value);"' UXD/design_system/typography.json >> Stage5_RTSD_Creation/figma_assets/css_variables.css 2>/dev/null || echo "⚠️  Typography extraction failed"
         
-        jq -r '.font_sizes | to_entries[] | "  --font-size-\(.key): \(.value);"' UXD/design_system/typography.json >> Stage4_RTSD_Creation/figma_assets/css_variables.css 2>/dev/null || echo "⚠️  Font size extraction failed"
+        jq -r '.font_sizes | to_entries[] | "  --font-size-\(.key): \(.value);"' UXD/design_system/typography.json >> Stage5_RTSD_Creation/figma_assets/css_variables.css 2>/dev/null || echo "⚠️  Font size extraction failed"
     fi
     
     # Process spacing
     if [ -f "UXD/design_system/spacing.json" ]; then
         echo "📏 Processing spacing..."
         
-        jq -r '.spacing | to_entries[] | "  --spacing-\(.key): \(.value);"' UXD/design_system/spacing.json >> Stage4_RTSD_Creation/figma_assets/css_variables.css 2>/dev/null || echo "⚠️  Spacing extraction failed"
+        jq -r '.spacing | to_entries[] | "  --spacing-\(.key): \(.value);"' UXD/design_system/spacing.json >> Stage5_RTSD_Creation/figma_assets/css_variables.css 2>/dev/null || echo "⚠️  Spacing extraction failed"
     fi
 }
 
@@ -265,12 +265,12 @@ EOF
 create_asset_documentation() {
     echo "📚 Creating asset usage documentation..."
     
-    cat > Stage4_RTSD_Creation/figma_assets/ASSET_USAGE_GUIDE.md << EOF
+    cat > Stage5_RTSD_Creation/figma_assets/ASSET_USAGE_GUIDE.md << EOF
 # 🎨 Figma Asset Usage Guide
 
 ## Asset Structure
 \`\`\`
-Stage4_RTSD_Creation/figma_assets/
+Stage5_RTSD_Creation/figma_assets/
 ├── screens/
 │   ├── [screen_id]/
 │   │   ├── icons/          # SVG icons for this screen
@@ -289,7 +289,7 @@ Stage4_RTSD_Creation/figma_assets/
 \`\`\`vue
 <template>
   <div class="icon-container">
-    <img src="@/assets/Stage4_RTSD_Creation/figma_assets/screens/login/icons/user.svg" alt="User" />
+    <img src="@/assets/Stage5_RTSD_Creation/figma_assets/screens/login/icons/user.svg" alt="User" />
   </div>
 </template>
 \`\`\`
@@ -298,7 +298,7 @@ Stage4_RTSD_Creation/figma_assets/
 \`\`\`vue
 <template>
   <div class="image-container">
-    <img src="@/assets/Stage4_RTSD_Creation/figma_assets/screens/dashboard/images/hero.png" alt="Hero" />
+    <img src="@/assets/Stage5_RTSD_Creation/figma_assets/screens/dashboard/images/hero.png" alt="Hero" />
   </div>
 </template>
 \`\`\`

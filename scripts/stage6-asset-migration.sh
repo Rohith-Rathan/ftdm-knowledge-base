@@ -12,7 +12,7 @@ move_assets_to_development() {
     echo "📦 Moving assets from Stage 4 to development folder..."
     
     # Check if Stage 4 assets exist
-    if [ -d "Stage4_RTSD_Creation/figma_assets" ]; then
+    if [ -d "Stage5_RTSD_Creation/figma_assets" ]; then
         echo "✅ Found Stage 4 assets"
         
         # Create development folder if it doesn't exist
@@ -28,7 +28,7 @@ move_assets_to_development() {
         mkdir -p "../$DEV_FOLDER/frontend/src/assets/figma_assets"
         
         # Move all assets
-        cp -r Stage4_RTSD_Creation/figma_assets/* "../$DEV_FOLDER/frontend/src/assets/figma_assets/"
+        cp -r Stage5_RTSD_Creation/figma_assets/* "../$DEV_FOLDER/frontend/src/assets/figma_assets/"
         
         echo "✅ Assets moved to ../$DEV_FOLDER/frontend/src/assets/figma_assets/"
         
@@ -53,7 +53,7 @@ update_asset_paths() {
     
     # Update asset usage guide
     if [ -f "src/assets/figma_assets/ASSET_USAGE_GUIDE.md" ]; then
-        sed -i 's|Stage4_RTSD_Creation/figma_assets/|src/assets/figma_assets/|g' src/assets/figma_assets/ASSET_USAGE_GUIDE.md
+        sed -i 's|Stage5_RTSD_Creation/figma_assets/|src/assets/figma_assets/|g' src/assets/figma_assets/ASSET_USAGE_GUIDE.md
         echo "✅ Updated asset usage guide paths"
     fi
     
@@ -197,7 +197,7 @@ update_package_scripts() {
         cat >> package.json << EOF
 
   "scripts": {
-    "assets:copy": "cp -r Stage4_RTSD_Creation/figma_assets/* src/assets/figma_assets/",
+    "assets:copy": "cp -r Stage5_RTSD_Creation/figma_assets/* src/assets/figma_assets/",
     "assets:clean": "rm -rf src/assets/figma_assets/*",
     "assets:update": "npm run assets:clean && npm run assets:copy"
   }

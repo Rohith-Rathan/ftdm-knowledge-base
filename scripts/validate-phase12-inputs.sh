@@ -7,41 +7,41 @@ echo "🔍 Phase 12: Frontend Unit Test Cases - Input Validation"
 echo "======================================================"
 
 # Check if frontend screens are implemented
-if [ ! -f "Stage4_RTSD_Creation/frontend_screens.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/frontend_screens.md" ]; then
     echo "❌ ERROR: Frontend screens not found"
-    echo "📋 REQUIRED: Frontend screens document in Stage4_RTSD_Creation/frontend_screens.md"
+    echo "📋 REQUIRED: Frontend screens document in Stage5_RTSD_Creation/frontend_screens.md"
     echo "💡 ACTION: Run Phase 11: Frontend Screen Development first"
     exit 1
 fi
 
 # Check if Vue.js components are complete
-if [ ! -f "Stage4_RTSD_Creation/vue_components.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/vue_components.md" ]; then
     echo "❌ ERROR: Vue.js components not found"
-    echo "📋 REQUIRED: Vue.js components document in Stage4_RTSD_Creation/vue_components.md"
+    echo "📋 REQUIRED: Vue.js components document in Stage5_RTSD_Creation/vue_components.md"
     echo "💡 ACTION: Run Phase 11: Frontend Screen Development first"
     exit 1
 fi
 
 # Check if API integration is comprehensive
-if [ ! -f "Stage4_RTSD_Creation/api_integration.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/api_integration.md" ]; then
     echo "❌ ERROR: API integration not found"
-    echo "📋 REQUIRED: API integration document in Stage4_RTSD_Creation/api_integration.md"
+    echo "📋 REQUIRED: API integration document in Stage5_RTSD_Creation/api_integration.md"
     echo "💡 ACTION: Run Phase 11: Frontend Screen Development first"
     exit 1
 fi
 
 # Check if styling is pixel-perfect
-if [ ! -f "Stage4_RTSD_Creation/pixel_perfect_styling.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/pixel_perfect_styling.md" ]; then
     echo "❌ ERROR: Pixel-perfect styling not found"
-    echo "📋 REQUIRED: Pixel-perfect styling document in Stage4_RTSD_Creation/pixel_perfect_styling.md"
+    echo "📋 REQUIRED: Pixel-perfect styling document in Stage5_RTSD_Creation/pixel_perfect_styling.md"
     echo "💡 ACTION: Run Phase 11: Frontend Screen Development first"
     exit 1
 fi
 
 # Check if frontend logic exists
-if [ ! -f "Stage4_RTSD_Creation/frontend_logic.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/frontend_logic.md" ]; then
     echo "❌ ERROR: Frontend logic not found"
-    echo "📋 REQUIRED: Frontend logic document in Stage4_RTSD_Creation/frontend_logic.md"
+    echo "📋 REQUIRED: Frontend logic document in Stage5_RTSD_Creation/frontend_logic.md"
     echo "💡 ACTION: Run Phase 11: Frontend Screen Development first"
     exit 1
 fi

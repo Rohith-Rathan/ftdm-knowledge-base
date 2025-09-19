@@ -438,7 +438,7 @@ cat > "$DEV_FOLDER/frontend/package.json" << EOF
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "assets:copy": "cp -r ../EFTDM_Framework/Stage4_RTSD_Creation/figma_assets/* src/assets/figma_assets/",
+    "assets:copy": "cp -r ../EFTDM_Framework/Stage5_RTSD_Creation/figma_assets/* src/assets/figma_assets/",
     "assets:clean": "rm -rf src/assets/figma_assets/*",
     "assets:update": "npm run assets:clean && npm run assets:copy"
   },

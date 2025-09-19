@@ -23,10 +23,10 @@ if [ ! -f "Stage3_TSD_Creation/tsd_output.md" ]; then
 fi
 
 # Check if RTSD document exists and is complete
-if [ ! -f "Stage4_RTSD_Creation/rtsd_output.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/rtsd_output.md" ]; then
     echo "❌ ERROR: RTSD document not found"
-    echo "📋 REQUIRED: Complete RTSD document in Stage4_RTSD_Creation/rtsd_output.md"
-    echo "💡 ACTION: Run Stage 4: RTSD Creation first"
+    echo "📋 REQUIRED: Complete RTSD document in Stage5_RTSD_Creation/rtsd_output.md"
+    echo "💡 ACTION: Run Stage 5: RTSD Creation first"
     exit 1
 fi
 
@@ -39,9 +39,9 @@ if [ ! -f "Stage1_Mermaid_Generation/UXD/figma_analysis.md" ]; then
 fi
 
 # Check if service implementations exist
-if [ ! -f "Stage4_RTSD_Creation/service_implementations.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/service_implementations.md" ]; then
     echo "❌ ERROR: Service implementations not found"
-    echo "📋 REQUIRED: Service implementations document in Stage4_RTSD_Creation/service_implementations.md"
+    echo "📋 REQUIRED: Service implementations document in Stage5_RTSD_Creation/service_implementations.md"
     echo "💡 ACTION: Run Phase 8: Business Service Implementations first"
     exit 1
 fi

@@ -65,7 +65,7 @@ General assets like:
 
 1. Follow this structure when organizing your project's UXD folder
 2. Ensure all relevant design system JSONs, screen images, and Figma links are placed in their respective locations
-3. The EFTDM framework will automatically analyze these files during Stage 4 (RTSD Creation)
+3. The EFTDM framework will automatically analyze these files during Stage 5 (RTSD Creation)
 
 ## 🔧 Framework Integration
 

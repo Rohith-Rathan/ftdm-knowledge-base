@@ -11,7 +11,7 @@ EFTDM_FRAMEWORK/
 ├── Stage1_Mermaid_Generation/     # Raw Requirements → Mermaid Diagrams
 ├── Stage2_FSD_Creation/           # Requirements + Diagrams → FSD
 ├── Stage3_TSD_Creation/           # FSD → TSD
-├── Stage4_RTSD_Creation/          # FSD + TSD + UXD → RTSD (Optional)
+├── Stage5_RTSD_Creation/          # FSD + TSD + UXD → RTSD (Optional)
 ├── Stage5_Implementation/         # All Documents → Complete Application
 ├── Stage6_Temporary_Backend/      # Mock Backend for Testing (Optional)
 └── frameworks/                    # Supporting frameworks
@@ -74,7 +74,7 @@ EFTDM_FRAMEWORK/
 - You can iterate and refine at any stage
 
 ### **✅ Flexible Workflow**
-- Stage 4 (RTSD) is optional
+- Stage 5 (RTSD) is optional
 - Stage 6 (Temporary Backend) is optional
 - UXD can be images or Figma links
 - Can skip stages if documents already exist
@@ -96,7 +96,7 @@ EFTDM_FRAMEWORK/
 1. **Stage 1**: Raw Requirements → Mermaid Diagrams
 2. **Stage 2**: Requirements + Diagrams → FSD
 3. **Stage 3**: FSD → TSD
-4. **Stage 4**: FSD + TSD + UXD → RTSD (Optional)
+4. **Stage 5**: FSD + TSD + UXD → RTSD (Optional)
 5. **Stage 5**: All Documents → Complete Application
 6. **Stage 6**: Mock Backend for Testing (Optional)
 

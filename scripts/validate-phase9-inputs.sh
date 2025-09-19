@@ -7,41 +7,41 @@ echo "🔍 Phase 9: Unit Testing Cases (100% Coverage) - Input Validation"
 echo "==============================================================="
 
 # Check if service implementations exist
-if [ ! -f "Stage4_RTSD_Creation/service_implementations.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/service_implementations.md" ]; then
     echo "❌ ERROR: Service implementations not found"
-    echo "📋 REQUIRED: Service implementations document in Stage4_RTSD_Creation/service_implementations.md"
+    echo "📋 REQUIRED: Service implementations document in Stage5_RTSD_Creation/service_implementations.md"
     echo "💡 ACTION: Run Phase 8: Business Service Implementations first"
     exit 1
 fi
 
 # Check if business logic exists
-if [ ! -f "Stage4_RTSD_Creation/business_logic_implementations.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/business_logic_implementations.md" ]; then
     echo "❌ ERROR: Business logic implementations not found"
-    echo "📋 REQUIRED: Business logic implementations document in Stage4_RTSD_Creation/business_logic_implementations.md"
+    echo "📋 REQUIRED: Business logic implementations document in Stage5_RTSD_Creation/business_logic_implementations.md"
     echo "💡 ACTION: Run Phase 8: Business Service Implementations first"
     exit 1
 fi
 
 # Check if data access exists
-if [ ! -f "Stage4_RTSD_Creation/data_access_implementations.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/data_access_implementations.md" ]; then
     echo "❌ ERROR: Data access implementations not found"
-    echo "📋 REQUIRED: Data access implementations document in Stage4_RTSD_Creation/data_access_implementations.md"
+    echo "📋 REQUIRED: Data access implementations document in Stage5_RTSD_Creation/data_access_implementations.md"
     echo "💡 ACTION: Run Phase 8: Business Service Implementations first"
     exit 1
 fi
 
 # Check if error handling exists
-if [ ! -f "Stage4_RTSD_Creation/error_handling_implementations.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/error_handling_implementations.md" ]; then
     echo "❌ ERROR: Error handling implementations not found"
-    echo "📋 REQUIRED: Error handling implementations document in Stage4_RTSD_Creation/error_handling_implementations.md"
+    echo "📋 REQUIRED: Error handling implementations document in Stage5_RTSD_Creation/error_handling_implementations.md"
     echo "💡 ACTION: Run Phase 8: Business Service Implementations first"
     exit 1
 fi
 
 # Check if service contracts exist
-if [ ! -f "Stage4_RTSD_Creation/service_contracts.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/service_contracts.md" ]; then
     echo "❌ ERROR: Service contracts not found"
-    echo "📋 REQUIRED: Service contracts document in Stage4_RTSD_Creation/service_contracts.md"
+    echo "📋 REQUIRED: Service contracts document in Stage5_RTSD_Creation/service_contracts.md"
     echo "💡 ACTION: Run Phase 6: Business Service Interfaces first"
     exit 1
 fi

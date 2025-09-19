@@ -103,7 +103,7 @@ EFTDM-Framework/
 │   └── ...
 ├── Stage2_FSD_Creation/           # Functional specifications
 ├── Stage3_TSD_Creation/           # Technical specifications
-├── Stage4_RTSD_Creation/          # Refined technical specs
+├── Stage5_RTSD_Creation/          # Refined technical specs
 ├── Stage5_Implementation/         # Complete implementation
 ├── frameworks/                    # Core framework files
 │   ├── phase_prompts/            # Phase-specific prompts

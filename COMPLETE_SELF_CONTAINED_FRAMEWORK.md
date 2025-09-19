@@ -136,7 +136,7 @@ Test-EFTDM/
 │   ├── 📁 Stage1_Mermaid_Generation/
 │   ├── 📁 Stage2_FSD_Creation/
 │   ├── 📁 Stage3_TSD_Creation/
-│   ├── 📁 Stage4_RTSD_Creation/
+│   ├── 📁 Stage5_RTSD_Creation/
 │   ├── 📁 Stage5_Implementation/
 │   ├── 📁 Stage6_Temporary_Backend/
 │   ├── 📁 frameworks/
@@ -255,7 +255,7 @@ Test-EFTDM/
 - You can iterate and refine at any stage
 
 ### **✅ Flexible Workflow**
-- Stage 4 (RTSD) is optional
+- Stage 5 (RTSD) is optional
 - UXD can be images or Figma links
 - Can skip stages if documents already exist
 

@@ -139,7 +139,7 @@ cat > enhanced_workflow_config.json << EOF
         "tech_stack_enforced": true
       },
       {
-        "name": "Stage 4 - RTSD Creation",
+        "name": "Stage 5 - RTSD Creation",
         "enabled": true,
         "depends_on": ["Stage 3"],
         "design_system_integration": true,
@@ -269,7 +269,7 @@ cat > ENHANCED_FRAMEWORK_UPDATES.md << 'EOF'
 - **Issue**: Design system JSON files not integrated with RTSD
 - **Solution**: Updated RTSD creation prompt with mandatory design system integration
 - **Files Updated**:
-  - `Stage4_RTSD_Creation/rtsd_creation_prompt.md`
+  - `Stage5_RTSD_Creation/rtsd_creation_prompt.md`
 
 ### 6. ✅ Technology Stack Updated
 - **Issue**: Tech stack not matching organization standards

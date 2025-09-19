@@ -7,9 +7,9 @@ echo "🔍 Phase 7: Interface Validation & Coverage - Input Validation"
 echo "============================================================"
 
 # Check if service interfaces exist
-if [ ! -f "Stage4_RTSD_Creation/service_interfaces.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/service_interfaces.md" ]; then
     echo "❌ ERROR: Service interfaces not found"
-    echo "📋 REQUIRED: Service interfaces document in Stage4_RTSD_Creation/service_interfaces.md"
+    echo "📋 REQUIRED: Service interfaces document in Stage5_RTSD_Creation/service_interfaces.md"
     echo "💡 ACTION: Run Phase 6: Business Service Interfaces first"
     exit 1
 fi
@@ -31,17 +31,17 @@ if [ ! -f "Stage2_FSD_Creation/business_requirements.md" ]; then
 fi
 
 # Check if service contracts exist
-if [ ! -f "Stage4_RTSD_Creation/service_contracts.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/service_contracts.md" ]; then
     echo "❌ ERROR: Service contracts not found"
-    echo "📋 REQUIRED: Service contracts document in Stage4_RTSD_Creation/service_contracts.md"
+    echo "📋 REQUIRED: Service contracts document in Stage5_RTSD_Creation/service_contracts.md"
     echo "💡 ACTION: Run Phase 6: Business Service Interfaces first"
     exit 1
 fi
 
 # Check if business logic exists
-if [ ! -f "Stage4_RTSD_Creation/business_logic.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/business_logic.md" ]; then
     echo "❌ ERROR: Business logic not found"
-    echo "📋 REQUIRED: Business logic document in Stage4_RTSD_Creation/business_logic.md"
+    echo "📋 REQUIRED: Business logic document in Stage5_RTSD_Creation/business_logic.md"
     echo "💡 ACTION: Run Phase 6: Business Service Interfaces first"
     exit 1
 fi

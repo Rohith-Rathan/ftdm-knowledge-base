@@ -15,18 +15,18 @@ if [ ! -f "Stage1_Mermaid_Generation/UXD/figma_designs.md" ]; then
 fi
 
 # Check if REST API endpoints are implemented
-if [ ! -f "Stage4_RTSD_Creation/rest_api_endpoints.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/rest_api_endpoints.md" ]; then
     echo "❌ ERROR: REST API endpoints not found"
-    echo "📋 REQUIRED: REST API endpoints document in Stage4_RTSD_Creation/rest_api_endpoints.md"
+    echo "📋 REQUIRED: REST API endpoints document in Stage5_RTSD_Creation/rest_api_endpoints.md"
     echo "💡 ACTION: Run Phase 10: REST API Development first"
     exit 1
 fi
 
 # Check if RTSD document exists and is complete
-if [ ! -f "Stage4_RTSD_Creation/rtsd_output.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/rtsd_output.md" ]; then
     echo "❌ ERROR: RTSD document not found"
-    echo "📋 REQUIRED: Complete RTSD document in Stage4_RTSD_Creation/rtsd_output.md"
-    echo "💡 ACTION: Run Stage 4: RTSD Creation first"
+    echo "📋 REQUIRED: Complete RTSD document in Stage5_RTSD_Creation/rtsd_output.md"
+    echo "💡 ACTION: Run Stage 5: RTSD Creation first"
     exit 1
 fi
 

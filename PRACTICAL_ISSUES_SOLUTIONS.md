@@ -14,7 +14,7 @@
 **Problem**: JSON files in UXD folder not being analyzed
 **Solution**:
 - Created `frameworks/uxd_folder_structure_guide.md`
-- Updated `Stage4_RTSD_Creation/rtsd_creation_prompt.md`
+- Updated `Stage5_RTSD_Creation/rtsd_creation_prompt.md`
 - Added proper UXD folder structure analysis
 - Added design system JSON processing for light/dark modes
 
@@ -116,7 +116,7 @@ UXD/
 
 ### **Downloaded Assets Structure**
 ```
-Stage4_RTSD_Creation/figma_assets/  # Temporary storage during Stage 4
+Stage5_RTSD_Creation/figma_assets/  # Temporary storage during Stage 5
 ├── screens/
 │   ├── [screen_id]/
 │   │   ├── icons/          # SVG icons for this screen
@@ -248,7 +248,7 @@ restart_application() {
 ## **ASSET WORKFLOW**
 
 ### **Stage 4: Asset Download & Analysis**
-1. **Assets downloaded** to `Stage4_RTSD_Creation/figma_assets/`
+1. **Assets downloaded** to `Stage5_RTSD_Creation/figma_assets/`
 2. **Design system analysis** performed
 3. **Asset cleanup** and optimization
 4. **CSS variables** generated

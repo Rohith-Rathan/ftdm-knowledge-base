@@ -7,41 +7,41 @@ echo "🔍 Phase 5: ORM Mapper & MongoDB Classes - Input Validation"
 echo "=========================================================="
 
 # Check if database model design exists
-if [ ! -f "Stage4_RTSD_Creation/database_schema.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/database_schema.md" ]; then
     echo "❌ ERROR: Database schema not found"
-    echo "📋 REQUIRED: Database schema document in Stage4_RTSD_Creation/database_schema.md"
+    echo "📋 REQUIRED: Database schema document in Stage5_RTSD_Creation/database_schema.md"
     echo "💡 ACTION: Run Phase 4: Database Model Design first"
     exit 1
 fi
 
 # Check if entity models exist
-if [ ! -f "Stage4_RTSD_Creation/entity_models.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/entity_models.md" ]; then
     echo "❌ ERROR: Entity models not found"
-    echo "📋 REQUIRED: Entity models document in Stage4_RTSD_Creation/entity_models.md"
+    echo "📋 REQUIRED: Entity models document in Stage5_RTSD_Creation/entity_models.md"
     echo "💡 ACTION: Run Phase 4: Database Model Design first"
     exit 1
 fi
 
 # Check if relationship mappings exist
-if [ ! -f "Stage4_RTSD_Creation/relationship_mappings.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/relationship_mappings.md" ]; then
     echo "❌ ERROR: Relationship mappings not found"
-    echo "📋 REQUIRED: Relationship mappings document in Stage4_RTSD_Creation/relationship_mappings.md"
+    echo "📋 REQUIRED: Relationship mappings document in Stage5_RTSD_Creation/relationship_mappings.md"
     echo "💡 ACTION: Run Phase 4: Database Model Design first"
     exit 1
 fi
 
 # Check if data constraints exist
-if [ ! -f "Stage4_RTSD_Creation/data_constraints.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/data_constraints.md" ]; then
     echo "❌ ERROR: Data constraints not found"
-    echo "📋 REQUIRED: Data constraints document in Stage4_RTSD_Creation/data_constraints.md"
+    echo "📋 REQUIRED: Data constraints document in Stage5_RTSD_Creation/data_constraints.md"
     echo "💡 ACTION: Run Phase 4: Database Model Design first"
     exit 1
 fi
 
 # Check if performance indexes exist
-if [ ! -f "Stage4_RTSD_Creation/performance_indexes.md" ]; then
+if [ ! -f "Stage5_RTSD_Creation/performance_indexes.md" ]; then
     echo "❌ ERROR: Performance indexes not found"
-    echo "📋 REQUIRED: Performance indexes document in Stage4_RTSD_Creation/performance_indexes.md"
+    echo "📋 REQUIRED: Performance indexes document in Stage5_RTSD_Creation/performance_indexes.md"
     echo "💡 ACTION: Run Phase 4: Database Model Design first"
     exit 1
 fi
