@@ -6,7 +6,7 @@
 
 ## 🎯 **What is EFTDM?**
 
-The **Enhanced Fast-Track Development Methodology (EFTDM)** is a comprehensive, AI-powered development framework that transforms raw requirements into production-ready applications through a structured 5-stage process.
+The **Enhanced Fast-Track Development Methodology (EFTDM)** is a comprehensive, AI-powered development framework that transforms raw requirements into production-ready applications through a structured 7-stage process.
 
 ## ✨ **Key Features**
 
@@ -21,15 +21,16 @@ The **Enhanced Fast-Track Development Methodology (EFTDM)** is a comprehensive, 
 
 ## 🏗️ **Framework Architecture**
 
-### **6-Stage Development Process:**
+### **7-Stage Development Process:**
 
 ```
 Stage 1: Mermaid Generation    → Visual requirement diagrams
 Stage 2: FSD Creation         → Functional specifications
 Stage 3: TSD Creation          → Technical specifications
-Stage 4: RTSD Creation         → Refined technical specs with UX
-Stage 5: Implementation        → Complete application development
-Stage 6: Temporary Backend     → Optional mock backend for testing
+Stage 4: UI/UX Designs         → Design system and asset management 🎯 NEW
+Stage 5: RTSD Creation         → Refined technical specs with UX
+Stage 6: Implementation        → Complete application development
+Stage 7: Temporary Backend     → Optional mock backend for testing
 ```
 
 ### **Enhanced 13-Phase Implementation:**
@@ -79,11 +80,17 @@ cp -r Stage1_Mermaid_Generation/UXD/ your-project-root/
 # Stage 3: Create TSD
 # Use: Stage3_TSD_Creation/tsd_creation_prompt.md
 
-# Stage 4: Create RTSD with UXD analysis
-# Use: Stage4_RTSD_Creation/rtsd_creation_prompt.md
+# Stage 4: Create UI/UX design system
+# Use: Stage4_UI_UX_Designs/ui_ux_designs_prompt.md
 
-# Stage 5: Implement complete application
-# Use: Stage5_Implementation/implementation_prompt.md
+# Stage 5: Create RTSD with UXD analysis
+# Use: Stage5_RTSD_Creation/rtsd_creation_prompt.md
+
+# Stage 6: Implement complete application
+# Use: Stage6_Implementation/implementation_prompt.md
+
+# Stage 7: Create temporary backend (optional)
+# Use: Stage7_Temporary_Backend/temporary_backend_prompt.md
 ```
 
 ## 📁 **Project Structure**

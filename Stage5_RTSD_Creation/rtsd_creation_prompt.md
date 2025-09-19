@@ -1,4 +1,4 @@
-# 🎯 STAGE 4: RTSD CREATION PROMPT
+# 🎯 STAGE 5: RTSD CREATION PROMPT
 
 ## **INSTRUCTIONS FOR CURSOR AI**
 
@@ -7,8 +7,8 @@ You are a Senior Technical Architect with 15+ years of experience in designing e
 I will provide you with:
 1. A UX Diagrams Document (UXD) that contains user flows, wireframes, and interaction designs.
 2. A previously generated Technical Specification Document (TSD).
-3. **MANDATORY**: Design system JSON files (color_palette.json, typography.json, spacing.json) from UXD folder.
-4. **MANDATORY**: Figma asset inventory and component specifications.
+3. **MANDATORY**: UXD folder from Stage 4 with design system, assets, and navigation structure.
+4. **MANDATORY**: Figma asset inventory and component specifications from Stage 4.
 
 Your job is to generate a refined Technical Specification Document (TSD) that merges insights from all inputs.
 
@@ -24,24 +24,24 @@ Refinement Objectives:
 1. Alignment with UX
    - Ensure technical components, APIs, and workflows align with the UX diagrams.
    - Map every key UX flow to the corresponding technical module/service.
-   - **MANDATORY**: Map every UI element to its corresponding Figma asset and design token.
+   - **MANDATORY**: Map every UI element to its corresponding Figma asset and design token from Stage 4 UXD folder.
 
 2. Completeness
    - Fill any gaps left in the previous TSD using details from UXD.
    - Ensure end-to-end coverage of functional flows, data handling, and integrations.
-   - **IF** design system files exist: Include complete asset mapping and design system integration.
+   - **IF** design system files exist: Include complete asset mapping and design system integration from Stage 4.
    - **IF** design system files don't exist: Create basic design guidelines from UXD analysis.
 
 3. Consistency
    - Resolve discrepancies between the UXD and the previous TSD.
    - Ensure terminology, module names, and workflows remain consistent.
-   - **IF** design system files exist: Ensure design system consistency across all components.
+   - **IF** design system files exist: Ensure design system consistency across all components using Stage 4 assets.
    - **IF** design system files don't exist: Establish consistent design patterns from UXD analysis.
 
 4. Enhancements
    - Optimize architecture if UXD reveals performance, usability, or scalability needs.
    - Highlight potential improvements in NFRs (performance, security, maintainability).
-   - **IF** Figma designs available: Optimize for pixel-perfect implementation matching Figma designs.
+   - **IF** Figma designs available: Optimize for pixel-perfect implementation matching Figma designs from Stage 4.
    - **IF** Figma designs not available: Optimize based on UXD analysis and best practices.
 
 5. Documentation Standards
@@ -113,11 +113,11 @@ Output Requirements:
 
 ## **YOUR TASK**
 
-### **Step 1: UXD Analysis (If Available)**
-If UXD assets are provided:
+### **Step 1: UXD Analysis (From Stage 4)**
+If UXD assets are provided from Stage 4:
 
 #### **1.1: UXD Folder Structure Analysis**
-- **Check for design system files** in `UXD/design_system/` folder
+- **Check for design system files** in `UXD/design_system_files/` folder
 - **Analyze JSON files** for color palette, typography, spacing, components
 - **Extract design tokens** and create CSS variables
 - **Map design system** to Vue.js implementation
@@ -130,7 +130,7 @@ If UXD assets are provided:
 - **Scan layout positions** and element structure for pixel-perfect implementation
 
 #### **1.3: Figma Analysis**
-- Analyze Figma links from `UXD/figma_links.md` file
+- Analyze Figma links from `UXD/figma_screen_links.md` file
 - Extract spacing, typography, and colors
 - Identify component library and design system
 - Extract interaction patterns and animations
@@ -143,8 +143,8 @@ If UXD assets are provided:
 ./scripts/comprehensive-figma-analysis.sh
 
 # This will:
-# - Analyze all Figma screens from UXD/figma_links.md
-# - Download assets to figma_assets/screens/
+# - Analyze all Figma screens from UXD/figma_screen_links.md
+# - Download assets to UXD/figma_captured_assets/
 # - Generate CSS variables from design system
 # - Create asset inventory with file paths
 # - Generate usage guide for Vue.js implementation
@@ -268,7 +268,7 @@ Analyze the provided Figma links and extract:
 ### **File Naming Convention**
 **CRITICAL**: Save the RTSD document with project-specific naming:
 - **File Name**: `{PROJECT_NAME}_rtsd.md`
-- **Location**: `Stage4_RTSD_Creation/{PROJECT_NAME}_rtsd.md`
+- **Location**: `Stage5_RTSD_Creation/{PROJECT_NAME}_rtsd.md`
 - **Example**: If project is "TaskManager", save as `TaskManager_rtsd.md`
 
 After completion, you will have:

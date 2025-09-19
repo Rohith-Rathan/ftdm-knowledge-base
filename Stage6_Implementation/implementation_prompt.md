@@ -1,8 +1,8 @@
-# 🎯 STAGE 5: IMPLEMENTATION PROMPT
+# 🎯 STAGE 6: IMPLEMENTATION PROMPT
 
 ## **INSTRUCTIONS FOR CURSOR AI**
 
-You are a Senior Product Developer with 10+ years of experience. I need you to execute the complete EFTDM methodology using all validated documents from previous stages.
+You are a Senior Product Developer with 10+ years of experience. I need you to execute the complete EFTDM methodology using all validated documents from previous stages, including the UXD folder from Stage 4.
 
 ## **MANDATORY TECHNOLOGY STACK**
 
@@ -69,8 +69,15 @@ You are a Senior Product Developer with 10+ years of experience. I need you to e
 ### **RTSD Document (Optional)**
 [USER_PROVIDES_RTSD_DOCUMENT]
 
-### **UXD Assets (Optional)**
+### **UXD Assets (From Stage 4)**
 [USER_PROVIDES_UXD_ASSETS]
+
+**UXD Integration Requirements:**
+- **MUST** use UXD folder structure from Stage 4
+- **MUST** implement design system from UXD/design_system_files/
+- **MUST** use assets from UXD/figma_captured_assets/
+- **MUST** follow navigation structure from UXD/screens/navigation_list.md
+- **MUST** implement pixel-perfect designs from UXD analysis
 
 ## **ENHANCED 13-PHASE DEVELOPMENT APPROACH**
 
@@ -297,11 +304,12 @@ Execute the Enhanced Fast-Track Development Methodology through 7 phases:
 
 ### **Phase 4: Frontend Implementation**
 1. **Setup comprehensive mock backend** for complete frontend testing
-2. **Implement UI components** based on RTSD and UXD analysis
-3. **Create user interfaces** following pixel-perfect design system
+2. **Implement UI components** based on RTSD and UXD analysis from Stage 4
+3. **Create user interfaces** following pixel-perfect design system from UXD
 4. **Implement user workflows** and interactions with mock data
 5. **Add responsive design** and accessibility features
 6. **Test complete frontend** with all features and user flows
+7. **Migrate UXD assets** to development folder using stage6-asset-migration.sh
 
 ### **Phase 5: Backend Implementation**
 1. **Implement real API endpoints** based on frontend requirements

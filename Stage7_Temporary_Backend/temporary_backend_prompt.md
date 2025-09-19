@@ -1,4 +1,4 @@
-# 🎯 STAGE 6: TEMPORARY DEVELOPMENT BACKEND GENERATOR
+# 🎯 STAGE 7: TEMPORARY DEVELOPMENT BACKEND GENERATOR
 
 ## **INSTRUCTIONS FOR CURSOR AI**
 
@@ -15,8 +15,14 @@ Create a temporary development backend that allows immediate testing of the fron
 ### **TSD Document**
 [USER_PROVIDES_TSD_DOCUMENT]
 
-### **RTSD Document**
-[USER_PROVIDES_RTSD_DOCUMENT]
+### **UXD Assets (From Stage 4)**
+[USER_PROVIDES_UXD_ASSETS]
+
+**UXD Integration for Mock Data:**
+- **MUST** use navigation structure from UXD/screens/navigation_list.md
+- **MUST** create mock data that matches UI components from UXD analysis
+- **MUST** simulate realistic data flows based on UXD user journeys
+- **MUST** provide mock endpoints that support UXD screen requirements
 
 ### **Frontend Implementation**
 [USER_PROVIDES_FRONTEND_CODE]
