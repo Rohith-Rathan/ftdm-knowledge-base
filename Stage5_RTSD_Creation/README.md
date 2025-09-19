@@ -44,4 +44,4 @@ Create Refined Technical Specification Document using FSD, TSD, and UXD (images 
 - [ ] Ready for implementation
 
 ## **NEXT STAGE**
-Once validated, proceed to **Stage 5: Implementation**
+Once validated, proceed to **Stage 6.1: FSD Analysis & Validation**

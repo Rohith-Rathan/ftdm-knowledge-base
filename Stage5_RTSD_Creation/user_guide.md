@@ -55,7 +55,7 @@ Replace placeholders with:
 - [ ] Ready for implementation
 
 ## **NEXT STAGE**
-Once validated, proceed to **Stage 5: Implementation**.
+Once validated, proceed to **Stage 6.1: FSD Analysis & Validation**.
 
 ## **FILES INCLUDED**
 - `rtsd_creation_prompt.md` - Main prompt for AI

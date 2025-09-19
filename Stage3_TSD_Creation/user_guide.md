@@ -50,7 +50,7 @@ Replace placeholders with:
 - [ ] Ready for next stage
 
 ## **NEXT STAGE**
-Once validated, proceed to **Stage 4: RTSD Creation** (Optional) or **Stage 5: Implementation**.
+Once validated, proceed to **Stage 4: UI/UX Designs Analysis**.
 
 ## **FILES INCLUDED**
 - `tsd_creation_prompt.md` - Main prompt for AI
