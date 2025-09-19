@@ -203,10 +203,10 @@ Test-EFTDM/
 - **Validation**: Comprehensive checklist for quality assurance
 - **Success Criteria**: Clear validation points
 
-### **✅ Stage 6: Implementation** (Updated)
-- **Main Prompt**: `implementation_prompt.md` with 13-phase enterprise structure
-- **Phase Prompts**: Individual prompts for each of the 13 phases
-- **Auto-Testing**: Input validation scripts for each phase
+### **✅ Stage 6.1-6.13: Implementation Stages** (Updated)
+- **Main Prompt**: Individual stage prompts for each of the 13 implementation stages
+- **Phase Prompts**: Each stage has its own dedicated prompt and user guide
+- **Auto-Testing**: Input validation scripts for each stage
 - **UXD Integration**: Uses UXD folder for asset management
 - **Templates**: Code templates and examples
 - **Validation**: Comprehensive checklist for quality assurance
@@ -232,7 +232,7 @@ Test-EFTDM/
 8. **Validate UXD**: Review and approve UI/UX design system
 9. **Proceed to Stage 5**: Use `rtsd_creation_prompt.md`
 10. **Validate RTSD**: Review and approve RTSD document
-11. **Proceed to Stage 6**: Use `implementation_prompt.md`
+11. **Proceed to Stage 6.1**: Use individual stage prompts (Stage6_1_FSD_Analysis_Validation/ through Stage6_13_CICD_Deployment_Azure_App_Service/)
 12. **Execute 13 phases**: Approve each phase before proceeding
 13. **Optional Stage 7**: Use `temporary_backend_prompt.md` for mock backend
 

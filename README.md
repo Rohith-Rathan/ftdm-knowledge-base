@@ -29,7 +29,7 @@ Stage 2: FSD Creation         → Functional specifications
 Stage 3: TSD Creation          → Technical specifications
 Stage 4: UI/UX Designs Analysis     → Design system and asset management 🎯 NEW
 Stage 5: RTSD Creation         → Refined technical specs with UX
-Stage 6: Implementation        → Complete application development
+Stage 6.1-6.13: Implementation Stages → Complete application development
 Stage 7: Temporary Backend     → Optional mock backend for testing
 ```
 
@@ -86,8 +86,8 @@ cp -r Stage1_Mermaid_Generation/UXD/ your-project-root/
 # Stage 5: Create RTSD with UXD analysis
 # Use: Stage5_RTSD_Creation/rtsd_creation_prompt.md
 
-# Stage 6: Implement complete application
-# Use: Stage6_Implementation/implementation_prompt.md
+# Stage 6.1-6.13: Implement complete application
+# Use: Individual stage prompts (Stage6_1_FSD_Analysis_Validation/ through Stage6_13_CICD_Deployment_Azure_App_Service/)
 
 # Stage 7: Create temporary backend (optional)
 # Use: Stage7_Temporary_Backend/temporary_backend_prompt.md
