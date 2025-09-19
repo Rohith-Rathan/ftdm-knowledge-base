@@ -6,7 +6,7 @@ Stage 6 creates a temporary mock backend for immediate local testing of your Vue
 ## **WHEN TO USE STAGE 6**
 
 ### **✅ Use Stage 6 When:**
-- You've completed Stages 1-5 (FSD → TSD → RTSD → Implementation)
+- You've completed Stages 1-6.13 (FSD → TSD → UI/UX Analysis → RTSD → Implementation Stages)
 - You have a working Vue.js frontend ready for testing
 - You don't have a real backend running locally
 - You want to test the frontend immediately

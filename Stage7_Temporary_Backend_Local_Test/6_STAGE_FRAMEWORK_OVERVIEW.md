@@ -12,8 +12,8 @@ EFTDM_FRAMEWORK/
 ├── Stage2_FSD_Creation/           # Requirements + Diagrams → FSD
 ├── Stage3_TSD_Creation/           # FSD → TSD
 ├── Stage5_RTSD_Creation/          # FSD + TSD + UXD → RTSD (Optional)
-├── Stage5_Implementation/         # All Documents → Complete Application
-├── Stage6_Temporary_Backend/      # Mock Backend for Testing (Optional)
+├── Stage6_1_FSD_Analysis_Validation/         # All Documents → Complete Application
+├── Stage7_Temporary_Backend_Local_Test/      # Mock Backend for Testing (Optional)
 └── frameworks/                    # Supporting frameworks
 ```
 

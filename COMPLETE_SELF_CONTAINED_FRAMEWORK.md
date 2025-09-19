@@ -137,8 +137,8 @@ Test-EFTDM/
 │   ├── 📁 Stage2_FSD_Creation/
 │   ├── 📁 Stage3_TSD_Creation/
 │   ├── 📁 Stage5_RTSD_Creation/
-│   ├── 📁 Stage5_Implementation/
-│   ├── 📁 Stage6_Temporary_Backend/
+│   ├── 📁 Stage6_1_FSD_Analysis_Validation/
+│   ├── 📁 Stage7_Temporary_Backend_Local_Test/
 │   ├── 📁 frameworks/
 │   ├── 📁 scripts/
 │   └── 📄 README.md

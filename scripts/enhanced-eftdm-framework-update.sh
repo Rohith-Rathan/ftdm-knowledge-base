@@ -139,7 +139,7 @@ cat > enhanced_workflow_config.json << EOF
         "tech_stack_enforced": true
       },
       {
-        "name": "Stage 5 - RTSD Creation",
+        "name": "Stage 4 - UI/UX Designs Analysis",
         "enabled": true,
         "depends_on": ["Stage 3"],
         "design_system_integration": true,
@@ -147,9 +147,17 @@ cat > enhanced_workflow_config.json << EOF
         "pixel_perfect": true
       },
       {
-        "name": "Stage 5 - Implementation",
+        "name": "Stage 5 - RTSD Creation",
         "enabled": true,
         "depends_on": ["Stage 4"],
+        "design_system_integration": true,
+        "asset_mapping": true,
+        "pixel_perfect": true
+      },
+      {
+        "name": "Stage 6.1-6.13 - Implementation Stages",
+        "enabled": true,
+        "depends_on": ["Stage 5"],
         "tech_stack_enforced": true,
         "pixel_perfect_ui": true
       }
@@ -276,7 +284,7 @@ cat > ENHANCED_FRAMEWORK_UPDATES.md << 'EOF'
 - **Solution**: Updated all framework components with organization tech stack
 - **Files Updated**:
   - `Stage3_TSD_Creation/tsd_creation_prompt.md`
-  - `Stage5_Implementation/implementation_prompt.md`
+  - `Stage6_1_FSD_Analysis_Validation/implementation_prompt.md`
 
 ### 8. ✅ Icon Management & Reuse Optimization Added
 - **Issue**: Icons not optimized for reuse, unnecessary Vue wrappers created
@@ -290,13 +298,13 @@ cat > ENHANCED_FRAMEWORK_UPDATES.md << 'EOF'
 - **Files Created**:
   - `scripts/detect-design-system.sh`
 
-### 10. ✅ Stage 6 Temporary Backend Added
+### 10. ✅ Stage 7 Temporary Backend Added
 - **Issue**: No immediate testing solution after frontend implementation
-- **Solution**: Created optional Stage 6 for mock backend generation
+- **Solution**: Created optional Stage 7 for mock backend generation
 - **Files Created**:
-  - `Stage6_Temporary_Backend/temporary_backend_prompt.md`
-  - `Stage6_Temporary_Backend/user_guide.md`
-  - `Stage6_Temporary_Backend/README.md`
+  - `Stage7_Temporary_Backend_Local_Test/temporary_backend_prompt.md`
+  - `Stage7_Temporary_Backend_Local_Test/user_guide.md`
+  - `Stage7_Temporary_Backend_Local_Test/README.md`
 
 ## New Features Added
 
@@ -323,7 +331,7 @@ cat > ENHANCED_FRAMEWORK_UPDATES.md << 'EOF'
 - Fallback to UXD analysis when design system files don't exist
 - Comprehensive design system status reporting
 
-### 🚀 Stage 6 Temporary Backend
+### 🚀 Stage 7 Temporary Backend
 - Mock backend generation for immediate testing
 - Express.js server with realistic data simulation
 - Easy frontend integration and testing
@@ -365,7 +373,7 @@ Edit `figma_mcp_config.json` with your Figma credentials
 - ✅ Technology stack compliance enforced
 - ✅ Icon management and reuse optimization
 - ✅ Flexible design system integration
-- ✅ Stage 6 temporary backend for testing
+- ✅ Stage 7 temporary backend for testing
 
 ## Next Steps
 
@@ -391,7 +399,7 @@ if [ -f "scripts/validate-framework.sh" ]; then
         echo "✅ Mandatory asset download added"
         echo "✅ Design system integration added"
         echo "✅ Technology stack updated"
-        echo "✅ Stage 6 temporary backend added"
+        echo "✅ Stage 7 temporary backend added"
         echo ""
         echo "📁 Configuration files created:"
         echo "  - figma_mcp_config.json"

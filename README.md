@@ -104,7 +104,7 @@ EFTDM-Framework/
 ├── Stage2_FSD_Creation/           # Functional specifications
 ├── Stage3_TSD_Creation/           # Technical specifications
 ├── Stage5_RTSD_Creation/          # Refined technical specs
-├── Stage5_Implementation/         # Complete implementation
+├── Stage6_1_FSD_Analysis_Validation/         # Complete implementation
 ├── frameworks/                    # Core framework files
 │   ├── phase_prompts/            # Phase-specific prompts
 │   ├── kickstart_prompt.md       # Quick start guide
@@ -171,7 +171,7 @@ Output: Comprehensive FSD document
 
 ### **3. Implement with 13-Phase Enterprise Structure**
 ```markdown
-Use: Stage5_Implementation/implementation_prompt.md
+Use: Stage6_1_FSD_Analysis_Validation/fsd_analysis_prompt.md
 Phase 4: Database Model Design
 Phase 5: ORM Mapper & MongoDB Classes
 Phase 6: Business Service Interfaces
