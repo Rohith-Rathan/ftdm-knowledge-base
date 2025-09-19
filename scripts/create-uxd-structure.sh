@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 🎨 CREATE UXD STRUCTURE SCRIPT
-# This script creates the UXD folder structure for Stage 4: UI/UX Designs
+# This script creates the UXD folder structure for Stage 4: UI/UX Designs Analysis
 
 set -e
 

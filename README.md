@@ -27,7 +27,7 @@ The **Enhanced Fast-Track Development Methodology (EFTDM)** is a comprehensive, 
 Stage 1: Mermaid Generation    → Visual requirement diagrams
 Stage 2: FSD Creation         → Functional specifications
 Stage 3: TSD Creation          → Technical specifications
-Stage 4: UI/UX Designs         → Design system and asset management 🎯 NEW
+Stage 4: UI/UX Designs Analysis     → Design system and asset management 🎯 NEW
 Stage 5: RTSD Creation         → Refined technical specs with UX
 Stage 6: Implementation        → Complete application development
 Stage 7: Temporary Backend     → Optional mock backend for testing
@@ -80,8 +80,8 @@ cp -r Stage1_Mermaid_Generation/UXD/ your-project-root/
 # Stage 3: Create TSD
 # Use: Stage3_TSD_Creation/tsd_creation_prompt.md
 
-# Stage 4: Create UI/UX design system
-# Use: Stage4_UI_UX_Designs/ui_ux_designs_prompt.md
+# Stage 4: Create UI/UX design system analysis
+# Use: Stage4_UI_UX_Designs_Analysis/ui_ux_designs_prompt.md
 
 # Stage 5: Create RTSD with UXD analysis
 # Use: Stage5_RTSD_Creation/rtsd_creation_prompt.md

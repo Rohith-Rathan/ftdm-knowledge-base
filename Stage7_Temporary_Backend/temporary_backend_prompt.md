@@ -15,7 +15,7 @@ Create a temporary development backend that allows immediate testing of the fron
 ### **TSD Document**
 [USER_PROVIDES_TSD_DOCUMENT]
 
-### **UXD Assets (From Stage 4)**
+### **UXD Assets (From Stage 4 - UI/UX Designs Analysis)**
 [USER_PROVIDES_UXD_ASSETS]
 
 **UXD Integration for Mock Data:**

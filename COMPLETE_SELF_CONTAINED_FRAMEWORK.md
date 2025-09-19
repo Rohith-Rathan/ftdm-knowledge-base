@@ -36,7 +36,7 @@ Test-EFTDM/
 │   ├── user_guide.md                      # Step-by-step usage guide
 │   ├── tsd_creation_prompt.md             # Main AI prompt
 │   └── example_outputs/                   # Sample TSD documents
-├── Stage4_UI_UX_Designs/                  # 🎯 NEW: UI/UX Design System
+├── Stage4_UI_UX_Designs_Analysis/          # 🎯 NEW: UI/UX Design System
 │   ├── README.md                          # Stage overview and purpose
 │   ├── user_guide.md                      # Step-by-step usage guide
 │   ├── ui_ux_designs_prompt.md            # Main AI prompt
@@ -127,7 +127,7 @@ Test-EFTDM/
 - **Validation**: Comprehensive checklist for quality assurance
 - **Success Criteria**: Clear validation points
 
-### **✅ Stage 4: UI/UX Designs** 🎯 NEW
+### **✅ Stage 4: UI/UX Designs Analysis** 🎯 NEW
 - **Main Prompt**: `ui_ux_designs_prompt.md`
 - **User Guide**: Complete step-by-step instructions
 - **Templates**: Navigation list, Figma links, design system templates

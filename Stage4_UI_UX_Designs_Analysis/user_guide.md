@@ -47,7 +47,7 @@
 ### **Step 2: Run Stage 4**
 
 #### **Using Cursor AI:**
-1. Open the main prompt: `Stage4_UI_UX_Designs/ui_ux_designs_prompt.md`
+1. Open the main prompt: `Stage4_UI_UX_Designs_Analysis/ui_ux_designs_prompt.md`
 2. Provide your FSD and TSD documents
 3. Specify which design assets you have
 4. Let AI create the UXD structure
