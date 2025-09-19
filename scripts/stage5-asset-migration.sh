@@ -15,13 +15,22 @@ move_assets_to_development() {
     if [ -d "Stage4_RTSD_Creation/figma_assets" ]; then
         echo "✅ Found Stage 4 assets"
         
+        # Create development folder if it doesn't exist
+        PROJECT_NAME=$(basename "$(pwd)" | sed 's/_development$//')
+        DEV_FOLDER="${PROJECT_NAME}_development"
+        
+        if [ ! -d "../$DEV_FOLDER" ]; then
+            echo "📁 Creating development folder: ../$DEV_FOLDER"
+            mkdir -p "../$DEV_FOLDER/frontend/src/assets"
+        fi
+        
         # Create development assets directory
-        mkdir -p "src/assets/figma_assets"
+        mkdir -p "../$DEV_FOLDER/frontend/src/assets/figma_assets"
         
         # Move all assets
-        cp -r Stage4_RTSD_Creation/figma_assets/* src/assets/figma_assets/
+        cp -r Stage4_RTSD_Creation/figma_assets/* "../$DEV_FOLDER/frontend/src/assets/figma_assets/"
         
-        echo "✅ Assets moved to src/assets/figma_assets/"
+        echo "✅ Assets moved to ../$DEV_FOLDER/frontend/src/assets/figma_assets/"
         
         # Update asset paths in documentation
         update_asset_paths
@@ -32,7 +41,9 @@ move_assets_to_development() {
     else
         echo "⚠️  No Stage 4 assets found"
         echo "📁 Creating empty assets directory for development"
-        mkdir -p "src/assets/figma_assets"
+        PROJECT_NAME=$(basename "$(pwd)" | sed 's/_development$//')
+        DEV_FOLDER="${PROJECT_NAME}_development"
+        mkdir -p "../$DEV_FOLDER/frontend/src/assets/figma_assets"
     fi
 }
 

@@ -21,6 +21,40 @@ You are a Senior Product Developer with 10+ years of experience. I need you to e
 - **MUST** maintain centralized icon management for optimal reuse
 - **MUST** document asset usage patterns and naming conventions
 
+## **CRITICAL DEVELOPMENT FOLDER STRUCTURE**
+
+**IMPORTANT**: Create development folder alongside EFTDM framework, NOT inside it.
+
+### **Required Project Structure**
+```
+[PROJECT_NAME]/
+├── 📁 EFTDM_Framework/              # Framework (don't touch)
+│   ├── 📁 Stage1_Mermaid_Generation/
+│   ├── 📁 Stage2_FSD_Creation/
+│   ├── 📁 Stage3_TSD_Creation/
+│   ├── 📁 Stage4_RTSD_Creation/
+│   ├── 📁 Stage5_Implementation/
+│   ├── 📁 Stage6_Temporary_Backend/
+│   ├── 📁 frameworks/
+│   ├── 📁 scripts/
+│   └── 📄 README.md
+└── 📁 [PROJECT_NAME]_development/   # 🎯 DEVELOPMENT FOLDER
+    ├── 📁 backend/                   # .NET Core 8.0 Backend
+    ├── 📁 frontend/                  # Vue.js 3 Frontend
+    ├── 📁 docs/                      # Project Documentation
+    ├── 📁 tests/                     # Test Files
+    ├── 📁 scripts/                  # Build & Deploy Scripts
+    └── 📄 README.md                 # Project README
+```
+
+### **Development Folder Contents**
+- **Backend**: Complete .NET Core 8.0 project with controllers, services, models
+- **Frontend**: Complete Vue.js 3 project with components, views, stores
+- **Assets**: All Figma assets migrated from Stage 4
+- **Tests**: Unit tests, integration tests, E2E tests
+- **Documentation**: API docs, component guides, setup instructions
+- **Scripts**: Build, deploy, test, and asset management scripts
+
 ## **INPUTS FROM ALL PREVIOUS STAGES**
 
 ### **FSD Document**

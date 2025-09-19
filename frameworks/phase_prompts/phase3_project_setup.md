@@ -27,9 +27,23 @@ Your task is to perform Phase 3: Project Setup & Architecture for the **{PROJECT
 
 ## **PROJECT SETUP REQUIREMENTS**
 
+### **Development Folder Structure**
+**CRITICAL**: Create development folder alongside EFTDM framework, NOT inside it.
+
+```
+[PROJECT_NAME]_development/
+├── 📁 backend/                  # .NET Core 8.0 Backend
+├── 📁 frontend/                 # Vue.js 3 Frontend
+├── 📁 docs/                     # Project Documentation
+├── 📁 tests/                    # Test Files
+├── 📁 scripts/                  # Build & Deploy Scripts
+├── 📄 README.md                # Project README
+└── 📄 .gitignore               # Project Git Ignore
+```
+
 ### **Backend Project Structure**
 ```
-backend/
+[PROJECT_NAME]_development/backend/
 ├── src/
 │   ├── Controllers/           # API controllers
 │   ├── Services/             # Business logic services
@@ -52,7 +66,7 @@ backend/
 
 ### **Frontend Project Structure**
 ```
-frontend/
+[PROJECT_NAME]_development/frontend/
 ├── src/
 │   ├── components/          # Reusable UI components
 │   ├── views/               # Page components

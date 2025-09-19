@@ -54,6 +54,40 @@ Test-EFTDM/
     └── 6_STAGE_FRAMEWORK_OVERVIEW.md      # Complete framework overview
 ```
 
+## **🎯 DEVELOPMENT FOLDER STRUCTURE**
+
+**CRITICAL**: The framework creates a separate development folder alongside the EFTDM framework, NOT inside it.
+
+### **Project Structure**
+```
+[PROJECT_NAME]/
+├── 📁 EFTDM_Framework/              # Framework (don't touch)
+│   ├── 📁 Stage1_Mermaid_Generation/
+│   ├── 📁 Stage2_FSD_Creation/
+│   ├── 📁 Stage3_TSD_Creation/
+│   ├── 📁 Stage4_RTSD_Creation/
+│   ├── 📁 Stage5_Implementation/
+│   ├── 📁 Stage6_Temporary_Backend/
+│   ├── 📁 frameworks/
+│   ├── 📁 scripts/
+│   └── 📄 README.md
+└── 📁 [PROJECT_NAME]_development/   # 🎯 DEVELOPMENT FOLDER
+    ├── 📁 backend/                   # .NET Core 8.0 Backend
+    ├── 📁 frontend/                  # Vue.js 3 Frontend
+    ├── 📁 docs/                      # Project Documentation
+    ├── 📁 tests/                     # Test Files
+    ├── 📁 scripts/                  # Build & Deploy Scripts
+    └── 📄 README.md                 # Project README
+```
+
+### **Development Folder Contents**
+- **Backend**: Complete .NET Core 8.0 project with controllers, services, models
+- **Frontend**: Complete Vue.js 3 project with components, views, stores
+- **Assets**: All Figma assets migrated from Stage 4
+- **Tests**: Unit tests, integration tests, E2E tests
+- **Documentation**: API docs, component guides, setup instructions
+- **Scripts**: Build, deploy, test, and asset management scripts
+
 ## **🎯 EACH STAGE IS COMPLETELY SELF-CONTAINED**
 
 ### **✅ Stage 1: Mermaid Generation**
