@@ -1,8 +1,8 @@
-# 📚 EFTDM COMPLETE USAGE GUIDE
+# 📚 EFTDM FRAMEWORK USAGE GUIDE
 
-## **🎯 Complete Guide to Using EFTDM**
+## **🎯 Complete Guide to Using EFTDM Framework**
 
-This guide covers every aspect of the Enhanced Fast-Track Development Methodology (EFTDM) package.
+This guide covers every aspect of the Enhanced Fast-Track Development Methodology (EFTDM) framework.
 
 ---
 
@@ -16,7 +16,7 @@ This guide covers every aspect of the Enhanced Fast-Track Development Methodolog
 
 ### **🔧 Frameworks (25+ Files)**
 - **`senior_developer_kickstart_prompt.md`** - Main EFTDM execution prompt
-- **`phase_prompts/`** - 13 phase execution prompts (enhanced enterprise structure)
+- **`all_stage_prompts/`** - 19 stage execution prompts (enhanced enterprise structure)
 - **`uxd_image_analysis_framework.md`** - UXD image analysis
 - **`figma_mcp_integration_framework.md`** - Figma MCP integration
 - **`mermaid_integration_framework.md`** - Mermaid diagram integration
@@ -45,8 +45,8 @@ This guide covers every aspect of the Enhanced Fast-Track Development Methodolog
 mkdir my_new_project
 cd my_new_project
 
-# Copy EFTDM package
-cp -r /path/to/EFTDM_COMPLETE ./
+# Copy EFTDM framework
+cp -r /path/to/EFTDM_FRAMEWORK ./
 
 # Create requirements file
 echo "Build a task management app with user authentication, task creation, and team collaboration" > requirements.txt
@@ -55,81 +55,84 @@ echo "Build a task management app with user authentication, task creation, and t
 #### **Step 2: Run Automated Workflow**
 ```bash
 # Execute complete automation
-./EFTDM_COMPLETE/scripts/automated-workflow.sh
+./EFTDM_FRAMEWORK/scripts/automated-workflow.sh
 
 # This generates:
 # - Mermaid diagrams (user journey, system flow, data model)
 # - Enhanced FSD with embedded diagrams
 # - TSD with technical specifications
-# - RTSD (if design assets exist)
+# - UXD folder structure (Stage 3)
+# - UI/UX Designs Analysis (Stage 4)
+# - RTSD (Stage 5)
 ```
 
 #### **Step 3: Development**
 ```bash
 # Load EFTDM prompt in Cursor AI
-cat EFTDM_COMPLETE/frameworks/senior_developer_kickstart_prompt.md
+cat EFTDM_FRAMEWORK/frameworks/senior_developer_kickstart_prompt.md
 
-# Provide project context and let AI execute the 7 phases
+# Provide project context and let AI execute the 19 stages
 ```
 
 ### **Scenario 2: Existing Project Enhancement**
 
 #### **Step 1: Analyze Current State**
 ```bash
-# Copy EFTDM to existing project
-cp -r /path/to/EFTDM_COMPLETE ./existing_project/
+# Copy EFTDM framework to existing project
+cp -r /path/to/EFTDM_FRAMEWORK ./existing_project/
 
 # Analyze current FSD/TSD gaps
-cat EFTDM_COMPLETE/TSD_RTSD_ANALYSIS_AND_IMPROVEMENTS.md
+cat EFTDM_FRAMEWORK/EXISTING_PROJECT_INTEGRATION_GUIDE.md
 ```
 
 #### **Step 2: Integrate Design Assets**
 ```bash
 # Detect design assets
-./EFTDM_COMPLETE/scripts/detect-design-assets.sh
+./EFTDM_FRAMEWORK/scripts/detect-design-assets.sh
 
 # Analyze UXD images
-./EFTDM_COMPLETE/scripts/analyze-uxd-images.sh
+./EFTDM_FRAMEWORK/scripts/analyze-uxd-images.sh
 
 # Analyze Figma designs
-./EFTDM_COMPLETE/scripts/analyze-figma-designs.sh
+./EFTDM_FRAMEWORK/scripts/analyze-figma-designs.sh
 ```
 
 #### **Step 3: Create RTSD**
 ```bash
 # Generate RTSD from UX insights
-cat EFTDM_COMPLETE/frameworks/rtsd_creation_methodology.md
+cat EFTDM_FRAMEWORK/frameworks/rtsd_creation_methodology.md
 
 # Use RTSD template
-cp EFTDM_COMPLETE/templates/INDUSTRY_STANDARD_RTSD_TEMPLATE.md my_project_rtsd.md
+cp EFTDM_FRAMEWORK/templates/INDUSTRY_STANDARD_RTSD_TEMPLATE.md my_project_rtsd.md
 ```
 
 ### **Scenario 3: Team Process Standardization**
 
 #### **Step 1: Establish Standards**
 ```bash
-# Copy EFTDM to team repository
-cp -r /path/to/EFTDM_COMPLETE ./team_standards/
+# Copy EFTDM framework to team repository
+cp -r /path/to/EFTDM_FRAMEWORK ./team_standards/
 
 # Create team-specific templates
-cp EFTDM_COMPLETE/templates/* ./team_standards/custom_templates/
+cp EFTDM_FRAMEWORK/templates/* ./team_standards/custom_templates/
 ```
 
 #### **Step 2: Train Team**
 ```bash
 # Share documentation
-cat EFTDM_COMPLETE/README.md
-cat EFTDM_COMPLETE/QUICK_START.md
-cat EFTDM_COMPLETE/USAGE_GUIDE.md
+cat EFTDM_FRAMEWORK/README.md
+cat EFTDM_FRAMEWORK/QUICK_START.md
+cat EFTDM_FRAMEWORK/USAGE_GUIDE.md
+cat EFTDM_FRAMEWORK/EXISTING_PROJECT_INTEGRATION_GUIDE.md
 ```
 
 #### **Step 3: Implement Quality Gates**
 ```bash
 # Set up quality gates
-cat EFTDM_COMPLETE/frameworks/enhanced_quality_gates.md
+cat EFTDM_FRAMEWORK/frameworks/enhanced_quality_gates.md
 
 # Configure real-time testing
-cat EFTDM_COMPLETE/frameworks/real_time_testing_framework.md
+cat EFTDM_FRAMEWORK/frameworks/real_time_testing_framework.md
 ```
 
 ---
@@ -150,10 +153,10 @@ project/
 **Process:**
 ```bash
 # Analyze UXD images
-./EFTDM_COMPLETE/scripts/analyze-uxd-images.sh
+./EFTDM_FRAMEWORK/scripts/analyze-uxd-images.sh
 
 # Extract design system
-cat EFTDM_COMPLETE/frameworks/uxd_image_analysis_framework.md
+cat EFTDM_FRAMEWORK/frameworks/uxd_image_analysis_framework.md
 ```
 
 ### **Figma Links Only**
@@ -166,10 +169,10 @@ project/
 **Process:**
 ```bash
 # Analyze Figma designs
-./EFTDM_COMPLETE/scripts/analyze-figma-designs.sh
+./EFTDM_FRAMEWORK/scripts/analyze-figma-designs.sh
 
 # Extract Dev Mode specs
-cat EFTDM_COMPLETE/frameworks/figma_mcp_integration_framework.md
+cat EFTDM_FRAMEWORK/frameworks/figma_mcp_integration_framework.md
 ```
 
 ### **Both Images + Figma**
@@ -185,11 +188,11 @@ project/
 **Process:**
 ```bash
 # Detect all assets
-./EFTDM_COMPLETE/scripts/detect-design-assets.sh
+./EFTDM_FRAMEWORK/scripts/detect-design-assets.sh
 
 # Analyze both types
-./EFTDM_COMPLETE/scripts/analyze-uxd-images.sh
-./EFTDM_COMPLETE/scripts/analyze-figma-designs.sh
+./EFTDM_FRAMEWORK/scripts/analyze-uxd-images.sh
+./EFTDM_FRAMEWORK/scripts/analyze-figma-designs.sh
 ```
 
 ---
@@ -199,7 +202,7 @@ project/
 ### **Generate Diagrams from Requirements**
 ```bash
 # Create Mermaid diagrams
-python3 EFTDM_COMPLETE/scripts/generate-mermaid-diagrams.py
+python3 EFTDM_FRAMEWORK/scripts/generate-mermaid-diagrams.py
 
 # Output: diagrams/user_journey.mmd, system_flow.mmd, data_model.mmd, etc.
 ```
@@ -207,7 +210,7 @@ python3 EFTDM_COMPLETE/scripts/generate-mermaid-diagrams.py
 ### **Embed in FSD**
 ```bash
 # Create enhanced FSD with diagrams
-python3 EFTDM_COMPLETE/scripts/create-enhanced-fsd.py
+python3 EFTDM_FRAMEWORK/scripts/create-enhanced-fsd.py
 
 # Output: enhanced_fsd_with_mermaid.md
 ```
@@ -227,10 +230,10 @@ python3 EFTDM_COMPLETE/scripts/create-enhanced-fsd.py
 ### **Real-Time Validation**
 ```bash
 # Load quality gates
-cat EFTDM_COMPLETE/frameworks/enhanced_quality_gates.md
+cat EFTDM_FRAMEWORK/frameworks/enhanced_quality_gates.md
 
 # Execute real-time testing
-cat EFTDM_COMPLETE/frameworks/real_time_testing_framework.md
+cat EFTDM_FRAMEWORK/frameworks/real_time_testing_framework.md
 ```
 
 ### **Validation Types**
@@ -247,7 +250,7 @@ cat EFTDM_COMPLETE/frameworks/real_time_testing_framework.md
 ### **FSD Template**
 ```bash
 # Copy template
-cp EFTDM_COMPLETE/templates/INDUSTRY_STANDARD_FSD_TEMPLATE.md my_fsd.md
+cp EFTDM_FRAMEWORK/templates/INDUSTRY_STANDARD_FSD_TEMPLATE.md my_fsd.md
 
 # Customize sections:
 # - Project Overview
@@ -260,7 +263,7 @@ cp EFTDM_COMPLETE/templates/INDUSTRY_STANDARD_FSD_TEMPLATE.md my_fsd.md
 ### **TSD Template**
 ```bash
 # Copy template
-cp EFTDM_COMPLETE/templates/INDUSTRY_STANDARD_TSD_TEMPLATE.md my_tsd.md
+cp EFTDM_FRAMEWORK/templates/INDUSTRY_STANDARD_TSD_TEMPLATE.md my_tsd.md
 
 # Customize sections:
 # - Architecture Overview
@@ -273,7 +276,7 @@ cp EFTDM_COMPLETE/templates/INDUSTRY_STANDARD_TSD_TEMPLATE.md my_tsd.md
 ### **RTSD Template**
 ```bash
 # Copy template
-cp EFTDM_COMPLETE/templates/INDUSTRY_STANDARD_RTSD_TEMPLATE.md my_rtsd.md
+cp EFTDM_FRAMEWORK/templates/INDUSTRY_STANDARD_RTSD_TEMPLATE.md my_rtsd.md
 
 # Customize sections:
 # - UX-Aligned Architecture
@@ -290,32 +293,34 @@ cp EFTDM_COMPLETE/templates/INDUSTRY_STANDARD_RTSD_TEMPLATE.md my_rtsd.md
 ### **Complete Workflow**
 ```bash
 # Run automated workflow
-./EFTDM_COMPLETE/scripts/automated-workflow.sh
+./EFTDM_FRAMEWORK/scripts/automated-workflow.sh
 
 # This executes:
 # 1. Generate Mermaid diagrams
 # 2. Create enhanced FSD
 # 3. Generate TSD
-# 4. Create RTSD (if UXD exists)
-# 5. Initialize development
+# 4. Create UXD folder structure (Stage 3)
+# 5. UI/UX Designs Analysis (Stage 4)
+# 6. Create RTSD (Stage 5)
+# 7. Initialize development (Stage 6.1-6.13)
 ```
 
 ### **Individual Scripts**
 ```bash
 # Generate Mermaid diagrams
-python3 EFTDM_COMPLETE/scripts/generate-mermaid-diagrams.py
+python3 EFTDM_FRAMEWORK/scripts/generate-mermaid-diagrams.py
 
 # Create enhanced FSD
-python3 EFTDM_COMPLETE/scripts/create-enhanced-fsd.py
+python3 EFTDM_FRAMEWORK/scripts/create-enhanced-fsd.py
 
 # Analyze UXD images
-./EFTDM_COMPLETE/scripts/analyze-uxd-images.sh
+./EFTDM_FRAMEWORK/scripts/analyze-uxd-images.sh
 
 # Analyze Figma designs
-./EFTDM_COMPLETE/scripts/analyze-figma-designs.sh
+./EFTDM_FRAMEWORK/scripts/analyze-figma-designs.sh
 
 # Detect design assets
-./EFTDM_COMPLETE/scripts/detect-design-assets.sh
+./EFTDM_FRAMEWORK/scripts/detect-design-assets.sh
 ```
 
 ---
@@ -325,7 +330,7 @@ python3 EFTDM_COMPLETE/scripts/create-enhanced-fsd.py
 ### **Load EFTDM Prompt**
 ```bash
 # Copy prompt to Cursor AI
-cat EFTDM_COMPLETE/frameworks/senior_developer_kickstart_prompt.md
+cat EFTDM_FRAMEWORK/frameworks/senior_developer_kickstart_prompt.md
 ```
 
 ### **Provide Project Context**
@@ -337,20 +342,26 @@ Figma: DESIGN_ASSETS.md
 Technology: Vue.js 3, Node.js, PostgreSQL
 ```
 
-### **Execute 13 Phases**
-1. **Phase 1:** FSD Analysis & Validation
-2. **Phase 2:** Implementation Planning
-3. **Phase 3:** Project Setup & Architecture
-4. **Phase 4:** Database Model Design ⭐ NEW
-5. **Phase 5:** ORM Mapper & MongoDB Classes ⭐ NEW
-6. **Phase 6:** Business Service Interfaces ⭐ NEW
-7. **Phase 7:** Interface Validation & Coverage ⭐ NEW
-8. **Phase 8:** Business Service Implementations ⭐ NEW
-9. **Phase 9:** Unit Testing Cases (80% Coverage) ⭐ NEW
-10. **Phase 10:** REST API Development ⭐ NEW
-11. **Phase 11:** Frontend Screen Development ⭐ NEW
-12. **Phase 12:** Frontend Unit Test Cases ⭐ NEW
-13. **Phase 13:** CI/CD Deployment & Azure App Service ⭐ NEW
+### **Execute 19 Stages**
+1. **Stage 1:** Mermaid Generation
+2. **Stage 2:** FSD Creation
+3. **Stage 3:** TSD Creation + UXD folder structure
+4. **Stage 4:** UI/UX Designs Analysis
+5. **Stage 5:** RTSD Creation
+6. **Stage 6.1:** FSD Analysis & Validation
+7. **Stage 6.2:** Implementation Planning
+8. **Stage 6.3:** Project Setup & Architecture
+9. **Stage 6.4:** Database Model Design
+10. **Stage 6.5:** ORM Mapper & MongoDB Classes
+11. **Stage 6.6:** Business Service Interfaces
+12. **Stage 6.7:** Interface Validation & Coverage
+13. **Stage 6.8:** Business Service Implementations
+14. **Stage 6.9:** Unit Testing Cases (100% Coverage)
+15. **Stage 6.10:** REST API Development
+16. **Stage 6.11:** Frontend Screen Development
+17. **Stage 6.12:** Frontend Unit Test Cases
+18. **Stage 6.13:** CI/CD Deployment & Azure App Service
+19. **Stage 7:** Temporary Backend & Local Test (Optional)
 
 ---
 
@@ -421,6 +432,6 @@ Technology: Vue.js 3, Node.js, PostgreSQL
 
 ---
 
-**🚀 Your enhanced development journey starts with EFTDM COMPLETE!**
+**🚀 Your enhanced development journey starts with EFTDM FRAMEWORK!**
 
 **Ready to revolutionize your development process?** 🎯
