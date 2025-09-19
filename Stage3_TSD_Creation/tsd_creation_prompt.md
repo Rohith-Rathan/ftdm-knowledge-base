@@ -161,6 +161,12 @@ Reference the validated Mermaid diagrams:
 
 ## **EXPECTED OUTPUT**
 
+### **File Naming Convention**
+**CRITICAL**: Save the TSD document with project-specific naming:
+- **File Name**: `{PROJECT_NAME}_tsd.md`
+- **Location**: `Stage3_TSD_Creation/{PROJECT_NAME}_tsd.md`
+- **Example**: If project is "TaskManager", save as `TaskManager_tsd.md`
+
 After completion, you will have:
 - ✅ **Comprehensive TSD** covering all technical requirements
 - ✅ **Complete technical architecture** with components

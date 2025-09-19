@@ -146,6 +146,12 @@ Embed the validated Mermaid diagrams into the FSD:
 
 ## **EXPECTED OUTPUT**
 
+### **File Naming Convention**
+**CRITICAL**: Save the FSD document with project-specific naming:
+- **File Name**: `{PROJECT_NAME}_fsd.md`
+- **Location**: `Stage2_FSD_Creation/{PROJECT_NAME}_fsd.md`
+- **Example**: If project is "TaskManager", save as `TaskManager_fsd.md`
+
 After completion, you will have:
 - ✅ **Comprehensive FSD** covering all requirements
 - ✅ **Complete user stories** with acceptance criteria

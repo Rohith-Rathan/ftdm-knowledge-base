@@ -101,6 +101,29 @@ gantt
 4. **Verify file creation** by listing the generated files
 5. **Provide file paths** for each generated diagram
 
+### **Step 4: Figma Analysis (If UXD Provided)**
+**CRITICAL**: If UXD folder with Figma links is provided:
+
+1. **Analyze Figma links** from `UXD/figma_links.md` file
+2. **Run comprehensive Figma analysis** using the framework script
+3. **Download assets** (icons, images, components) from Figma screens
+4. **Generate CSS variables** from design system analysis
+5. **Create asset inventory** with file paths and usage contexts
+6. **Provide asset usage guide** for Vue.js implementation
+
+**Figma Analysis Commands:**
+```bash
+# Run comprehensive Figma analysis
+./scripts/comprehensive-figma-analysis.sh
+
+# This will:
+# - Analyze all Figma screens
+# - Download assets to figma_assets/screens/
+# - Generate CSS variables
+# - Create asset inventory
+# - Generate usage guide
+```
+
 **Required Files to Generate:**
 - `user_journey.mmd`
 - `system_architecture.mmd` 

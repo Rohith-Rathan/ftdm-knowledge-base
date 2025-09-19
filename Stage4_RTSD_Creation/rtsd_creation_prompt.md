@@ -137,6 +137,19 @@ If UXD assets are provided:
 - **Download assets** (icons, images, components) and save locally
 - **Clean icon names** by removing "--Streamline-Tabler" and similar text
 
+**CRITICAL**: Run comprehensive Figma analysis before proceeding:
+```bash
+# Run comprehensive Figma analysis
+./scripts/comprehensive-figma-analysis.sh
+
+# This will:
+# - Analyze all Figma screens from UXD/figma_links.md
+# - Download assets to figma_assets/screens/
+# - Generate CSS variables from design system
+# - Create asset inventory with file paths
+# - Generate usage guide for Vue.js implementation
+```
+
 ### **Step 2: RTSD Generation**
 Create a comprehensive RTSD using the enhanced template:
 
@@ -251,6 +264,12 @@ Analyze the provided Figma links and extract:
 ```
 
 ## **EXPECTED OUTPUT**
+
+### **File Naming Convention**
+**CRITICAL**: Save the RTSD document with project-specific naming:
+- **File Name**: `{PROJECT_NAME}_rtsd.md`
+- **Location**: `Stage4_RTSD_Creation/{PROJECT_NAME}_rtsd.md`
+- **Example**: If project is "TaskManager", save as `TaskManager_rtsd.md`
 
 After completion, you will have:
 - ✅ **Comprehensive RTSD** with UX-driven technical specs
