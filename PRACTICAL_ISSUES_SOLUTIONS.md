@@ -14,6 +14,7 @@
 **Problem**: JSON files in UXD folder not being analyzed
 **Solution**:
 - Created `frameworks/uxd_folder_structure_guide.md`
+- Updated `Stage4_UI_UX_Designs_Analysis/ui_ux_designs_prompt.md`
 - Updated `Stage5_RTSD_Creation/rtsd_creation_prompt.md`
 - Added proper UXD folder structure analysis
 - Added design system JSON processing for light/dark modes
@@ -21,7 +22,8 @@
 ### **3. Figma Links Not Being Analyzed** ✅ FIXED
 **Problem**: Links in MD file not being processed
 **Solution**:
-- Updated RTSD prompt to look for `UXD/figma_links.md`
+- Updated `Stage4_UI_UX_Designs_Analysis/ui_ux_designs_prompt.md` to look for `UXD/figma_links.md`
+- Updated `Stage5_RTSD_Creation/rtsd_creation_prompt.md` to use UXD assets
 - Added Figma analysis workflow
 - Added asset download and name cleanup
 - Added pixel-perfect measurement extraction
@@ -46,7 +48,7 @@
 ### **6. Test UI Creation Issue** ✅ FIXED
 **Problem**: Don't merge with original frontend
 **Solution**:
-- Updated Stage 6 to only create dummy backend
+- Updated Stage 7 to only create dummy backend
 - Added error analysis script
 - Added systematic error fixing
 - Added application restart functionality
@@ -62,7 +64,7 @@
 ## **NEW UXD FOLDER STRUCTURE**
 
 ```
-UXD/
+UXD/  # Created in Stage 3: TSD Creation
 ├── 📁 design_system/
 │   ├── color_palette.json          # Color system (light/dark modes)
 │   ├── typography.json            # Font system and hierarchy
@@ -85,6 +87,8 @@ UXD/
 ├── 📁 figma_links.md             # Figma design links
 └── 📁 design_analysis.md         # Design analysis notes
 ```
+
+**Note**: UXD folder structure is created in **Stage 3: TSD Creation** and populated with assets in **Stage 4: UI/UX Designs Analysis**.
 
 ## **FIGMA LINKS STRUCTURE**
 
@@ -116,7 +120,7 @@ UXD/
 
 ### **Downloaded Assets Structure**
 ```
-Stage5_RTSD_Creation/figma_assets/  # Temporary storage during Stage 5
+Stage4_UI_UX_Designs_Analysis/figma_assets/  # Temporary storage during Stage 4
 ├── screens/
 │   ├── [screen_id]/
 │   │   ├── icons/          # SVG icons for this screen
@@ -134,7 +138,7 @@ Stage5_RTSD_Creation/figma_assets/  # Temporary storage during Stage 5
 ├── figma_icon_inventory.json
 └── ASSET_USAGE_GUIDE.md
 
-# After Stage 5 starts, assets are moved to:
+# After Stage 6.1 starts, assets are moved to:
 src/assets/figma_assets/    # Development folder
 ├── [same structure as above]
 └── DEVELOPMENT_GUIDE.md
@@ -247,15 +251,22 @@ restart_application() {
 
 ## **ASSET WORKFLOW**
 
-### **Stage 4: Asset Download & Analysis**
-1. **Assets downloaded** to `Stage5_RTSD_Creation/figma_assets/`
+### **Stage 4: UI/UX Designs Analysis**
+1. **Assets downloaded** to `Stage4_UI_UX_Designs_Analysis/figma_assets/`
 2. **Design system analysis** performed
 3. **Asset cleanup** and optimization
 4. **CSS variables** generated
 5. **Asset documentation** created
+6. **UXD folder structure** populated with analyzed assets
 
-### **Stage 5: Asset Migration to Development**
-1. **Run asset migration script**: `./scripts/stage5-asset-migration.sh`
+### **Stage 5: RTSD Creation**
+1. **Uses UXD assets** from Stage 4
+2. **Creates refined technical specifications**
+3. **Integrates design system** into technical specs
+4. **Prepares assets** for implementation stages
+
+### **Stage 6.1: Asset Migration to Development**
+1. **Run asset migration script**: `./scripts/stage6-asset-migration.sh`
 2. **Assets moved** to `src/assets/figma_assets/`
 3. **Asset paths updated** in documentation
 4. **Vue.js asset helper** created
@@ -269,34 +280,47 @@ restart_application() {
 
 ## **USAGE INSTRUCTIONS**
 
-### **1. Setup UXD Folder Structure**
+### **1. Setup UXD Folder Structure (Stage 3)**
 ```bash
-mkdir -p UXD/design_system
-mkdir -p UXD/screens
-mkdir -p UXD/figma_links
+# UXD folder structure is automatically created in Stage 3: TSD Creation
+# No manual setup required
 ```
 
-### **2. Add Design System Files**
+### **2. Add Design System Files (Stage 3)**
 - Place JSON files in `UXD/design_system/`
 - Follow the structure in `uxd_folder_structure_guide.md`
+- Files are analyzed in Stage 4: UI/UX Designs Analysis
 
-### **3. Add Figma Links**
+### **3. Add Figma Links (Stage 3)**
 - Create `UXD/figma_links.md`
 - Add Figma URLs with proper structure
+- Links are processed in Stage 4: UI/UX Designs Analysis
 
-### **4. Run Practical Issues Fixer**
+### **4. Run Stage 4: UI/UX Designs Analysis**
+```bash
+cd Stage4_UI_UX_Designs_Analysis/
+# Use ui_ux_designs_prompt.md to analyze designs and download assets
+```
+
+### **5. Run Stage 5: RTSD Creation**
+```bash
+cd Stage5_RTSD_Creation/
+# Use rtsd_creation_prompt.md to create refined technical specifications
+```
+
+### **6. Run Practical Issues Fixer**
 ```bash
 ./scripts/fix-practical-issues.sh
 ```
 
-### **5. Use Error Analysis Script**
+### **7. Use Error Analysis Script**
 ```bash
 ./scripts/analyze-and-fix-errors.sh
 ```
 
-### **6. Run Asset Migration (Stage 5)**
+### **8. Run Asset Migration (Stage 6.1)**
 ```bash
-./scripts/stage5-asset-migration.sh
+./scripts/stage6-asset-migration.sh
 ```
 
 ## **BENEFITS OF THESE FIXES**
@@ -332,12 +356,15 @@ mkdir -p UXD/figma_links
 
 ## **NEXT STEPS**
 
-1. **Use the new UXD folder structure** for your projects
-2. **Run the practical issues fixer** script
-3. **Test Stage 1** with visual preview
-4. **Use figma_links.md** for Figma analysis
-5. **Leverage asset management** system
-6. **Use error analysis** script for debugging
+1. **Use the new UXD folder structure** for your projects (created in Stage 3)
+2. **Run Stage 4: UI/UX Designs Analysis** to process designs and download assets
+3. **Run Stage 5: RTSD Creation** to create refined technical specifications
+4. **Run the practical issues fixer** script
+5. **Test Stage 1** with visual preview
+6. **Use figma_links.md** for Figma analysis (processed in Stage 4)
+7. **Leverage asset management** system (assets downloaded in Stage 4)
+8. **Use error analysis** script for debugging
+9. **Proceed to Stage 6.1-6.13** for implementation
 
 ---
 
