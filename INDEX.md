@@ -23,14 +23,20 @@ This index provides quick access to all files in the EFTDM COMPLETE package.
 - **`enhanced_quality_gates.md`** - Quality gates and validation framework
 - **`real_time_testing_framework.md`** - Real-time testing framework
 
-### **Phase Prompts**
+### **Phase Prompts (Enhanced 13-Phase Structure)**
 - **`phase_prompts/phase1_fsd_analysis.md`** - FSD analysis phase
 - **`phase_prompts/phase2_implementation_planning.md`** - Implementation planning phase
 - **`phase_prompts/phase3_project_setup.md`** - Project setup phase
-- **`phase_prompts/phase4_frontend_implementation.md`** - Frontend implementation phase
-- **`phase_prompts/phase5_backend_implementation.md`** - Backend implementation phase
-- **`phase_prompts/phase6_integration_testing.md`** - Integration and testing phase
-- **`phase_prompts/phase7_deployment_optimization.md`** - Deployment and optimization phase
+- **`phase_prompts/phase4_database_model_design.md`** ⭐ NEW - Database model design phase
+- **`phase_prompts/phase5_orm_mapper_mongodb_classes.md`** ⭐ NEW - ORM mapper & MongoDB classes phase
+- **`phase_prompts/phase6_business_service_interfaces.md`** ⭐ NEW - Business service interfaces phase
+- **`phase_prompts/phase7_interface_validation_coverage.md`** ⭐ NEW - Interface validation & coverage phase
+- **`phase_prompts/phase8_business_service_implementations.md`** ⭐ NEW - Business service implementations phase
+- **`phase_prompts/phase9_unit_testing_cases.md`** ⭐ NEW - Unit testing cases (80% coverage) phase
+- **`phase_prompts/phase10_rest_api_development.md`** ⭐ NEW - REST API development phase
+- **`phase_prompts/phase11_frontend_screen_development.md`** ⭐ NEW - Frontend screen development phase
+- **`phase_prompts/phase12_frontend_unit_test_cases.md`** ⭐ NEW - Frontend unit test cases phase
+- **`phase_prompts/phase13_cicd_deployment_azure.md`** ⭐ NEW - CI/CD deployment & Azure App Service phase
 
 ### **Design Asset Frameworks**
 - **`uxd_image_analysis_framework.md`** - UXD image analysis framework
@@ -47,6 +53,18 @@ This index provides quick access to all files in the EFTDM COMPLETE package.
 ---
 
 ## **🤖 SCRIPTS**
+
+### **Auto-Testing & Validation Scripts** ⭐ NEW
+- **`validate-phase4-inputs.sh`** - Database model design input validation
+- **`validate-phase5-inputs.sh`** - ORM mapper & MongoDB classes input validation
+- **`validate-phase6-inputs.sh`** - Business service interfaces input validation
+- **`validate-phase7-inputs.sh`** - Interface validation & coverage input validation
+- **`validate-phase8-inputs.sh`** - Business service implementations input validation
+- **`validate-phase9-inputs.sh`** - Unit testing cases input validation
+- **`validate-phase10-inputs.sh`** - REST API development input validation
+- **`validate-phase11-inputs.sh`** - Frontend screen development input validation
+- **`validate-phase12-inputs.sh`** - Frontend unit test cases input validation
+- **`validate-phase13-inputs.sh`** - CI/CD deployment input validation
 
 ### **Automation Scripts**
 - **`automated-workflow.sh`** - Complete automated workflow script
