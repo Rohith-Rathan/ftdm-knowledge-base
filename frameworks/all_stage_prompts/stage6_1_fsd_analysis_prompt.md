@@ -186,10 +186,10 @@ The analysis is successful when:
 - Clear PASSED/FAILED recommendation is provided
 - Next steps are clearly defined
 
-## **NEXT PHASE**
+## **NEXT STAGE**
 
-If validation **PASSES**, proceed to **Phase 2: Implementation Planning**
-If validation **FAILS**, address the issues and re-run this phase
+If validation **PASSES**, proceed to **Stage 6.2: Implementation Planning**
+If validation **FAILS**, address the issues and re-run this stage
 
 ---
 

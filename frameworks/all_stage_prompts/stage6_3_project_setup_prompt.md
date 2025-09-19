@@ -225,9 +225,9 @@ The project setup is successful when:
 - Caching strategy
 - Resource management
 
-## **NEXT PHASE**
+## **NEXT STAGE**
 
-After completing this phase, proceed to **Phase 4: Backend Implementation**
+After completing this stage, proceed to **Stage 6.4: Database Model Design**
 
 ---
 
