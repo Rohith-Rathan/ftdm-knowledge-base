@@ -81,7 +81,17 @@ Reference the validated Mermaid diagrams:
 - Business Process Flow
 - User Journey Flow
 
-### **Step 4: Quality Assurance**
+### **Step 4: UXD Folder Structure Creation**
+Create the UXD folder structure for design assets:
+- **UXD folder** with subfolders:
+  - `screens/` - For screen images
+  - `figma_captured_assets/` - For downloaded Figma assets
+  - `design_system/` - For design system files
+- **Navigation list template** (`navigation_list_template.md`)
+- **Figma links template** (`figma_links_template.md`)
+- **Design system template** (`design_system_template.json`)
+
+### **Step 5: Quality Assurance**
 - [ ] All FSD requirements are covered
 - [ ] Technical architecture is complete
 - [ ] API specifications are detailed
@@ -89,6 +99,7 @@ Reference the validated Mermaid diagrams:
 - [ ] Security requirements are defined
 - [ ] Performance requirements are specified
 - [ ] Development standards are clear
+- [ ] UXD folder structure is created
 
 ## **TSD TEMPLATE STRUCTURE**
 
@@ -174,6 +185,7 @@ After completion, you will have:
 - ✅ **Comprehensive database design** with schema
 - ✅ **Clear security requirements** and protocols
 - ✅ **Performance requirements** and strategies
+- ✅ **UXD folder structure** created for design assets
 - ✅ **Ready for Stage 4** (UI/UX Designs Analysis)
 
 ## **NEXT STEPS**

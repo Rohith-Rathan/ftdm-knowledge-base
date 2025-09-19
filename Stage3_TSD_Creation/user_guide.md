@@ -10,6 +10,7 @@ This stage creates a comprehensive Technical Specification Document (TSD) using 
 - Database Design
 - Technology Stack
 - Security Requirements
+- UXD Folder Structure
 
 ## **HOW TO USE**
 
@@ -25,6 +26,7 @@ Replace placeholders with:
 - AI analyzes FSD for technical requirements
 - AI creates comprehensive TSD using enhanced template
 - AI references Mermaid diagrams for consistency
+- AI creates UXD folder structure for design assets
 - AI ensures all FSD requirements are covered
 
 ### **Step 4: Review and Refine**
@@ -47,6 +49,7 @@ Replace placeholders with:
 - [ ] Database design is comprehensive
 - [ ] Security requirements are defined
 - [ ] Performance requirements are specified
+- [ ] UXD folder structure is created
 - [ ] Ready for next stage
 
 ## **NEXT STAGE**

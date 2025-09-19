@@ -16,12 +16,12 @@ Your task is to perform Stage 4: UI/UX Designs Analysis for the **{PROJECT_NAME}
 
 ## **REQUIREMENTS**
 
-1. **Create comprehensive UXD folder structure** from FSD and TSD
+1. **Use existing UXD folder structure** from Stage 3
 2. **Handle three design scenarios** (having designs, no designs, existing UI)
 3. **Run hybrid analysis** (AI vision + Figma MCP + Design system)
 4. **Generate design system** and component library
 5. **Establish design consistency** standards for future features
-6. **Prepare assets** for development implementation
+6. **Download and organize assets** in UXD folder structure
 
 ## **INPUTS FROM PREVIOUS STAGES**
 
@@ -31,34 +31,38 @@ Your task is to perform Stage 4: UI/UX Designs Analysis for the **{PROJECT_NAME}
 ### **TSD Document**
 [USER_PROVIDES_TSD_DOCUMENT]
 
+### **UXD Folder Structure**
+[USER_PROVIDES_UXD_FOLDER_STRUCTURE] - Created in Stage 3
+
 ### **Design Assets (Optional)**
 [USER_PROVIDES_DESIGN_ASSETS]
 
-## **UXD FOLDER STRUCTURE REQUIREMENTS**
+## **UXD FOLDER STRUCTURE (FROM STAGE 3)**
 
-### **Required Structure**
+### **Existing Structure**
 ```
 UXD/
-├── screens/                        # Screen images folder
-│   └── navigation_list.md          # Screen navigation structure
-├── figma_screen_links.md           # Figma links with navigation
-├── design_system_files/            # Design system JSON files
-└── figma_captured_assets/          # Downloaded assets
-    ├── icons/                      # All unique icons
-    ├── images/                     # All unique images
-    ├── components/                 # All unique components
-    ├── css_variables.css           # Generated CSS variables
-    ├── asset_inventory.json        # Asset inventory
-    ├── screen_asset_mapping.json   # Background relationships
-    └── USAGE_GUIDE.md              # Usage guide
+├── screens/                    # Screen images folder
+├── figma_captured_assets/     # Downloaded Figma assets
+├── design_system/             # Design system files
+├── navigation_list_template.md # Navigation template
+├── figma_links_template.md    # Figma links template
+└── design_system_template.json # Design system template
 ```
+
+### **Your Task**
+Use this existing structure and populate it with:
+- Screen images in `screens/` folder
+- Figma links in `figma_links_template.md`
+- Design system files in `design_system/` folder
+- Downloaded assets in `figma_captured_assets/` folder
 
 ## **THREE DESIGN SCENARIOS**
 
 ### **Scenario 1: Having Designs**
 **When user provides images and/or Figma links:**
 
-1. **Create UXD structure** with navigation list
+1. **Use existing UXD structure** from Stage 3
 2. **Run hybrid analysis**:
    - AI vision analysis of images
    - Figma MCP integration for links
@@ -70,7 +74,7 @@ UXD/
 ### **Scenario 2: No Designs**
 **When user provides no design assets:**
 
-1. **Create UXD structure** with placeholder navigation
+1. **Use existing UXD structure** from Stage 3
 2. **Generate navigation list** from FSD requirements
 3. **Create Figma links template** with placeholders
 4. **Generate basic design system** from TSD
@@ -82,7 +86,7 @@ UXD/
 
 1. **Analyze existing app structure**
 2. **Extract design system** from existing code
-3. **Create UXD structure** matching existing app
+3. **Use existing UXD structure** from Stage 3
 4. **Map existing assets** to UXD structure
 5. **Generate component library** from existing components
 6. **Create migration guide** for integration
