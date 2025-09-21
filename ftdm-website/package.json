@@ -1,0 +1,54 @@
+{
+  "name": "ftdm-framework-website",
+  "version": "1.0.0",
+  "description": "Interactive Knowledge Base Website for FTDM Framework - Fast-Track Development Methodology",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "next": "15.5.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.544.0",
+    "next-themes": "^0.2.1",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "eslint": "^8",
+    "eslint-config-next": "15.5.3",
+    "@eslint/eslintrc": "^3.0.0"
+  },
+  "keywords": [
+    "FTDM",
+    "Fast-Track Development",
+    "AI Development",
+    "Domain Intelligence",
+    "Software Development Framework",
+    "Next.js",
+    "React",
+    "TypeScript"
+  ],
+  "author": "FTDM Framework Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ftdm-framework/website"
+  },
+  "homepage": "https://ftdm-framework.vercel.app"
+}
