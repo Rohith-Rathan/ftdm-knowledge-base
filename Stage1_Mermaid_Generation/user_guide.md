@@ -68,7 +68,7 @@ Replace `[USER_PROVIDES_RAW_REQUIREMENTS]` with your actual requirements
 - [ ] Ready for FSD creation
 
 ## **NEXT STAGE**
-Once validated, proceed to **Stage 2: FSD Creation** with your refined requirements and Mermaid diagrams.
+Once validated, proceed to **Stage 2: FSD Creation** with your refined requirements and Mermaid diagrams (both MMD files and image files for easy verification).
 
 ## **TROUBLESHOOTING**
 

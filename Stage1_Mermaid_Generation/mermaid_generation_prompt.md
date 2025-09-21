@@ -234,13 +234,22 @@ gantt
 ```
 
 ### **Step 3: Visual Preview & File Persistence**
-**CRITICAL**: Show Mermaid diagrams in response AND save as `.mmd` files:
+**CRITICAL**: Show Mermaid diagrams in response AND save as both `.mmd` files AND image files:
 
 1. **Display each diagram** in the response using Mermaid syntax for visual preview
 2. **Save each diagram** as a separate `.mmd` file in the `Stage1_Mermaid_Generation/diagrams/` directory
-3. **Create the diagrams directory** if it doesn't exist
-4. **Verify file creation** by listing the generated files
-5. **Provide file paths** for each generated diagram
+3. **Generate image versions** of each diagram for easy verification and sharing
+4. **Save image files** in the `Stage1_Mermaid_Generation/diagrams/images/` directory
+5. **Create the diagrams directory** if it doesn't exist
+6. **Verify file creation** by listing the generated files
+7. **Provide file paths** for each generated diagram
+
+### **Why Both MMD and Image Files?**
+- **MMD files**: For technical users who can read Mermaid syntax
+- **Image files**: For stakeholders, clients, and non-technical users who need visual verification
+- **Easy sharing**: Image files can be easily shared via email, presentations, or documentation
+- **Universal understanding**: Everyone can understand visual flow diagrams
+- **Verification**: Visual confirmation that the diagrams match requirements
 
 ### **Step 4: Figma Analysis (If UXD Provided)**
 **CRITICAL**: If UXD folder with Figma links is provided:
@@ -320,7 +329,7 @@ gantt
 
 After refinement, you will have:
 - ✅ **Crystal clear requirements** with no ambiguities
-- ✅ **Complete set of Mermaid diagrams** representing your vision
+- ✅ **Complete set of Mermaid diagrams** (6 diagrams + 6 MMD files + 6 image files)
 - ✅ **Visual validation** of your understanding
 - ✅ **Ready for Stage 2** (FSD Creation)
 

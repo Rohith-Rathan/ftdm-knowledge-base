@@ -9,12 +9,12 @@ Transform raw requirements into visual Mermaid flow diagrams for validation and 
 - **UXD Folder Structure** (see `UXD/` folder for example)
 
 ## **OUTPUT**
-- User Journey Flow (MMD)
-- System Architecture Flow (MMD)
-- Business Process Flow (MMD)
-- Data Flow Diagram (MMD)
-- Decision Tree Flow (MMD)
-- Gantt Chart (MMD)
+- User Journey Flow (MMD + PNG)
+- System Architecture Flow (MMD + PNG)
+- Business Process Flow (MMD + PNG)
+- Data Flow Diagram (MMD + PNG)
+- Decision Tree Flow (MMD + PNG)
+- Gantt Chart (MMD + PNG)
 
 ## **PROCESS**
 1. **Requirement Analysis** → AI analyzes raw requirements
