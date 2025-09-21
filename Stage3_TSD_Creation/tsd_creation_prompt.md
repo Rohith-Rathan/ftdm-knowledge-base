@@ -14,20 +14,42 @@ You are a Senior Product Developer with 10+ years of experience. I need you to c
 
 ## **YOUR TASK**
 
-### **Step 1: TSD Analysis**
-1. **Analyze the FSD** for technical requirements
-2. **Map FSD requirements to technical solutions**
-3. **Validate against Mermaid diagrams** for consistency
-4. **Identify technical gaps** and requirements
+### **Step 1: Domain-Intelligent Architecture Planning**
 
-### **Step 2: TSD Generation**
-Create a comprehensive TSD using the enhanced template:
+#### **1.1: Domain Architecture Analysis**
+1. **Domain-Specific Architecture**: Apply domain-specific architecture patterns and best practices
+2. **Industry Standards**: Research and apply industry-standard architecture patterns
+3. **Technology Stack Optimization**: Select domain-appropriate technology stacks and frameworks
+4. **Compliance Architecture**: Design architecture to meet regulatory and compliance requirements
 
-#### **2.1: Technical Architecture**
-- System architecture overview
-- Component architecture
-- Microservices architecture
-- Integration architecture
+#### **1.2: Enterprise Architecture Design**
+1. **Clean Architecture Principles**: Implement clean architecture principles for maintainability
+2. **Domain-Driven Design**: Apply domain-driven design patterns for business logic
+3. **Microservices Patterns**: Design microservices architecture for scalability
+4. **Event-Driven Architecture**: Implement event-driven patterns for real-time processing
+
+#### **1.3: Security and Compliance Architecture**
+1. **Security-First Design**: Implement security-first architecture principles
+2. **Authentication and Authorization**: Design comprehensive auth/authz systems
+3. **Data Encryption**: Implement data encryption and protection mechanisms
+4. **Audit and Compliance**: Design audit trails and compliance monitoring
+
+### **Step 2: Enhanced TSD Analysis**
+1. **Analyze the FSD** for technical requirements and domain-specific needs
+2. **Map FSD requirements to domain-appropriate technical solutions**
+3. **Validate against Mermaid diagrams** for consistency and completeness
+4. **Identify domain-specific technical gaps** and requirements
+
+### **Step 3: Domain-Intelligent TSD Generation**
+Create a comprehensive TSD using the enhanced template with domain intelligence:
+
+#### **3.1: Technical Architecture**
+- System architecture overview (domain-specific)
+- Component architecture (enterprise-grade)
+- Microservices architecture (scalable)
+- Integration architecture (industry-standard)
+- Domain-specific architecture patterns
+- Compliance and security architecture
 - Deployment architecture
 
 #### **2.2: Technology Stack**

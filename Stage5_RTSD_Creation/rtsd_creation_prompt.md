@@ -20,13 +20,52 @@ Your job is to generate a refined Technical Specification Document (TSD) that me
 - **MUST** maintain centralized icon management for optimal reuse
 - **MUST** document asset usage patterns and naming conventions
 
-Refinement Objectives:
-1. Alignment with UX
+## **BUSINESS LOGIC INTELLIGENCE REQUIREMENTS**
+
+### **1. Domain-Specific Business Logic Implementation**
+- Implement domain-specific business logic (not generic CRUD operations)
+- Create proper calculation engines (payroll, tax, deductions, etc.)
+- Implement compliance and validation rules
+- Add audit trails and logging for business operations
+
+### **2. Industry-Standard Calculations**
+- Implement industry-standard calculation methods
+- Create domain-appropriate calculation engines
+- Include regulatory compliance calculations
+- Add business rule validation and enforcement
+
+### **3. Workflow Management**
+- Implement domain-specific workflows and processes
+- Create proper state management for business processes
+- Include approval workflows and business rules
+- Add workflow monitoring and audit capabilities
+
+### **4. Compliance and Audit Implementation**
+- Implement domain-specific compliance requirements
+- Add comprehensive audit trails and logging
+- Include regulatory compliance monitoring
+- Create compliance reporting and validation
+
+### **5. Enterprise-Grade Business Logic**
+- Implement proper error handling and validation
+- Create comprehensive business rule engines
+- Add performance optimization for business calculations
+- Include scalability considerations for business logic
+
+## **REFINEMENT OBJECTIVES**
+
+1. **Alignment with UX**
    - Ensure technical components, APIs, and workflows align with the UX diagrams.
    - Map every key UX flow to the corresponding technical module/service.
    - **MANDATORY**: Map every UI element to its corresponding Figma asset and design token from Stage 4 (UI/UX Designs Analysis) UXD folder.
 
-2. Completeness
+2. **Business Logic Integration**
+   - Implement domain-specific business logic (not generic CRUD operations)
+   - Create proper calculation engines (payroll, tax, deductions, etc.)
+   - Implement compliance and validation rules
+   - Add audit trails and logging for business operations
+
+3. **Completeness**
    - Fill any gaps left in the previous TSD using details from UXD.
    - Ensure end-to-end coverage of functional flows, data handling, and integrations.
    - **IF** design system files exist: Include complete asset mapping and design system integration from Stage 4 (UI/UX Designs Analysis).

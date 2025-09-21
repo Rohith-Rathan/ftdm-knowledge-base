@@ -9,12 +9,37 @@ You are a Senior Product Developer with 10+ years of experience. I need you to a
 
 ## **YOUR TASK**
 
-### **Step 1: Requirement Analysis**
-1. **Analyze the requirements** for completeness and clarity
-2. **Identify missing information**, ambiguities, or gaps
-3. **Ask clarifying questions** to refine the requirements
-4. **Suggest improvements** for better understanding
-5. **Help me iterate** until we have crystal-clear requirements
+### **Step 1: Comprehensive Requirement Analysis**
+
+#### **1.1: Domain Detection & Industry Analysis**
+1. **Detect Domain**: Identify the primary domain (healthcare, finance, e-commerce, education, etc.)
+2. **Industry Research**: Research industry standards, best practices, and regulatory requirements
+3. **Compliance Mapping**: Identify relevant compliance requirements (HIPAA, PCI-DSS, GDPR, etc.)
+4. **Domain Context**: Understand domain-specific terminology, workflows, and business processes
+
+#### **1.2: Business Context Analysis**
+1. **Business Goals**: Identify primary business objectives and success metrics
+2. **User Personas**: Define target users, their roles, and use cases
+3. **Business Workflows**: Map complete business processes and workflows
+4. **Success Criteria**: Define clear success criteria and acceptance criteria
+
+#### **1.3: Functional Requirements Analysis**
+1. **Complete Scope**: Ensure comprehensive understanding of the complete scope
+2. **User Journey Mapping**: Map complete user journeys and workflows
+3. **Feature Specifications**: Create detailed feature specifications with acceptance criteria
+4. **Integration Requirements**: Identify all integration points and external dependencies
+
+#### **1.4: Non-Functional Requirements Analysis**
+1. **Performance Requirements**: Define performance benchmarks and scalability needs
+2. **Security Requirements**: Identify security, authentication, and authorization needs
+3. **Usability Requirements**: Define user experience and accessibility requirements
+4. **Compliance Requirements**: Map regulatory and compliance requirements
+
+#### **1.5: Validation & Clarification**
+1. **Stakeholder Validation**: Validate understanding with domain experts
+2. **Technical Feasibility**: Assess technical feasibility and resource requirements
+3. **Risk Assessment**: Identify potential risks and mitigation strategies
+4. **Iterative Refinement**: Help iterate until we have crystal-clear requirements
 
 ### **Step 2: Mermaid Diagram Generation**
 Once requirements are clear, create the following diagrams:
@@ -183,13 +208,39 @@ After refinement, you will have:
 - ✅ **Visual validation** of your understanding
 - ✅ **Ready for Stage 2** (FSD Creation)
 
+## **QUALITY GATES & VALIDATION**
+
+### **Requirements Gate (MANDATORY)**
+Before proceeding to Stage 2, ensure:
+- [ ] **Domain Detection**: Primary domain identified and validated
+- [ ] **Industry Research**: Industry standards and best practices researched
+- [ ] **Compliance Mapping**: Regulatory requirements identified and documented
+- [ ] **Complete Scope**: Comprehensive understanding of complete scope
+- [ ] **User Journey Mapping**: Complete user journeys and workflows mapped
+- [ ] **Feature Specifications**: Detailed feature specifications with acceptance criteria
+- [ ] **Success Criteria**: Clear success criteria and acceptance criteria defined
+- [ ] **Stakeholder Validation**: Understanding validated with domain experts
+- [ ] **Technical Feasibility**: Technical feasibility assessed
+- [ ] **Risk Assessment**: Potential risks identified and mitigation strategies planned
+
+### **Quality Assurance Checklist**
+- [ ] All requirements are clear and unambiguous
+- [ ] All user journeys are mapped
+- [ ] All system components are identified
+- [ ] All business processes are documented
+- [ ] All diagrams are accurate and complete
+- [ ] Domain-specific patterns and standards identified
+- [ ] Compliance requirements documented
+- [ ] Performance and security requirements defined
+
 ## **NEXT STEPS**
 
 1. **Provide your raw requirements**
 2. **Answer clarifying questions** as they come up
 3. **Review and provide feedback** on each diagram
 4. **Confirm accuracy** of final diagrams
-5. **Proceed to Stage 2** with validated requirements and diagrams
+5. **Pass all quality gates** before proceeding
+6. **Proceed to Stage 2** with validated requirements and diagrams
 
 ---
 

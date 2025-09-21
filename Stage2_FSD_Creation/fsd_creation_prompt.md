@@ -14,25 +14,49 @@ You are a Senior Product Developer with 10+ years of experience. I need you to c
 
 ## **YOUR TASK**
 
-### **Step 1: FSD Analysis**
-1. **Analyze the refined requirements** for completeness
-2. **Map requirements to Mermaid diagrams** for validation
-3. **Identify any gaps** between requirements and diagrams
-4. **Ensure consistency** across all inputs
+### **Step 1: Domain Intelligence Integration**
 
-### **Step 2: FSD Generation**
-Create a comprehensive FSD using the enhanced template:
+#### **1.1: Domain Context Analysis**
+1. **Domain Detection**: Identify and validate the primary domain from Stage 1
+2. **Industry Research**: Research industry standards, best practices, and regulatory requirements
+3. **Compliance Mapping**: Map relevant compliance requirements (HIPAA, PCI-DSS, GDPR, etc.)
+4. **Domain-Specific Patterns**: Identify domain-specific workflows, calculations, and business rules
 
-#### **2.1: Project Overview**
+#### **1.2: Industry Standard Analysis**
+1. **Best Practices Research**: Research industry-specific best practices and methodologies
+2. **Common Workflows**: Identify common workflows and processes in the domain
+3. **Regulatory Requirements**: Map regulatory requirements and compliance standards
+4. **Technology Standards**: Identify industry-standard technology stacks and frameworks
+
+#### **1.3: Business Context Integration**
+1. **Business Goals Alignment**: Ensure FSD aligns with business objectives and success metrics
+2. **User Persona Validation**: Validate user personas against domain-specific requirements
+3. **Workflow Optimization**: Optimize workflows based on industry best practices
+4. **Success Criteria Refinement**: Refine success criteria based on domain standards
+
+### **Step 2: Enhanced FSD Analysis**
+1. **Analyze the refined requirements** for completeness and domain appropriateness
+2. **Map requirements to Mermaid diagrams** for validation and consistency
+3. **Identify domain-specific gaps** between requirements and industry standards
+4. **Ensure domain compliance** across all inputs and requirements
+
+### **Step 3: Domain-Intelligent FSD Generation**
+Create a comprehensive FSD using the enhanced template with domain intelligence:
+
+#### **3.1: Project Overview**
 - Project name, description, objectives
-- Target users and personas
-- Business context and goals
-- Success metrics and KPIs
+- Target users and personas (domain-specific)
+- Business context and goals (industry-aligned)
+- Success metrics and KPIs (domain-appropriate)
+- Domain-specific compliance requirements
 
-#### **2.2: Functional Requirements**
-- Core features and capabilities
-- User workflows and journeys
-- Business rules and constraints
+#### **3.2: Functional Requirements**
+- Core features and capabilities (domain-specific)
+- User workflows and journeys (industry-standard)
+- Business rules and constraints (domain-appropriate)
+- Domain-specific calculations and business logic
+- Industry-standard workflows and processes
+- Compliance and regulatory requirements
 - Data requirements and relationships
 
 #### **2.3: User Stories**

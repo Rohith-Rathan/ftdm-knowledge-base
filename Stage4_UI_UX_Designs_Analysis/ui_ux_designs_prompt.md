@@ -14,14 +14,37 @@ Your task is to perform Stage 4: UI/UX Designs Analysis for the **{PROJECT_NAME}
 **FSD Path**: {FSD_PATH}
 **TSD Path**: {TSD_PATH}
 
-## **REQUIREMENTS**
+## **DESIGN-FIRST APPROACH REQUIREMENTS**
 
-1. **Use existing UXD folder structure** from Stage 3
-2. **Handle three design scenarios** (having designs, no designs, existing UI)
-3. **Run hybrid analysis** (AI vision + Figma MCP + Design system)
-4. **Generate design system** and component library
-5. **Establish design consistency** standards for future features
-6. **Download and organize assets** in UXD folder structure
+### **1. Wireframes and Mockups BEFORE Implementation**
+- Create wireframes and mockups BEFORE any coding begins
+- Design complete user interface layouts and interactions
+- Validate information architecture and user flows
+- Get user approval on design before implementation
+
+### **2. Data Visualization Design**
+- Design proper data visualizations (charts, graphs, analytics)
+- Create domain-specific dashboard layouts
+- Design real-time data visualization components
+- Include industry-standard data presentation patterns
+
+### **3. Enterprise Design Patterns**
+- Design for specific domain context (not generic forms)
+- Follow established design patterns for enterprise applications
+- Implement professional, domain-appropriate UI components
+- Create comprehensive design system with custom components
+
+### **4. Responsive Design with Mobile-First Approach**
+- Design mobile-first responsive layouts
+- Ensure cross-device compatibility
+- Implement proper breakpoints and responsive patterns
+- Test responsive design across all devices
+
+### **5. Comprehensive Design System**
+- Create reusable component library
+- Define consistent spacing, typography, and color scales
+- Implement proper design tokens
+- Create style guide and component documentation
 
 ## **INPUTS FROM PREVIOUS STAGES**
 
