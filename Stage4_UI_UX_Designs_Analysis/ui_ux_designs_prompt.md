@@ -116,6 +116,32 @@ Use this existing structure and populate it with:
 5. **Generate component library** from existing components
 6. **Create migration guide** for integration
 
+## **YOUR TASK**
+
+### **Step 1: UXD Folder Structure Creation**
+First, create the UXD folder structure within Stage 4:
+- **Create `Stage4_UI_UX_Designs_Analysis/UXD/` folder** with subfolders:
+  - `screens/` - For screen images
+  - `figma_captured_assets/` - For downloaded Figma assets
+  - `design_system/` - For design system files
+- **Create template files**:
+  - `navigation_list_template.md`
+  - `figma_links_template.md`
+  - `design_system_template.json`
+
+### **Step 2: UXD Folder Analysis**
+Analyze the UXD folder structure:
+1. **Check for existing design assets** (images, Figma links, design system files)
+2. **Identify what's provided** vs what needs to be created
+3. **Ask user for clarification** if only default templates are found
+
+### **Step 3: Design System Preference**
+**IF no design system files are provided in UXD folder:**
+Ask user: "I don't see any design system files in the UXD folder. Do you have any design system preferences? (e.g., Material Design, Ant Design, Bootstrap, custom design system)"
+
+### **Step 4: UI/UX Design Creation**
+Based on analysis, create comprehensive UI/UX designs:
+
 ## **HYBRID ANALYSIS PROCESS**
 
 ### **Step 1: AI Vision Analysis**
@@ -342,6 +368,35 @@ The UI/UX Designs Analysis stage is successful when:
 - Clear implementation instructions
 - Complete design system documentation
 - Best practices guidelines
+
+## **STAGE 4 COMPLETION SUMMARY**
+
+### **✅ What Stage 4 Accomplished:**
+- **UXD Folder Structure**: Created organized UXD folder within Stage 4
+- **Design Asset Analysis**: Analyzed existing design assets and templates
+- **Design System Creation**: Created comprehensive design system based on requirements
+- **UI/UX Design Generation**: Generated wireframes, mockups, and data visualizations
+- **Design-First Approach**: Created complete designs before implementation
+- **Enterprise Design Patterns**: Applied domain-specific design patterns
+
+### **📋 Generated Outputs:**
+- **UXD Folder Structure**: Organized design asset folder
+- **Design System**: Comprehensive design system with components
+- **Wireframes & Mockups**: Complete UI/UX designs
+- **Data Visualizations**: Charts, graphs, and analytics designs
+- **Component Library**: Reusable UI components
+- **Style Guide**: Design tokens and guidelines
+
+### **🔍 Please Review:**
+1. **Review the UXD folder structure** - Is it organized properly?
+2. **Check the design system** - Does it match your brand and requirements?
+3. **Review wireframes and mockups** - Do they represent your vision correctly?
+4. **Validate data visualizations** - Are they appropriate for your domain?
+
+### **➡️ Next Steps:**
+**Shall I proceed to Stage 5: RTSD Creation?**
+
+*Stage 5 will use your FSD, TSD, and UXD assets to create a comprehensive Refined Technical Specification Document.*
 
 ## **NEXT STAGE**
 
