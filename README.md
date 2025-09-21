@@ -1,285 +1,85 @@
-# 🚀 EFTDM Framework - Enhanced Fast-Track Development Methodology
+# EFTDM Framework - Clean Download
 
-[![GitHub](https://img.shields.io/github/license/Rohith-Rathan/EFTDM-Framework)](https://github.com/Rohith-Rathan/EFTDM-Framework/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/Rohith-Rathan/EFTDM-Framework)](https://github.com/Rohith-Rathan/EFTDM-Framework/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Rohith-Rathan/EFTDM-Framework)](https://github.com/Rohith-Rathan/EFTDM-Framework/network)
+> **Essential Framework Files Only** - Ready for Production Use
 
-## 🎯 **What is EFTDM?**
+This repository contains only the essential EFTDM Framework files needed for development. For complete documentation and analysis files, see the [master repository](https://github.com/Rohith-Rathan/ftdm-framework).
 
-The **Enhanced Fast-Track Development Methodology (EFTDM)** is a comprehensive, AI-powered development framework that transforms raw requirements into production-ready applications through a structured **7-stage process**.
+## 🚀 Quick Start
 
-## ✨ **Key Features**
+```bash
+git clone https://github.com/Rohith-Rathan/ftdm-framework-download.git
+cd ftdm-framework-download
+```
 
-- **🎨 Frontend-First Development**: Test complete frontend with mock backend before real implementation
-- **📊 Visual Requirements**: Mermaid diagrams for clear requirement visualization
-- **🎯 Pixel-Perfect UI**: UXD analysis with Figma integration for exact design implementation
-- **⚡ Rapid Prototyping**: Complete frontend testing in Phase 4, backend in Phase 5
-- **🔧 Asset Management**: Automated Figma asset downloading and management
-- **📱 Responsive Design**: Mobile-first approach with comprehensive breakpoints
-- **♿ Accessibility**: WCAG Level AA compliance built-in
-- **🧪 Comprehensive Testing**: Unit, integration, and end-to-end testing frameworks
+## 📁 What's Included
 
-## 🧠 **DOMAIN INTELLIGENCE FRAMEWORK** (NEW)
+### **Core Framework Files**
+- ✅ **7 Main Stages** - Complete automation workflow
+- ✅ **13 Implementation Sub-Stages** - Detailed development phases
+- ✅ **Framework Scripts** - Automation and validation tools
+- ✅ **UXD Structure** - Complete design system templates
+- ✅ **Stage Prompts** - Ready-to-use AI prompts
 
-The EFTDM framework now includes **Domain Intelligence** capabilities that make it truly universal and intelligent for any domain or industry.
+### **Essential Directories**
+```
+EFTDM_FRAMEWORK/
+├── frameworks/           # Core framework files
+├── scripts/             # Automation scripts
+├── Stage1_Mermaid_Generation/
+├── Stage2_FSD_Creation/
+├── Stage3_TSD_Creation/
+├── Stage4_UI_UX_Designs_Analysis/
+│   └── UXD/            # Complete design system
+├── Stage5_RTSD_Creation/
+├── Stage6_1_FSD_Analysis_Validation/
+├── ... (all implementation stages)
+├── Stage7_Temporary_Backend_Local_Test/
+├── templates/          # Project templates
+├── README.md
+└── USAGE_GUIDE.md
+```
 
-### **Key Features:**
-- **🔍 Auto-Detection**: Automatically detects domain from requirements
-- **📚 Industry Research**: Researches industry standards and best practices  
-- **🎯 Pattern Application**: Applies domain-specific patterns and standards
-- **⚖️ Compliance Integration**: Includes regulatory and compliance requirements
-- **✅ Quality Assurance**: Validates domain-specific quality standards
+## 🎯 Framework Overview
 
-### **Domain Intelligence Files:**
-- **`frameworks/domain_intelligence_framework.md`** - Core domain intelligence framework
-- **`frameworks/domain_intelligence_prompts.md`** - Domain intelligence prompts for all stages
-- **`frameworks/domain_intelligence_validation.md`** - Domain intelligence validation framework
-- **`frameworks/domain_intelligence_integration.md`** - Integration guide for domain intelligence
+**EFTDM Framework** transforms raw requirements into production-ready applications through a structured 7-stage automation process:
 
-### **How It Works:**
-1. **Domain Detection**: Framework analyzes requirements and detects domain (healthcare, finance, e-commerce, etc.)
-2. **Industry Research**: Automatically researches industry standards, best practices, and compliance requirements
-3. **Pattern Application**: Applies domain-specific patterns for UI/UX, business logic, and architecture
-4. **Quality Validation**: Validates domain-specific quality standards and compliance requirements
+1. **Stage 1**: Mermaid Generation
+2. **Stage 2**: FSD Creation  
+3. **Stage 3**: TSD Creation
+4. **Stage 4**: UI/UX Designs Analysis
+5. **Stage 5**: RTSD Creation
+6. **Stage 6**: Implementation (13 sub-stages)
+7. **Stage 7**: Temporary Backend Local Test
 
-### **Benefits:**
-- **Universal Applicability**: Works for any domain or industry
-- **Intelligent Automation**: Automatically applies domain-specific intelligence
-- **Professional Results**: Delivers enterprise-grade, domain-appropriate solutions
-- **Compliance Ready**: Includes regulatory and compliance requirements
-- **Quality Assured**: Validates industry-standard quality and security
+## 📖 Documentation
+
+- **[USAGE_GUIDE.md](./USAGE_GUIDE.md)** - Complete usage instructions
+- **[Master Repository](https://github.com/Rohith-Rathan/ftdm-framework)** - Full documentation and analysis files
+
+## 🔄 Updates
+
+This repository is automatically updated from the master repository. To get the latest version:
+
+```bash
+git pull origin main
+```
+
+## 📊 Repository Stats
+
+- **161 Essential Files**
+- **7 Main Stages**
+- **13 Implementation Sub-Stages**
+- **Complete UXD Structure**
+- **Ready-to-Use Scripts**
+
+## 🛡️ Anti-Hallucination Safeguards
+
+The framework includes built-in safeguards to prevent AI hallucinations and ensure consistent, reliable outputs across all stages.
+
+## 📄 License
+
+This framework is provided as-is for development use. See the master repository for complete licensing information.
 
 ---
 
-### **7-Stage Development Process:**
-
-```
-Stage 1: Mermaid Generation    → Visual requirement diagrams
-Stage 2: FSD Creation         → Functional specifications
-Stage 3: TSD Creation          → Technical specifications
-Stage 4: UI/UX Designs Analysis     → Design system and asset management 🎯 NEW
-Stage 5: RTSD Creation         → Refined technical specs with UX
-Stage 6.1-6.13: Implementation Stages → Complete application development (13 sub-stages)
-Stage 7: Temporary Backend     → Optional mock backend for testing
-```
-
-### **Enhanced 13-Phase Implementation (Within Stage 6):**
-
-```
-Phase 6.1: FSD Analysis & Validation
-Phase 6.2: Implementation Planning
-Phase 6.3: Project Setup & Architecture
-Phase 6.4: Database Model Design ⭐ NEW
-Phase 6.5: ORM Mapper & MongoDB Classes ⭐ NEW
-Phase 6.6: Business Service Interfaces ⭐ NEW
-Phase 6.7: Interface Validation & Coverage ⭐ NEW
-Phase 6.8: Business Service Implementations ⭐ NEW
-Phase 6.9: Unit Testing Cases (100% Coverage) ⭐ NEW
-Phase 6.10: REST API Development ⭐ NEW
-Phase 6.11: Frontend Screen Development ⭐ NEW
-Phase 6.12: Frontend Unit Test Cases ⭐ NEW
-Phase 6.13: CI/CD Deployment & Azure App Service ⭐ NEW
-```
-
-## 🚀 **Quick Start**
-
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/Rohith-Rathan/EFTDM-Framework.git
-cd EFTDM-Framework
-```
-
-### **2. Set Up Your Project**
-```bash
-# Copy the UXD folder structure to your project
-cp -r Stage1_Mermaid_Generation/UXD/ your-project-root/
-
-# Add your design system JSON files
-# Add your Figma links to UXD/figma_links.md
-# Add your screen images to UXD/screens/
-```
-
-### **3. Start Development**
-```bash
-# Stage 1: Generate Mermaid diagrams
-# Use: Stage1_Mermaid_Generation/mermaid_generation_prompt.md
-
-# Stage 2: Create FSD
-# Use: Stage2_FSD_Creation/fsd_creation_prompt.md
-
-# Stage 3: Create TSD
-# Use: Stage3_TSD_Creation/tsd_creation_prompt.md
-
-# Stage 4: Create UI/UX design system analysis
-# Use: Stage4_UI_UX_Designs_Analysis/ui_ux_designs_prompt.md
-
-# Stage 5: Create RTSD with UXD analysis
-# Use: Stage5_RTSD_Creation/rtsd_creation_prompt.md
-
-# Stage 6.1-6.13: Implement complete application
-# Use: Individual stage prompts (Stage6_1_FSD_Analysis_Validation/ through Stage6_13_CICD_Deployment_Azure_App_Service/)
-
-# Stage 7: Create temporary backend (optional)
-# Use: Stage7_Temporary_Backend/temporary_backend_prompt.md
-```
-
-## 📁 **Project Structure**
-
-```
-EFTDM-Framework/
-├── Stage1_Mermaid_Generation/     # Visual requirement diagrams
-│   ├── UXD/                       # Example UXD folder structure
-│   ├── mermaid_generation_prompt.md
-│   └── ...
-├── Stage2_FSD_Creation/           # Functional specifications
-├── Stage3_TSD_Creation/           # Technical specifications
-├── Stage5_RTSD_Creation/          # Refined technical specs
-├── Stage6_1_FSD_Analysis_Validation/         # Complete implementation
-├── frameworks/                    # Core framework files
-│   ├── phase_prompts/            # Phase-specific prompts
-│   ├── kickstart_prompt.md       # Quick start guide
-│   └── ...
-├── scripts/                       # Automation scripts
-└── templates/                     # Document templates
-```
-
-## 🎨 **UXD Folder Structure**
-
-The framework includes a complete UXD folder structure example:
-
-```
-UXD/
-├── design_system/              # Design system JSON files
-│   ├── color_palette.json      # Light/dark mode colors
-│   ├── typography.json         # Font specifications
-│   ├── spacing.json           # Spacing, shadows, breakpoints
-│   └── components.json        # UI component specifications
-├── screens/                   # Screen images (JPG, PNG)
-├── figma_links.md            # Figma URLs for asset extraction
-└── assets/                   # General assets
-    ├── icons/
-    └── images/
-```
-
-## 🛠️ **Technology Stack**
-
-### **Backend**
-- **.NET Core 8.0** (ASP.NET Core Web API, C# 12)
-- **MongoDB** for database
-- **JWT with Azure AD** for authentication
-- **Docker & Kubernetes** for deployment
-
-### **Frontend**
-- **Vue.js 3** with Composition API
-- **Vuex 4** for state management
-- **Vue Router 4** for routing
-- **Axios 1.6** for HTTP client
-- **Sass/SCSS** for styling
-- **Webpack 5** for building
-
-### **Development Tools**
-- **Figma MCP** for design asset extraction
-- **Mermaid** for diagram generation
-- **Automated testing** frameworks
-- **CI/CD** with Azure App Services
-
-## 📋 **Usage Examples**
-
-### **1. Generate Mermaid Diagrams**
-```markdown
-Use: Stage1_Mermaid_Generation/mermaid_generation_prompt.md
-Input: Raw requirements
-Output: User journey, system architecture, business process flows
-```
-
-### **2. Create Functional Specification**
-```markdown
-Use: Stage2_FSD_Creation/fsd_creation_prompt.md
-Input: Mermaid diagrams
-Output: Comprehensive FSD document
-```
-
-### **3. Implement with 13-Phase Enterprise Structure**
-```markdown
-Use: Stage6_1_FSD_Analysis_Validation/fsd_analysis_prompt.md
-Phase 4: Database Model Design
-Phase 5: ORM Mapper & MongoDB Classes
-Phase 6: Business Service Interfaces
-Phase 7: Interface Validation & Coverage
-Phase 8: Business Service Implementations
-Phase 9: Unit Testing Cases (80% Coverage)
-Phase 10: REST API Development
-Phase 11: Frontend Screen Development
-Phase 12: Frontend Unit Test Cases
-Phase 13: CI/CD Deployment & Azure App Service
-```
-
-## 🔧 **Automation Scripts**
-
-The framework includes powerful automation scripts:
-
-```bash
-# Auto-testing validation scripts
-./scripts/validate-phase4-inputs.sh   # Database Model Design
-./scripts/validate-phase5-inputs.sh   # ORM Mapper & MongoDB Classes
-./scripts/validate-phase6-inputs.sh   # Business Service Interfaces
-./scripts/validate-phase7-inputs.sh   # Interface Validation & Coverage
-./scripts/validate-phase8-inputs.sh   # Business Service Implementations
-./scripts/validate-phase9-inputs.sh   # Unit Testing Cases (80% Coverage)
-./scripts/validate-phase10-inputs.sh  # REST API Development
-./scripts/validate-phase11-inputs.sh  # Frontend Screen Development
-./scripts/validate-phase12-inputs.sh  # Frontend Unit Test Cases
-./scripts/validate-phase13-inputs.sh  # CI/CD Deployment & Azure App Service
-
-# Fix practical issues
-./scripts/fix-practical-issues.sh
-
-# Setup incremental testing
-./scripts/setup-incremental-testing.sh
-
-# Setup complete frontend testing
-./scripts/setup-complete-frontend-testing.sh
-
-# Asset migration
-./scripts/stage5-asset-migration.sh
-```
-
-## 📚 **Documentation**
-
-- **[Complete Framework Guide](COMPLETE_SELF_CONTAINED_FRAMEWORK.md)**
-- **[Quick Start Guide](QUICK_START.md)**
-- **[Usage Guide](USAGE_GUIDE.md)**
-- **[Practical Issues Solutions](PRACTICAL_ISSUES_SOLUTIONS.md)**
-- **[Incremental Testing Solution](INCREMENTAL_TESTING_SOLUTION.md)**
-
-## 🤝 **Contributing**
-
-We welcome contributions! Please see our contributing guidelines:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 **Acknowledgments**
-
-- Built with modern development practices
-- Inspired by agile methodologies
-- Enhanced with AI-powered automation
-- Designed for rapid application development
-
-## 📞 **Support**
-
-- **Issues**: [GitHub Issues](https://github.com/Rohith-Rathan/EFTDM-Framework/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Rohith-Rathan/EFTDM-Framework/discussions)
-- **Documentation**: [Wiki](https://github.com/Rohith-Rathan/EFTDM-Framework/wiki)
-
----
-
-**⭐ Star this repository if you find it helpful!**
-
-**🚀 Ready to build amazing applications faster than ever before!**
+**Ready to transform your requirements into production-ready applications?** Start with the [USAGE_GUIDE.md](./USAGE_GUIDE.md)!# Test Update - Mon Sep 22 00:50:19 IST 2025
