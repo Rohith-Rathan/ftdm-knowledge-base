@@ -295,18 +295,45 @@ AI-AGENTIC CONTEXT INDICATORS:
 - Agent Coordination: multi-agent systems, agent communication, swarm intelligence
 ```
 
-#### **Pattern Recognition**
-```
-PATTERN RECOGNITION:
-- Workflow patterns (CRUD, approval, notification)
-- Calculation patterns (financial, statistical, algorithmic)
-- UI patterns (dashboard, form, table, chart)
-- Integration patterns (API, webhook, batch, real-time)
-- Security patterns (authentication, authorization, encryption)
+#### **Smart AI-Agentic Detection Algorithm**
 
-AI-AGENTIC PATTERN RECOGNITION:
-- Conversational patterns (chat flow, dialogue management, context handling)
-- AI automation patterns (workflow orchestration, intelligent process automation)
+```
+SMART AI-AGENTIC DETECTION:
+
+Step 1: AI Requirement Analysis
+- Analyze requirements for AI-related keywords:
+  * Conversational AI: chat, conversation, dialogue, NLP, chatbot, voice, speech
+  * AI Automation: automation, workflow, orchestration, intelligent process, IPA
+  * AI-Assisted: AI-powered, intelligent, smart, recommendation, prediction
+  * Multi-Agent: agent, multi-agent, distributed AI, swarm intelligence
+
+Step 2: Domain-AI Compatibility Check
+- Healthcare Domain: AI diagnostics, AI monitoring, AI-assisted treatment
+- Finance Domain: AI fraud detection, AI investment advice, AI risk assessment
+- E-commerce Domain: AI recommendations, AI search, AI customer service
+- Education Domain: AI tutoring, AI assessment, AI personalized learning
+
+Step 3: AI Capability Decision
+- IF AI keywords found AND domain supports AI → Enable AI-Agentic Analysis
+- IF AI keywords found BUT domain doesn't support AI → Suggest AI Integration
+- IF No AI keywords found BUT domain could benefit from AI → Optional AI Analysis
+- IF No AI keywords found AND domain doesn't need AI → Skip AI-Agentic Analysis
+
+Step 4: Smart AI-Agentic Analysis
+- ONLY IF AI capabilities are needed:
+  * Apply AI-agentic patterns
+  * Research AI service integrations
+  * Design AI-agentic architecture
+  * Implement AI-agentic business logic
+- IF AI capabilities are optional:
+  * Provide AI integration suggestions
+  * Design AI-ready architecture
+  * Plan for future AI integration
+- IF AI capabilities are not needed:
+  * Skip AI-agentic analysis
+  * Focus on domain-specific patterns
+  * Design traditional architecture
+```
 - AI-assisted patterns (recommendation engines, intelligent search, content generation)
 - Multi-agent patterns (agent coordination, distributed decision making, swarm intelligence)
 - AI integration patterns (model serving, inference pipelines, AI service orchestration)
