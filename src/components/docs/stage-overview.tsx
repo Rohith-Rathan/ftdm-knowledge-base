@@ -665,18 +665,18 @@ export function StageOverview() {
                      >
                        {/* Stage Header */}
                        <div 
-                         className={`${stage.bgColor} p-6 cursor-pointer`}
+                         className={`${stage.bgColor} p-4 sm:p-6 cursor-pointer`}
                          onClick={() => setExpandedImplementationStage(expandedImplementationStage === stage.id ? null : stage.id)}
                        >
                          <div className="flex items-center justify-between">
                            <div className="flex items-center space-x-4">
-                             <div className={`p-4 rounded-lg ${stage.bgColor}`}>
-                               <stage.icon className={`h-8 w-8 ${stage.color}`} />
+                             <div className={`p-3 sm:p-4 rounded-lg ${stage.bgColor}`}>
+                               <stage.icon className={`h-6 w-6 sm:h-8 sm:w-8 ${stage.color}`} />
                              </div>
                              <div>
                                <div className="flex items-center space-x-3 mb-2">
-                                 <h3 className="text-2xl font-bold text-foreground">Stage {stage.id} - {stage.title}</h3>
-                                 <span className={`px-3 py-1 rounded-full text-sm font-semibold bg-gradient-to-r ${stage.gradient} text-white`}>
+                                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground">Stage {stage.id} - {stage.title}</h3>
+                                 <span className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r ${stage.gradient} text-white`}>
                                    {stage.duration}
                                  </span>
                                </div>

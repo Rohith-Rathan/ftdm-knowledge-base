@@ -300,17 +300,17 @@ export function AntiHallucinationSafeguards() {
             >
               {/* Safeguard Header */}
               <div 
-                className={`${safeguard.bgColor} p-6 cursor-pointer`}
+                className={`${safeguard.bgColor} p-4 sm:p-6 cursor-pointer`}
                 onClick={() => setExpandedSafeguard(expandedSafeguard === safeguard.id ? null : safeguard.id)}
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <div className={`p-4 rounded-lg ${safeguard.bgColor}`}>
-                      <safeguard.icon className={`h-8 w-8 ${safeguard.color}`} />
+                    <div className={`p-3 sm:p-4 rounded-lg ${safeguard.bgColor}`}>
+                      <safeguard.icon className={`h-6 w-6 sm:h-8 sm:w-8 ${safeguard.color}`} />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-foreground mb-2">{safeguard.title}</h3>
-                      <p className="text-muted-foreground">{safeguard.description}</p>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-2">{safeguard.title}</h3>
+                      <p className="text-sm sm:text-base text-muted-foreground">{safeguard.description}</p>
                     </div>
                   </div>
                   <div className="flex-shrink-0">
@@ -330,7 +330,7 @@ export function AntiHallucinationSafeguards() {
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="bg-card/50 p-6 space-y-6"
+                  className="bg-card/50 p-4 sm:p-6 space-y-4 sm:space-y-6"
                 >
                   {/* Details */}
                   <div>
