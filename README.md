@@ -19,7 +19,37 @@ The **Enhanced Fast-Track Development Methodology (EFTDM)** is a comprehensive, 
 - **♿ Accessibility**: WCAG Level AA compliance built-in
 - **🧪 Comprehensive Testing**: Unit, integration, and end-to-end testing frameworks
 
-## 🏗️ **Framework Architecture**
+## 🧠 **DOMAIN INTELLIGENCE FRAMEWORK** (NEW)
+
+The EFTDM framework now includes **Domain Intelligence** capabilities that make it truly universal and intelligent for any domain or industry.
+
+### **Key Features:**
+- **🔍 Auto-Detection**: Automatically detects domain from requirements
+- **📚 Industry Research**: Researches industry standards and best practices  
+- **🎯 Pattern Application**: Applies domain-specific patterns and standards
+- **⚖️ Compliance Integration**: Includes regulatory and compliance requirements
+- **✅ Quality Assurance**: Validates domain-specific quality standards
+
+### **Domain Intelligence Files:**
+- **`frameworks/domain_intelligence_framework.md`** - Core domain intelligence framework
+- **`frameworks/domain_intelligence_prompts.md`** - Domain intelligence prompts for all stages
+- **`frameworks/domain_intelligence_validation.md`** - Domain intelligence validation framework
+- **`frameworks/domain_intelligence_integration.md`** - Integration guide for domain intelligence
+
+### **How It Works:**
+1. **Domain Detection**: Framework analyzes requirements and detects domain (healthcare, finance, e-commerce, etc.)
+2. **Industry Research**: Automatically researches industry standards, best practices, and compliance requirements
+3. **Pattern Application**: Applies domain-specific patterns for UI/UX, business logic, and architecture
+4. **Quality Validation**: Validates domain-specific quality standards and compliance requirements
+
+### **Benefits:**
+- **Universal Applicability**: Works for any domain or industry
+- **Intelligent Automation**: Automatically applies domain-specific intelligence
+- **Professional Results**: Delivers enterprise-grade, domain-appropriate solutions
+- **Compliance Ready**: Includes regulatory and compliance requirements
+- **Quality Assured**: Validates industry-standard quality and security
+
+---
 
 ### **7-Stage Development Process:**
 
