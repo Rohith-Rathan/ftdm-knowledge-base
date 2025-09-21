@@ -15,15 +15,31 @@ Your task is to perform Phase 1: FSD Analysis & Validation using the comprehensi
 **Team Size**: {TEAM_SIZE}
 **Complexity**: {COMPLEXITY}
 
-## **REQUIREMENTS**
+## **DOMAIN-SPECIFIC ANALYSIS REQUIREMENTS**
 
-1. **Read and analyze** the FSD document at `{FSD_PATH}`
-2. **Apply the FSD Validation Checklist** systematically
-3. **Detect any red flags** that could block implementation
-4. **Analyze the design system scenario** (Complete Design System, Static Designs, Figma Links, or No Designs)
-5. **Classify the project type** (Simple Web App, Complex Web App, Enterprise SaaS, Mobile App, AI Agentic, etc.)
-6. **Assess complexity level** (LOW, MEDIUM, HIGH)
-7. **Provide a clear validation result** (PASSED/FAILED with reasons)
+### **1. Domain Intelligence Validation**
+- **Domain Detection**: Validate that the primary domain is correctly identified
+- **Industry Standards**: Verify industry standards and best practices are included
+- **Compliance Requirements**: Check regulatory and compliance requirements coverage
+- **Domain-Specific Patterns**: Validate domain-specific workflows and business logic
+
+### **2. Business Logic Analysis**
+- **Domain-Specific Logic**: Verify domain-specific business logic (not generic CRUD)
+- **Calculation Engines**: Check for proper calculation engines (payroll, tax, etc.)
+- **Compliance Rules**: Validate compliance and validation rules implementation
+- **Audit Requirements**: Check audit trails and logging requirements
+
+### **3. Enterprise-Grade Requirements**
+- **Architecture Patterns**: Verify enterprise architecture patterns are applied
+- **Security Requirements**: Check comprehensive security and compliance requirements
+- **Performance Requirements**: Validate performance and scalability requirements
+- **Integration Requirements**: Check industry-standard integration patterns
+
+### **4. Quality Assurance Validation**
+- **Requirement Completeness**: Verify all requirements are comprehensive and clear
+- **User Journey Coverage**: Check complete user journey mapping
+- **Business Process Coverage**: Validate all business processes are documented
+- **Success Criteria**: Verify clear success criteria and acceptance criteria
 
 ## **VALIDATION CHECKLIST TO APPLY**
 
