@@ -710,12 +710,13 @@ The EFTDM framework is designed to work seamlessly with existing projects, wheth
    - **Stage 6.1-6.13**: Enhances existing codebase with new features and improvements
    - **Stage 7**: Enhances existing backend with additional functionality
 
-3. **Enhancement Strategy**:
-   - **Code Analysis**: Analyzes existing codebase structure and patterns
-   - **Enhancement Planning**: Plans enhancements within existing codebase
-   - **File Modification**: Modifies existing files to improve functionality
-   - **File Addition**: Adds new files to enhance existing features
-   - **Architecture Improvement**: Improves existing architecture without breaking changes
+3. **Codebase Analysis Strategy**:
+   - **Deep Code Analysis**: Analyzes all existing files, components, and code structure
+   - **Pattern Recognition**: Identifies existing coding patterns, architecture, and conventions
+   - **Technology Stack Detection**: Detects existing tech stack and frameworks used
+   - **Design System Analysis**: Analyzes existing UI/UX patterns and design system
+   - **Architecture Understanding**: Understands existing architecture and data flow
+   - **Integration Points**: Identifies where new features can be integrated seamlessly
 
 4. **Benefits**:
    - **Enhanced Implementation**: Improves existing codebase with domain intelligence
@@ -736,12 +737,12 @@ The EFTDM framework is designed to work seamlessly with existing projects, wheth
    ```
    [project_name]/
    ├── EFTDM_FRAMEWORK/          # Framework files
-   ├── [existing_project]/       # Existing project (Lovable, Replit, etc.)
-   │   ├── src/                  # Existing source code
-   │   ├── components/           # Existing components
-   │   ├── services/             # Existing services
-   │   └── [existing_structure]  # Existing project structure
-   └── [eftdm_extensions]/       # New features added by EFTDM
+   └── [existing_project]/       # Existing project (Lovable, Replit, etc.)
+       ├── src/                  # Existing source code
+       ├── components/           # Existing components
+       ├── services/             # Existing services
+       ├── [existing_files]/     # All existing files
+       └── [enhanced_files]/     # Files added/modified by EFTDM
    ```
 
 2. **Framework Process**:
@@ -753,14 +754,22 @@ The EFTDM framework is designed to work seamlessly with existing projects, wheth
    - **Stage 6.1-6.13**: Implements new features that integrate with existing project
    - **Stage 7**: Extends existing backend with new functionality
 
-3. **Integration Strategy**:
+3. **Codebase Analysis Strategy**:
+   - **Deep Code Analysis**: Analyzes all existing files, components, and code structure
+   - **Pattern Recognition**: Identifies existing coding patterns, architecture, and conventions
+   - **Technology Stack Detection**: Detects existing tech stack and frameworks used
+   - **Design System Analysis**: Analyzes existing UI/UX patterns and design system
+   - **Architecture Understanding**: Understands existing architecture and data flow
+   - **Integration Points**: Identifies where new features can be integrated seamlessly
+
+4. **Integration Strategy**:
    - **Code Analysis**: Analyzes existing codebase structure and patterns
    - **Design System Integration**: Matches existing UI/UX patterns
    - **Architecture Extension**: Extends existing architecture without breaking changes
    - **API Integration**: Integrates new APIs with existing backend
    - **Database Extension**: Extends existing database schema
 
-4. **Benefits**:
+5. **Benefits**:
    - **Seamless Integration**: New features integrate naturally with existing code
    - **Consistent Design**: Maintains existing design system and patterns
    - **No Breaking Changes**: Preserves existing functionality
@@ -798,6 +807,28 @@ The EFTDM framework is designed to work seamlessly with existing projects, wheth
    - **Scalable Foundation**: Creates a solid foundation for future growth
 
 **Example**: You want to create a new healthcare management system from scratch. EFTDM creates a complete, production-ready application.
+
+## **🔍 CRITICAL: CODEBASE ANALYSIS FOR SCENARIOS 1 & 2**
+
+**IMPORTANT**: For both Scenario 1 and Scenario 2, the EFTDM framework **ALWAYS** starts by analyzing the existing project's codebase files and code inside of it. This analysis determines how the framework proceeds with development.
+
+### **Codebase Analysis Process**:
+1. **File Structure Analysis**: Examines all files, folders, and project structure
+2. **Code Pattern Recognition**: Identifies coding patterns, conventions, and architecture
+3. **Technology Stack Detection**: Detects frameworks, libraries, and tools used
+4. **Design System Analysis**: Analyzes UI/UX patterns, components, and styling
+5. **Architecture Understanding**: Maps data flow, API structure, and business logic
+6. **Integration Planning**: Plans how to enhance/integrate within existing codebase
+
+### **Framework Decision Making**:
+Based on the codebase analysis, the framework decides:
+- **How to enhance existing code** (Scenario 1)
+- **Where to integrate new features** (Scenario 2)
+- **What patterns to follow** (maintains consistency)
+- **What architecture to extend** (preserves existing structure)
+- **What design system to match** (maintains visual consistency)
+
+**Key Point**: The framework **NEVER** ignores existing code - it **ALWAYS** analyzes and works within the existing codebase structure and patterns.
 
 ---
 
