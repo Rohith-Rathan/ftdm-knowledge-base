@@ -14,11 +14,11 @@ export function Hero() {
       <div className="absolute inset-0">
         {/* Floating Orbs */}
         <motion.div 
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full mix-blend-multiply filter blur-3xl"
+          className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full mix-blend-multiply filter blur-3xl"
           animate={{ 
-            x: [0, 100, 0],
-            y: [0, -50, 0],
-            scale: [1, 1.2, 1]
+            x: [0, 50, 0],
+            y: [0, -25, 0],
+            scale: [1, 1.1, 1]
           }}
           transition={{ 
             duration: 8,
@@ -27,11 +27,11 @@ export function Hero() {
           }}
         />
         <motion.div 
-          className="absolute top-3/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-full mix-blend-multiply filter blur-3xl"
+          className="absolute top-3/4 right-1/4 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-full mix-blend-multiply filter blur-3xl"
           animate={{ 
-            x: [0, -100, 0],
-            y: [0, 50, 0],
-            scale: [1, 0.8, 1]
+            x: [0, -50, 0],
+            y: [0, 25, 0],
+            scale: [1, 0.9, 1]
           }}
           transition={{ 
             duration: 10,
@@ -40,11 +40,11 @@ export function Hero() {
           }}
         />
         <motion.div 
-          className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-gradient-to-r from-pink-500/30 to-blue-500/30 rounded-full mix-blend-multiply filter blur-3xl"
+          className="absolute bottom-1/4 left-1/3 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-r from-pink-500/30 to-blue-500/30 rounded-full mix-blend-multiply filter blur-3xl"
           animate={{ 
-            x: [0, 50, 0],
-            y: [0, -100, 0],
-            scale: [1, 1.1, 1]
+            x: [0, 25, 0],
+            y: [0, -50, 0],
+            scale: [1, 1.05, 1]
           }}
           transition={{ 
             duration: 12,
@@ -83,7 +83,7 @@ export function Hero() {
         ))}
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <div className="text-center space-y-12 max-w-6xl mx-auto">
           {/* Badge */}
           <motion.div
@@ -103,7 +103,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-8"
           >
-            <h1 className="text-6xl md:text-8xl font-bold leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight">
               <motion.span 
                 className="gradient-text"
                 animate={{ 
@@ -131,7 +131,7 @@ export function Hero() {
               </motion.span>
             </h1>
             <motion.p 
-              className="text-2xl md:text-3xl text-muted-foreground font-light"
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-light"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
@@ -145,7 +145,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed px-4"
           >
             Transform raw requirements into production-ready applications through our intelligent 7-stage development framework with domain intelligence and anti-hallucination safeguards.
           </motion.p>
@@ -185,7 +185,7 @@ export function Hero() {
               }
             }
           }}
-          className="text-xl px-12 py-8 h-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 pulse-glow hover:scale-105 active:scale-95 rounded-lg font-semibold flex items-center justify-center gap-4 cursor-pointer"
+          className="text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-6 md:py-8 h-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 pulse-glow hover:scale-105 active:scale-95 rounded-lg font-semibold flex items-center justify-center gap-2 sm:gap-4 cursor-pointer"
         >
           <Rocket className="h-7 w-7" />
           Get Started Now
@@ -203,7 +203,7 @@ export function Hero() {
                   setIsDownloadOpen(true);
                   console.log('State set to true');
                 }}
-                className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 rounded-md text-xl px-12 py-8 h-auto glass-morphism border-2 border-border text-foreground hover:bg-accent backdrop-blur-sm transition-all duration-300"
+                className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 rounded-md text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-6 md:py-8 h-auto glass-morphism border-2 border-border text-foreground hover:bg-accent backdrop-blur-sm transition-all duration-300"
               >
                 <Download className="mr-4 h-7 w-7" />
                 Download Framework
@@ -232,7 +232,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-20"
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mt-12 sm:mt-16 md:mt-20"
           >
             {[
               { number: '7', label: 'Automated Stages', icon: Zap, color: 'from-blue-400 to-purple-400' },
@@ -242,11 +242,11 @@ export function Hero() {
             ].map((stat, index) => (
               <motion.div 
                 key={index}
-                className="text-center space-y-4 p-8 rounded-3xl glass-morphism border border-white/10 floating-animation"
+                className="text-center space-y-2 sm:space-y-4 p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl glass-morphism border border-white/10 floating-animation"
                 style={{ animationDelay: `${index * 0.2}s` }}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className={`text-6xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}>
+                <div className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}>
                   {stat.number}
                 </div>
                   <div className="text-sm text-muted-foreground font-medium">{stat.label}</div>
@@ -259,7 +259,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="flex flex-wrap justify-center items-center gap-8 mt-16 text-muted-foreground"
+            className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 mt-12 sm:mt-14 md:mt-16 text-muted-foreground px-4"
           >
             {[
               { icon: Shield, text: 'Enterprise Grade Security', color: 'text-green-400' },
@@ -270,12 +270,12 @@ export function Hero() {
             ].map((item, index) => (
               <motion.div 
                 key={index}
-                className="flex items-center space-x-3 p-4 rounded-xl glass-morphism"
+                className="flex items-center space-x-2 sm:space-x-3 p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl glass-morphism"
                 whileHover={{ scale: 1.05 }}
                 transition={{ delay: index * 0.1 }}
               >
                 <item.icon className={`w-6 h-6 ${item.color}`} />
-                <span className="text-sm font-medium text-muted-foreground">{item.text}</span>
+                <span className="text-xs sm:text-sm font-medium text-muted-foreground">{item.text}</span>
               </motion.div>
             ))}
           </motion.div>

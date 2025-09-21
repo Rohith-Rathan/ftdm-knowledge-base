@@ -114,7 +114,7 @@ export function Introduction() {
             Fast-Track Development Methodology
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               FTDM Framework
             </span>
@@ -126,7 +126,7 @@ export function Introduction() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -153,19 +153,19 @@ export function Introduction() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="text-center p-6 rounded-xl border border-border bg-card/50"
+              className="text-center p-4 sm:p-6 rounded-xl border border-border bg-card/50"
             >
               <div className="flex justify-center mb-3">
                 <stat.icon className="h-8 w-8 text-blue-400" />
               </div>
-              <div className="text-3xl font-bold text-foreground mb-2">
+              <div className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
                 {stat.number}
               </div>
               <div className="text-sm text-muted-foreground font-medium">
