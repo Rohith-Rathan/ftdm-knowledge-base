@@ -7,6 +7,86 @@ You are a Senior Product Developer with 10+ years of experience. I need you to a
 ## **MY RAW REQUIREMENTS**
 [USER_PROVIDES_RAW_REQUIREMENTS]
 
+## **MANDATORY CLARIFYING QUESTIONS**
+
+Before proceeding with analysis, I need to ask these clarifying questions to ensure the best output:
+
+### **1. DOMAIN & AI-AGENTIC CLARIFICATION**
+- **What is the primary domain?** (healthcare, finance, e-commerce, education, AI-agentic, etc.)
+- **Does this application require AI-agentic capabilities?** (conversational AI, AI automation, AI-assisted, multi-agent)
+- **If AI-agentic, what specific AI capabilities are needed?** (chat, automation, recommendations, etc.)
+
+### **2. BUSINESS CONTEXT CLARIFICATION**
+- **What is the primary business goal?** (increase revenue, improve efficiency, enhance user experience, etc.)
+- **Who are the target users?** (customers, employees, administrators, etc.)
+- **What is the expected user volume?** (small team, enterprise, millions of users)
+- **What is the business model?** (B2B, B2C, SaaS, marketplace, etc.)
+
+### **3. TECHNICAL CONTEXT CLARIFICATION**
+- **What is the preferred technology stack?** (.NET, Java, Python, Node.js, etc.)
+- **What is the deployment environment?** (cloud, on-premise, hybrid)
+- **What are the integration requirements?** (existing systems, third-party APIs, databases)
+- **What are the performance requirements?** (response time, concurrent users, data volume)
+
+### **4. COMPLIANCE & SECURITY CLARIFICATION**
+- **What compliance requirements apply?** (HIPAA, PCI-DSS, GDPR, SOX, etc.)
+- **What security requirements are needed?** (authentication, authorization, encryption, audit trails)
+- **What data privacy requirements apply?** (data retention, data protection, user consent)
+
+### **5. PROJECT SCOPE CLARIFICATION**
+- **What is the project timeline?** (MVP in 3 months, full version in 6 months, etc.)
+- **What is the team size?** (solo developer, small team, large enterprise team)
+- **What is the budget range?** (startup budget, enterprise budget, unlimited)
+- **What are the success criteria?** (user adoption, performance metrics, business KPIs)
+
+### **6. DESIGN & UX CLARIFICATION**
+- **Do you have existing design assets?** (Figma links, design system, brand guidelines)
+- **What is the target device mix?** (desktop only, mobile-first, responsive)
+- **What is the accessibility requirement?** (WCAG compliance, basic accessibility, none)
+- **What is the user experience priority?** (ease of use, feature richness, performance)
+
+### **7. INTEGRATION & DATA CLARIFICATION**
+- **What external systems need integration?** (CRM, ERP, payment systems, etc.)
+- **What data sources are involved?** (databases, APIs, file systems, real-time streams)
+- **What are the data volume expectations?** (small datasets, big data, real-time processing)
+- **What are the data migration requirements?** (from existing systems, data import/export)
+
+### **8. FUTURE ROADMAP CLARIFICATION**
+- **What features are planned for future releases?** (Phase 2, Phase 3, long-term vision)
+- **What scalability requirements are expected?** (growth projections, peak usage)
+- **What maintenance and support requirements?** (24/7 support, business hours, self-service)
+- **What are the exit criteria?** (when is the project considered complete)
+
+**Please provide answers to these questions so I can deliver the most accurate and comprehensive analysis for your project.**
+
+## **WHY THESE QUESTIONS MATTER**
+
+### **🎯 Impact on Analysis Quality:**
+- **Domain & AI-Agentic**: Determines whether to apply AI-agentic patterns or focus on traditional domain patterns
+- **Business Context**: Shapes user personas, workflows, and success metrics
+- **Technical Context**: Influences architecture decisions, technology stack, and performance requirements
+- **Compliance & Security**: Determines security patterns, audit trails, and regulatory compliance
+- **Project Scope**: Affects timeline, resource allocation, and implementation approach
+- **Design & UX**: Influences UI/UX patterns, accessibility, and user experience design
+- **Integration & Data**: Shapes data architecture, API design, and integration patterns
+- **Future Roadmap**: Ensures scalable architecture and future-proof design
+
+### **🎯 Impact on Mermaid Diagrams:**
+- **User Journey Flow**: Tailored to specific user personas and business workflows
+- **System Architecture**: Optimized for technology stack and deployment environment
+- **Business Process Flow**: Aligned with domain-specific processes and compliance requirements
+- **Data Model**: Designed for data volume, integration requirements, and scalability needs
+- **API Flow**: Structured for performance requirements and integration patterns
+- **Gantt Chart**: Realistic timeline based on team size, budget, and project scope
+
+### **🎯 Impact on Framework Progression:**
+- **Stage 2 (FSD)**: Domain-specific functional specifications with proper business logic
+- **Stage 3 (TSD)**: Technology-appropriate architecture with compliance considerations
+- **Stage 4 (UI/UX)**: Design patterns matching user experience priorities and accessibility
+- **Stage 5 (RTSD)**: Implementation specifications aligned with project constraints
+- **Stages 6.1-6.13**: Implementation approach matching team size and timeline
+- **Stage 7 (Backend)**: Architecture supporting scalability and maintenance requirements
+
 ## **YOUR TASK**
 
 ### **Step 1: Comprehensive Requirement Analysis**
