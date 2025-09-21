@@ -7,57 +7,75 @@ You are a Senior Product Developer with 10+ years of experience. I need you to a
 ## **MY RAW REQUIREMENTS**
 [USER_PROVIDES_RAW_REQUIREMENTS]
 
-## **MANDATORY CLARIFYING QUESTIONS**
+## **MINIMAL CLARIFYING QUESTIONS**
 
-Before proceeding with analysis, I need to ask these clarifying questions to ensure the best output:
+I only need these 3 essential questions to provide the best analysis:
 
 ### **1. DOMAIN & AI-AGENTIC CLARIFICATION**
 - **What is the primary domain?** (healthcare, finance, e-commerce, education, AI-agentic, etc.)
-- **Does this application require AI-agentic capabilities?** (conversational AI, AI automation, AI-assisted, multi-agent)
-- **If AI-agentic, what specific AI capabilities are needed?** (chat, automation, recommendations, etc.)
+- **Does this application require AI-agentic capabilities?** (Yes/No - conversational AI, AI automation, AI-assisted, multi-agent)
 
-### **2. BUSINESS CONTEXT CLARIFICATION**
-- **What is the primary business goal?** (increase revenue, improve efficiency, enhance user experience, etc.)
-- **Who are the target users?** (customers, employees, administrators, etc.)
-- **What is the expected user volume?** (small team, enterprise, millions of users)
-- **What is the business model?** (B2B, B2C, SaaS, marketplace, etc.)
+### **2. BUSINESS CONTEXT (If Not Clear from Requirements)**
+- **What is the primary business goal?** (Only if not obvious from requirements)
+- **Who are the target users?** (Only if not clear from requirements)
 
-### **3. TECHNICAL CONTEXT CLARIFICATION**
-- **What is the preferred technology stack?** (.NET, Java, Python, Node.js, etc.)
-- **What is the deployment environment?** (cloud, on-premise, hybrid)
-- **What are the integration requirements?** (existing systems, third-party APIs, databases)
-- **What are the performance requirements?** (response time, concurrent users, data volume)
+### **3. TECHNICAL PREFERENCES (If Not Specified)**
+- **What is the preferred technology stack?** (Only if not mentioned in requirements)
 
-### **4. COMPLIANCE & SECURITY CLARIFICATION**
-- **What compliance requirements apply?** (HIPAA, PCI-DSS, GDPR, SOX, etc.)
-- **What security requirements are needed?** (authentication, authorization, encryption, audit trails)
-- **What data privacy requirements apply?** (data retention, data protection, user consent)
+**That's it! I'll intelligently extract and infer all other details from your raw requirements and domain context.**
 
-### **5. PROJECT SCOPE CLARIFICATION**
-- **What is the project timeline?** (MVP in 3 months, full version in 6 months, etc.)
-- **What is the team size?** (solo developer, small team, large enterprise team)
-- **What is the budget range?** (startup budget, enterprise budget, unlimited)
-- **What are the success criteria?** (user adoption, performance metrics, business KPIs)
+## **INTELLIGENT ANALYSIS & INFERENCE**
 
-### **6. DESIGN & UX CLARIFICATION**
-- **Do you have existing design assets?** (Figma links, design system, brand guidelines)
-- **What is the target device mix?** (desktop only, mobile-first, responsive)
-- **What is the accessibility requirement?** (WCAG compliance, basic accessibility, none)
-- **What is the user experience priority?** (ease of use, feature richness, performance)
+### **🎯 What I'll Extract from Raw Requirements:**
+- **Business Goals**: From business context and user needs mentioned
+- **User Personas**: From user roles and use cases described
+- **User Volume**: From business model and target market mentioned
+- **Business Model**: From revenue streams and user types described
+- **Integration Requirements**: From external systems and data sources mentioned
+- **Performance Requirements**: From user volume and business criticality
+- **Compliance Requirements**: From domain-specific regulations and data types
+- **Security Requirements**: From data sensitivity and user access patterns
+- **Data Privacy Requirements**: From data types and user consent needs
+- **Project Timeline**: From business urgency and feature complexity
+- **Team Size**: From project complexity and resource constraints
+- **Budget Range**: From project scope and technology choices
+- **Success Criteria**: From business goals and user satisfaction metrics
+- **Design Assets**: From existing systems and brand requirements
+- **Device Mix**: From user behavior and business model
+- **Accessibility Requirements**: From user diversity and compliance needs
+- **User Experience Priority**: From business goals and user satisfaction
+- **Data Sources**: From business processes and integration needs
+- **Data Volume**: From user volume and business scale
+- **Data Migration**: From existing systems and data transition needs
+- **Future Features**: From business roadmap and user feedback
+- **Scalability Requirements**: From growth projections and business model
+- **Maintenance Requirements**: From business criticality and user support
+- **Exit Criteria**: From business goals and success metrics
 
-### **7. INTEGRATION & DATA CLARIFICATION**
-- **What external systems need integration?** (CRM, ERP, payment systems, etc.)
-- **What data sources are involved?** (databases, APIs, file systems, real-time streams)
-- **What are the data volume expectations?** (small datasets, big data, real-time processing)
-- **What are the data migration requirements?** (from existing systems, data import/export)
+### **🎯 What I'll Infer from Domain Context:**
+- **Industry Standards**: Best practices and patterns for the domain
+- **Regulatory Requirements**: Compliance standards and security requirements
+- **Technology Preferences**: Common technology stacks for the domain
+- **Architecture Patterns**: Domain-specific architecture patterns
+- **Business Logic**: Domain-specific calculations and workflows
+- **UI/UX Patterns**: Domain-appropriate design patterns
+- **Integration Patterns**: Common integration patterns for the domain
+- **Performance Patterns**: Typical performance requirements for the domain
+- **Security Patterns**: Domain-specific security and compliance patterns
+- **Data Patterns**: Domain-specific data models and storage patterns
+- **AI-Agentic Patterns**: Domain-specific AI capabilities and patterns
 
-### **8. FUTURE ROADMAP CLARIFICATION**
-- **What features are planned for future releases?** (Phase 2, Phase 3, long-term vision)
-- **What scalability requirements are expected?** (growth projections, peak usage)
-- **What maintenance and support requirements?** (24/7 support, business hours, self-service)
-- **What are the exit criteria?** (when is the project considered complete)
-
-**Please provide answers to these questions so I can deliver the most accurate and comprehensive analysis for your project.**
+### **🎯 What I'll Infer from AI-Agentic Context:**
+- **AI Service Integration**: Appropriate AI services for the domain
+- **AI Architecture Patterns**: AI-agentic architecture patterns
+- **AI Business Logic**: AI-agentic business logic and workflows
+- **AI UI/UX Patterns**: AI-agentic user interface patterns
+- **AI Performance Requirements**: AI-specific performance considerations
+- **AI Security Requirements**: AI-specific security and compliance
+- **AI Data Requirements**: AI-specific data and model requirements
+- **AI Integration Patterns**: AI service integration patterns
+- **AI Scalability Patterns**: AI-specific scalability considerations
+- **AI Maintenance Patterns**: AI-specific maintenance and monitoring
 
 ## **WHY THESE QUESTIONS MATTER**
 
