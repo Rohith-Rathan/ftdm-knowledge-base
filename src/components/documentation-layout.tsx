@@ -31,7 +31,7 @@ export function DocumentationLayout({ children }: DocumentationLayoutProps) {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="dark"
+      defaultTheme="light"
       enableSystem
       disableTransitionOnChange
     >
