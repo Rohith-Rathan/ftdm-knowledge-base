@@ -29,7 +29,6 @@ import {
   Smartphone,
   GitBranch,
   Package,
-  Database2,
   Network,
   ShieldCheck,
   Eye,

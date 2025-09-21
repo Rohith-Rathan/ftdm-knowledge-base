@@ -30,7 +30,6 @@ import {
   GitBranch,
   Package,
   Terminal,
-  Database2,
   Network,
   ShieldCheck,
   ChevronDown,

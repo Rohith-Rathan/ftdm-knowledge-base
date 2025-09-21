@@ -36,7 +36,6 @@ import {
   Server,
   Monitor,
   Smartphone,
-  Database2,
   Network,
   ShieldCheck,
   Eye,
