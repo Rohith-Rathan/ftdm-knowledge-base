@@ -9,12 +9,6 @@ export const metadata: Metadata = {
   description: 'Transform raw requirements into production-ready applications through our intelligent 7-stage development framework with domain intelligence and anti-hallucination safeguards.',
   authors: [{ name: 'FTDM Framework Team' }],
   keywords: ['FTDM', 'Fast-Track Development', 'AI Development', 'Domain Intelligence', 'Software Development Framework'],
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
   openGraph: {
     title: 'FTDM Framework - Fast-Track Development Methodology',
     description: 'Transform raw requirements into production-ready applications through our intelligent 7-stage development framework.',
@@ -29,6 +23,13 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 }
 
 export default function RootLayout({
