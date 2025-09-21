@@ -693,10 +693,12 @@ The EFTDM framework is designed to work seamlessly with existing projects, wheth
    ```
    [project_name]/
    ├── EFTDM_FRAMEWORK/          # Framework files
-   ├── [existing_lovable_project]/    # Existing Lovable project (pasted by user)
-   ├── [existing_replit_project]/     # Existing Replit project (pasted by user)
-   ├── [existing_figma_project]/     # Existing Figma project (pasted by user)
-   └── [enhanced_files]/          # Enhanced files added by EFTDM
+   └── [existing_project]/       # Existing project (Lovable, Replit, Figma, Base44 - pasted by user)
+       ├── src/                  # Existing source code
+       ├── components/           # Existing components
+       ├── services/             # Existing services
+       ├── [existing_files]/     # All existing files
+       └── [enhanced_files]/     # Files added/modified by EFTDM
    ```
 
 2. **Framework Process**:
