@@ -18,9 +18,12 @@ You are a Senior Product Developer with 10+ years of experience. I need you to c
 
 #### **1.1: Domain Context Analysis**
 1. **Domain Detection**: Identify and validate the primary domain from Stage 1
-2. **Industry Research**: Research industry standards, best practices, and regulatory requirements
-3. **Compliance Mapping**: Map relevant compliance requirements (HIPAA, PCI-DSS, GDPR, etc.)
-4. **Domain-Specific Patterns**: Identify domain-specific workflows, calculations, and business rules
+2. **AI-Agentic Detection**: Identify AI-agentic patterns (conversational AI, AI automation, AI-assisted, multi-agent)
+3. **Industry Research**: Research industry standards, best practices, and regulatory requirements
+4. **AI Service Research**: Research AI service integrations and AI-agentic patterns
+5. **Compliance Mapping**: Map relevant compliance requirements (HIPAA, PCI-DSS, GDPR, AI ethics)
+6. **Domain-Specific Patterns**: Identify domain-specific workflows, calculations, and business rules
+7. **AI-Agentic Patterns**: Identify AI-agentic workflows, conversation patterns, and automation requirements
 
 #### **1.2: Industry Standard Analysis**
 1. **Best Practices Research**: Research industry-specific best practices and methodologies

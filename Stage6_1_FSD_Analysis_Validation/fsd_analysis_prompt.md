@@ -19,9 +19,12 @@ Your task is to perform Phase 1: FSD Analysis & Validation using the comprehensi
 
 ### **1. Domain Intelligence Validation**
 - **Domain Detection**: Validate that the primary domain is correctly identified
+- **AI-Agentic Detection**: Validate AI-agentic patterns (conversational AI, AI automation, AI-assisted, multi-agent)
 - **Industry Standards**: Verify industry standards and best practices are included
+- **AI Service Integration**: Verify AI service integration requirements (OpenAI, Anthropic, Azure AI, AWS AI)
 - **Compliance Requirements**: Check regulatory and compliance requirements coverage
 - **Domain-Specific Patterns**: Validate domain-specific workflows and business logic
+- **AI-Agentic Patterns**: Validate AI-agentic workflows, conversation patterns, and automation requirements
 
 ### **2. Business Logic Analysis**
 - **Domain-Specific Logic**: Verify domain-specific business logic (not generic CRUD)

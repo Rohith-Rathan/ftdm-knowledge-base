@@ -27,12 +27,14 @@ Your task is to perform Stage 4: UI/UX Designs Analysis for the **{PROJECT_NAME}
 - Create domain-specific dashboard layouts
 - Design real-time data visualization components
 - Include industry-standard data presentation patterns
+- Design AI-agentic data visualization (conversational AI dashboards, AI automation monitoring, AI-assisted analytics)
 
 ### **3. Enterprise Design Patterns**
 - Design for specific domain context (not generic forms)
 - Follow established design patterns for enterprise applications
 - Implement professional, domain-appropriate UI components
 - Create comprehensive design system with custom components
+- Design AI-agentic UI patterns (conversational interfaces, AI automation dashboards, AI-assisted forms)
 
 ### **4. Responsive Design with Mobile-First Approach**
 - Design mobile-first responsive layouts

@@ -27,12 +27,14 @@ Your job is to generate a refined Technical Specification Document (TSD) that me
 - Create proper calculation engines (payroll, tax, deductions, etc.)
 - Implement compliance and validation rules
 - Add audit trails and logging for business operations
+- Implement AI-agentic business logic (conversational AI workflows, AI automation logic, AI-assisted decision making)
 
 ### **2. Industry-Standard Calculations**
 - Implement industry-standard calculation methods
 - Create domain-appropriate calculation engines
 - Include regulatory compliance calculations
 - Add business rule validation and enforcement
+- Implement AI-agentic calculations (AI-powered recommendations, intelligent automation, predictive analytics)
 
 ### **3. Workflow Management**
 - Implement domain-specific workflows and processes

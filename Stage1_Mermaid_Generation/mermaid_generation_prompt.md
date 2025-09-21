@@ -12,10 +12,13 @@ You are a Senior Product Developer with 10+ years of experience. I need you to a
 ### **Step 1: Comprehensive Requirement Analysis**
 
 #### **1.1: Domain Detection & Industry Analysis**
-1. **Detect Domain**: Identify the primary domain (healthcare, finance, e-commerce, education, etc.)
-2. **Industry Research**: Research industry standards, best practices, and regulatory requirements
-3. **Compliance Mapping**: Identify relevant compliance requirements (HIPAA, PCI-DSS, GDPR, etc.)
-4. **Domain Context**: Understand domain-specific terminology, workflows, and business processes
+1. **Detect Domain**: Identify the primary domain (healthcare, finance, e-commerce, education, AI-agentic, etc.)
+2. **AI-Agentic Detection**: Identify AI-agentic patterns (conversational AI, AI automation, AI-assisted, multi-agent)
+3. **Industry Research**: Research industry standards, best practices, and regulatory requirements
+4. **AI Service Research**: Research AI service integrations (OpenAI, Anthropic, Azure AI, AWS AI)
+5. **Compliance Mapping**: Identify relevant compliance requirements (HIPAA, PCI-DSS, GDPR, AI ethics)
+6. **Domain Context**: Understand domain-specific terminology, workflows, and business processes
+7. **AI Context**: Understand AI-agentic workflows, conversation patterns, and automation requirements
 
 #### **1.2: Business Context Analysis**
 1. **Business Goals**: Identify primary business objectives and success metrics

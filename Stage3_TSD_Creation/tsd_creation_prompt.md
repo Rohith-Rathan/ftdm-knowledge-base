@@ -18,9 +18,12 @@ You are a Senior Product Developer with 10+ years of experience. I need you to c
 
 #### **1.1: Domain Architecture Analysis**
 1. **Domain-Specific Architecture**: Apply domain-specific architecture patterns and best practices
-2. **Industry Standards**: Research and apply industry-standard architecture patterns
-3. **Technology Stack Optimization**: Select domain-appropriate technology stacks and frameworks
-4. **Compliance Architecture**: Design architecture to meet regulatory and compliance requirements
+2. **AI-Agentic Architecture**: Apply AI-agentic architecture patterns (conversational AI, AI automation, AI-assisted, multi-agent)
+3. **Industry Standards**: Research and apply industry-standard architecture patterns
+4. **AI Service Integration**: Design AI service integration patterns (OpenAI, Anthropic, Azure AI, AWS AI)
+5. **Technology Stack Optimization**: Select domain-appropriate technology stacks and frameworks
+6. **Compliance Architecture**: Design architecture to meet regulatory and compliance requirements
+7. **AI Ethics Architecture**: Design architecture to meet AI ethics and compliance requirements
 
 #### **1.2: Enterprise Architecture Design**
 1. **Clean Architecture Principles**: Implement clean architecture principles for maintainability
