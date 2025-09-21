@@ -1,3 +1,5 @@
+"use client"
+
 import { DocumentationLayout } from '@/components/documentation-layout'
 import { Introduction } from '@/components/docs/introduction'
 import { FrameworkFlowVisualization } from '@/components/docs/framework-flow-visualization'

@@ -157,32 +157,73 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-8 justify-center items-center"
           >
+        <button 
+          onClick={() => {
+            // Find the main scrolling container
+            const mainContent = document.querySelector('main');
+            const quickStartSection = document.getElementById('quick-start');
+            
+            if (mainContent && quickStartSection) {
+              // Calculate the position relative to the main container
+              const mainRect = mainContent.getBoundingClientRect();
+              const sectionRect = quickStartSection.getBoundingClientRect();
+              const scrollTop = mainContent.scrollTop;
+              const targetPosition = scrollTop + (sectionRect.top - mainRect.top);
+              
+              // Scroll within the main container
+              mainContent.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            } else {
+              // Fallback: try window scroll
+              if (quickStartSection) {
+                quickStartSection.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }
+            }
+          }}
+          className="text-xl px-12 py-8 h-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 pulse-glow hover:scale-105 active:scale-95 rounded-lg font-semibold flex items-center justify-center gap-4 cursor-pointer"
+        >
+          <Rocket className="h-7 w-7" />
+          Get Started Now
+          <ArrowRight className="h-6 w-6" />
+        </button>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button 
-                size="lg" 
-                className="text-xl px-12 py-8 h-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 pulse-glow"
-              >
-                <Rocket className="mr-4 h-7 w-7" />
-                Get Started Now
-                <ArrowRight className="ml-4 h-6 w-6" />
-              </Button>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button 
-                variant="outline" 
-                size="lg" 
-                onClick={() => setIsDownloadOpen(true)}
-                className="text-xl px-12 py-8 h-auto glass-morphism border-2 border-border text-foreground hover:bg-accent backdrop-blur-sm transition-all duration-300"
+              <button 
+                onClick={() => {
+                  alert('BUTTON CLICKED - TESTING!');
+                  console.log('=== DOWNLOAD BUTTON CLICKED ===');
+                  console.log('Current state:', isDownloadOpen);
+                  setIsDownloadOpen(true);
+                  console.log('State set to true');
+                }}
+                className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 rounded-md text-xl px-12 py-8 h-auto glass-morphism border-2 border-border text-foreground hover:bg-accent backdrop-blur-sm transition-all duration-300"
               >
                 <Download className="mr-4 h-7 w-7" />
                 Download Framework
-              </Button>
+              </button>
+              
+              {/* SIMPLE TEST BUTTON */}
+              <button 
+                onClick={() => alert('SIMPLE TEST WORKS!')}
+                style={{ 
+                  marginLeft: '20px',
+                  padding: '10px 20px', 
+                  backgroundColor: 'red', 
+                  color: 'white', 
+                  border: 'none', 
+                  borderRadius: '5px',
+                  cursor: 'pointer'
+                }}
+              >
+                TEST BUTTON
+              </button>
             </motion.div>
           </motion.div>
 
