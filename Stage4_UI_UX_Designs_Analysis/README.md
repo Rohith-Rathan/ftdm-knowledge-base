@@ -7,7 +7,7 @@ Stage 4 bridges the gap between technical specifications (TSD) and refined imple
 ## **PURPOSE**
 
 This stage transforms technical requirements into actionable UI/UX specifications by:
-- Using existing UXD folder structure from Stage 3
+- Creating UXD folder structure within Stage 4
 - Analyzing provided images and Figma links
 - Generating design system and component library
 - Establishing design consistency standards
@@ -18,7 +18,7 @@ This stage transforms technical requirements into actionable UI/UX specification
 ### **Required:**
 - **FSD Document** (from Stage 2)
 - **TSD Document** (from Stage 3)
-- **UXD Folder Structure** (from Stage 3)
+- **UXD Folder Structure** (created in Stage 4)
 
 ### **Optional (Choose One or More):**
 - **Screen Images** (PNG/JPG files)

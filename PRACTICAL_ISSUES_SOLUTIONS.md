@@ -64,7 +64,7 @@
 ## **NEW UXD FOLDER STRUCTURE**
 
 ```
-UXD/  # Created in Stage 3: TSD Creation
+UXD/  # Created in Stage 4: UI/UX Designs Analysis
 ├── 📁 design_system/
 │   ├── color_palette.json          # Color system (light/dark modes)
 │   ├── typography.json            # Font system and hierarchy
@@ -88,7 +88,7 @@ UXD/  # Created in Stage 3: TSD Creation
 └── 📁 design_analysis.md         # Design analysis notes
 ```
 
-**Note**: UXD folder structure is created in **Stage 3: TSD Creation** and populated with assets in **Stage 4: UI/UX Designs Analysis**.
+**Note**: UXD folder structure is created in **Stage 4: UI/UX Designs Analysis** and populated with assets in the same stage.
 
 ## **FIGMA LINKS STRUCTURE**
 
@@ -280,9 +280,9 @@ restart_application() {
 
 ## **USAGE INSTRUCTIONS**
 
-### **1. Setup UXD Folder Structure (Stage 3)**
+### **1. Setup UXD Folder Structure (Stage 4)**
 ```bash
-# UXD folder structure is automatically created in Stage 3: TSD Creation
+# UXD folder structure is automatically created in Stage 4: UI/UX Designs Analysis
 # No manual setup required
 ```
 
@@ -356,7 +356,7 @@ cd Stage5_RTSD_Creation/
 
 ## **NEXT STEPS**
 
-1. **Use the new UXD folder structure** for your projects (created in Stage 3)
+1. **Use the new UXD folder structure** for your projects (created in Stage 4)
 2. **Run Stage 4: UI/UX Designs Analysis** to process designs and download assets
 3. **Run Stage 5: RTSD Creation** to create refined technical specifications
 4. **Run the practical issues fixer** script

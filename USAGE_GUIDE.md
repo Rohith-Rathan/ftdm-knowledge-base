@@ -61,7 +61,7 @@ echo "Build a task management app with user authentication, task creation, and t
 # - Mermaid diagrams (user journey, system flow, data model)
 # - Enhanced FSD with embedded diagrams
 # - TSD with technical specifications
-# - UXD folder structure (Stage 3)
+# - UXD folder structure (Stage 4)
 # - UI/UX Designs Analysis (Stage 4)
 # - RTSD (Stage 5)
 ```
@@ -299,7 +299,7 @@ cp EFTDM_FRAMEWORK/templates/INDUSTRY_STANDARD_RTSD_TEMPLATE.md my_rtsd.md
 # 1. Generate Mermaid diagrams
 # 2. Create enhanced FSD
 # 3. Generate TSD
-# 4. Create UXD folder structure (Stage 3)
+# 4. Create UXD folder structure (Stage 4)
 # 5. UI/UX Designs Analysis (Stage 4)
 # 6. Create RTSD (Stage 5)
 # 7. Initialize development (Stage 6.1-6.13)
@@ -345,8 +345,8 @@ Technology: Vue.js 3, Node.js, PostgreSQL
 ### **Execute 19 Stages**
 1. **Stage 1:** Mermaid Generation
 2. **Stage 2:** FSD Creation
-3. **Stage 3:** TSD Creation + UXD folder structure
-4. **Stage 4:** UI/UX Designs Analysis
+3. **Stage 3:** TSD Creation
+4. **Stage 4:** UI/UX Designs Analysis + UXD folder structure
 5. **Stage 5:** RTSD Creation
 6. **Stage 6.1:** FSD Analysis & Validation
 7. **Stage 6.2:** Implementation Planning

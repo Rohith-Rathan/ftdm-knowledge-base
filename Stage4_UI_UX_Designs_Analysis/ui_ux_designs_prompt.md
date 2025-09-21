@@ -57,12 +57,12 @@ Your task is to perform Stage 4: UI/UX Designs Analysis for the **{PROJECT_NAME}
 [USER_PROVIDES_TSD_DOCUMENT]
 
 ### **UXD Folder Structure**
-[USER_PROVIDES_UXD_FOLDER_STRUCTURE] - Created in Stage 3
+[USER_PROVIDES_UXD_FOLDER_STRUCTURE] - Created in Stage 4
 
 ### **Design Assets (Optional)**
 [USER_PROVIDES_DESIGN_ASSETS]
 
-## **UXD FOLDER STRUCTURE (FROM STAGE 3)**
+## **UXD FOLDER STRUCTURE (CREATED IN STAGE 4)**
 
 ### **Existing Structure**
 ```
@@ -87,7 +87,7 @@ Use this existing structure and populate it with:
 ### **Scenario 1: Having Designs**
 **When user provides images and/or Figma links:**
 
-1. **Use existing UXD structure** from Stage 3
+1. **Use existing UXD structure** created in Stage 4
 2. **Run hybrid analysis**:
    - AI vision analysis of images
    - Figma MCP integration for links
@@ -99,7 +99,7 @@ Use this existing structure and populate it with:
 ### **Scenario 2: No Designs**
 **When user provides no design assets:**
 
-1. **Use existing UXD structure** from Stage 3
+1. **Use existing UXD structure** created in Stage 4
 2. **Generate navigation list** from FSD requirements
 3. **Create Figma links template** with placeholders
 4. **Generate basic design system** from TSD
@@ -111,7 +111,7 @@ Use this existing structure and populate it with:
 
 1. **Analyze existing app structure**
 2. **Extract design system** from existing code
-3. **Use existing UXD structure** from Stage 3
+3. **Use existing UXD structure** created in Stage 4
 4. **Map existing assets** to UXD structure
 5. **Generate component library** from existing components
 6. **Create migration guide** for integration
