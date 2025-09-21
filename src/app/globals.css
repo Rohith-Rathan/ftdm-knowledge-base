@@ -69,6 +69,31 @@ html {
     box-sizing: border-box;
   }
   
+  /* Force proper mobile rendering */
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  /* Ensure proper touch handling */
+  body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Allow text selection in content areas */
+  p, span, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+  
   /* Ultra-small screen optimizations */
   @media (max-width: 480px) {
     .container {
@@ -107,6 +132,72 @@ html {
     
     .space-y-6 > * + * {
       margin-top: 1rem;
+    }
+  }
+  
+  /* Device toolbar specific fixes */
+  @media screen and (max-width: 768px) {
+    /* Ensure proper mobile layout */
+    .container {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    
+    /* Force mobile-friendly text sizes */
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
+    }
+    
+    h2 {
+      font-size: clamp(1.25rem, 3.5vw, 2rem) !important;
+    }
+    
+    h3 {
+      font-size: clamp(1.125rem, 3vw, 1.5rem) !important;
+    }
+    
+    p {
+      font-size: clamp(0.875rem, 2.5vw, 1rem) !important;
+    }
+  }
+  
+  /* Specific device toolbar breakpoints */
+  @media screen and (max-width: 414px) {
+    /* iPhone Plus and smaller */
+    .px-1 {
+      padding-left: 0.25rem !important;
+      padding-right: 0.25rem !important;
+    }
+    
+    .px-2 {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    /* iPhone standard */
+    .px-1 {
+      padding-left: 0.125rem !important;
+      padding-right: 0.125rem !important;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    /* iPhone SE and very small devices */
+    .px-1 {
+      padding-left: 0.125rem !important;
+      padding-right: 0.125rem !important;
+    }
+    
+    .text-sm {
+      font-size: 0.75rem !important;
+    }
+    
+    .text-xs {
+      font-size: 0.625rem !important;
     }
   }
 }
