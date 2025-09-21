@@ -222,4 +222,4 @@ After completion, you will have:
 ### **➡️ Next Steps:**
 **Shall I proceed to Stage 3: TSD Creation?**
 
-*Stage 3 will use your FSD and Mermaid diagrams to create a comprehensive Technical Specification Document.*
+*Stage 3 will use your FSD and Mermaid diagrams to create a comprehensive Technical Specification Document and UXD folder structure.*

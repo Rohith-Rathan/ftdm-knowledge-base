@@ -118,28 +118,17 @@ Use this existing structure and populate it with:
 
 ## **YOUR TASK**
 
-### **Step 1: UXD Folder Structure Creation**
-First, create the UXD folder structure within Stage 4:
-- **Create `Stage4_UI_UX_Designs_Analysis/UXD/` folder** with subfolders:
-  - `screens/` - For screen images
-  - `figma_captured_assets/` - For downloaded Figma assets
-  - `design_system/` - For design system files
-- **Create template files**:
-  - `navigation_list_template.md`
-  - `figma_links_template.md`
-  - `design_system_template.json`
-
-### **Step 2: UXD Folder Analysis**
-Analyze the UXD folder structure:
+### **Step 1: UXD Folder Analysis**
+Analyze the existing UXD folder structure created in Stage 3:
 1. **Check for existing design assets** (images, Figma links, design system files)
 2. **Identify what's provided** vs what needs to be created
 3. **Ask user for clarification** if only default templates are found
 
-### **Step 3: Design System Preference**
+### **Step 2: Design System Preference**
 **IF no design system files are provided in UXD folder:**
 Ask user: "I don't see any design system files in the UXD folder. Do you have any design system preferences? (e.g., Material Design, Ant Design, Bootstrap, custom design system)"
 
-### **Step 4: UI/UX Design Creation**
+### **Step 3: UI/UX Design Creation**
 Based on analysis, create comprehensive UI/UX designs:
 
 ## **HYBRID ANALYSIS PROCESS**
@@ -372,7 +361,7 @@ The UI/UX Designs Analysis stage is successful when:
 ## **STAGE 4 COMPLETION SUMMARY**
 
 ### **✅ What Stage 4 Accomplished:**
-- **UXD Folder Structure**: Created organized UXD folder within Stage 4
+- **UXD Folder Analysis**: Analyzed existing UXD folder structure from Stage 3
 - **Design Asset Analysis**: Analyzed existing design assets and templates
 - **Design System Creation**: Created comprehensive design system based on requirements
 - **UI/UX Design Generation**: Generated wireframes, mockups, and data visualizations
@@ -380,7 +369,7 @@ The UI/UX Designs Analysis stage is successful when:
 - **Enterprise Design Patterns**: Applied domain-specific design patterns
 
 ### **📋 Generated Outputs:**
-- **UXD Folder Structure**: Organized design asset folder
+- **UXD Folder Analysis**: Analysis of existing UXD folder structure
 - **Design System**: Comprehensive design system with components
 - **Wireframes & Mockups**: Complete UI/UX designs
 - **Data Visualizations**: Charts, graphs, and analytics designs
@@ -388,7 +377,7 @@ The UI/UX Designs Analysis stage is successful when:
 - **Style Guide**: Design tokens and guidelines
 
 ### **🔍 Please Review:**
-1. **Review the UXD folder structure** - Is it organized properly?
+1. **Review the UXD folder analysis** - Is the analysis accurate?
 2. **Check the design system** - Does it match your brand and requirements?
 3. **Review wireframes and mockups** - Do they represent your vision correctly?
 4. **Validate data visualizations** - Are they appropriate for your domain?

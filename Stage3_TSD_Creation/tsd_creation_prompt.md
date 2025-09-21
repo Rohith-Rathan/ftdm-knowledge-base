@@ -106,7 +106,18 @@ Reference the validated Mermaid diagrams:
 - Business Process Flow
 - User Journey Flow
 
-### **Step 4: Quality Assurance**
+### **Step 4: UXD Folder Structure Creation**
+Create the UXD folder structure within Stage 4 directory:
+- **Create `Stage4_UI_UX_Designs_Analysis/UXD/` folder** with subfolders:
+  - `screens/` - For screen images
+  - `figma_captured_assets/` - For downloaded Figma assets
+  - `design_system/` - For design system files
+- **Create template files**:
+  - `navigation_list_template.md`
+  - `figma_links_template.md`
+  - `design_system_template.json`
+
+### **Step 5: Quality Assurance**
 - [ ] All FSD requirements are covered
 - [ ] Technical architecture is complete
 - [ ] API specifications are detailed
@@ -124,6 +135,7 @@ Reference the validated Mermaid diagrams:
 - **TSD Generation**: Created comprehensive Technical Specification Document
 - **API Specifications**: Defined complete REST API endpoints
 - **Database Design**: Designed MongoDB schema and data models
+- **UXD Folder Structure**: Created UXD folder structure in Stage 4 directory
 
 ### **📋 Generated Outputs:**
 - **Complete TSD Document**: Comprehensive technical specification
@@ -132,12 +144,14 @@ Reference the validated Mermaid diagrams:
 - **Database Schema**: MongoDB data models and relationships
 - **Security Specifications**: Authentication and authorization requirements
 - **Performance Requirements**: Scalability and performance specifications
+- **UXD Folder Structure**: Created in Stage 4 directory with template files
 
 ### **🔍 Please Review:**
 1. **Review the TSD document** - Does it accurately capture all technical requirements?
 2. **Check system architecture** - Is the architecture appropriate for your domain?
 3. **Validate API specifications** - Are all required endpoints defined?
 4. **Review database design** - Does the schema support your business logic?
+5. **Check UXD folder structure** - Is the folder structure created properly in Stage 4 directory?
 
 ### **➡️ Next Steps:**
 **Shall I proceed to Stage 4: UI/UX Designs Analysis?**
