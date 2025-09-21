@@ -19,8 +19,23 @@ I only need these 3 essential questions to provide the best analysis:
 - **What is the primary business goal?** (Only if not obvious from requirements)
 - **Who are the target users?** (Only if not clear from requirements)
 
-### **3. TECHNICAL PREFERENCES (If Not Specified)**
-- **What is the preferred technology stack?** (Only if not mentioned in requirements)
+### **3. TECHNICAL STACK CONFIRMATION**
+
+**IF technology stack is NOT specified in your raw requirements:**
+**I will build this application using the below technology stack? (modify if you need any changes)**
+
+1. **Backend**: .NET Core 8.0 + C# 12 + ASP.NET Core Web API
+2. **Frontend**: Vue.js 3 + Vuex 4 + Vue Router 4 + Axios 1.6
+3. **Database**: MongoDB with official .NET driver
+4. **Authentication**: JWT + Azure AD
+5. **Deployment**: Docker + Kubernetes + Azure App Services
+
+**IF technology stack IS specified in your raw requirements:**
+**I found the following technology stack in your requirements - please confirm:**
+
+[EXTRACTED_TECHNOLOGY_STACK_FROM_REQUIREMENTS]
+
+**If you have a different technology stack in mind, please specify your preferred stack.**
 
 **That's it! I'll intelligently extract and infer all other details from your raw requirements and domain context.**
 
