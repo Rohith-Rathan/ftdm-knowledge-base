@@ -120,7 +120,7 @@ export function Introduction() {
             </span>
           </h1>
           
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Transform raw requirements into production-ready applications through our intelligent 7-stage development framework with domain intelligence and anti-hallucination safeguards.
           </p>
         </div>
@@ -185,7 +185,7 @@ export function Introduction() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="text-lg px-8 py-6 h-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300"
+              className="text-base sm:text-lg px-4 sm:px-8 py-4 sm:py-6 h-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Rocket className="mr-3 h-6 w-6" />
               Get Started Now
@@ -195,7 +195,7 @@ export function Introduction() {
               variant="outline" 
               size="lg" 
               onClick={() => setIsDownloadOpen(true)}
-              className="text-lg px-8 py-6 h-auto border-2 border-border text-foreground hover:bg-accent transition-all duration-300"
+              className="text-base sm:text-lg px-4 sm:px-8 py-4 sm:py-6 h-auto border-2 border-border text-foreground hover:bg-accent transition-all duration-300"
             >
               <Download className="mr-3 h-6 w-6" />
               Download Framework
