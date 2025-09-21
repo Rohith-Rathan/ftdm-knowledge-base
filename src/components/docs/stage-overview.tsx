@@ -539,22 +539,22 @@ export function StageOverview() {
             >
               {/* Stage Header */}
               <div 
-                className={`${stage.bgColor} p-6 cursor-pointer`}
+                className={`${stage.bgColor} p-4 sm:p-6 cursor-pointer`}
                 onClick={() => setExpandedStage(expandedStage === stage.id ? null : stage.id)}
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <div className={`p-4 rounded-lg ${stage.bgColor}`}>
-                      <stage.icon className={`h-8 w-8 ${stage.color}`} />
+                    <div className={`p-3 sm:p-4 rounded-lg ${stage.bgColor}`}>
+                      <stage.icon className={`h-6 w-6 sm:h-8 sm:w-8 ${stage.color}`} />
                     </div>
                     <div>
                       <div className="flex items-center space-x-3 mb-2">
-                        <h3 className="text-2xl font-bold text-foreground">Stage {stage.id} - {stage.title}</h3>
-                        <span className={`px-3 py-1 rounded-full text-sm font-semibold bg-gradient-to-r ${stage.gradient} text-white`}>
+                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground">Stage {stage.id} - {stage.title}</h3>
+                        <span className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r ${stage.gradient} text-white`}>
                           {stage.duration}
                         </span>
                       </div>
-                      <p className="text-muted-foreground">{stage.description}</p>
+                      <p className="text-sm sm:text-base text-muted-foreground">{stage.description}</p>
                     </div>
                   </div>
                   <div className="flex-shrink-0">
@@ -574,7 +574,7 @@ export function StageOverview() {
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="bg-card/50 p-6 space-y-6"
+                  className="bg-card/50 p-4 sm:p-6 space-y-4 sm:space-y-6"
                 >
                   {/* Details */}
                   <div>
@@ -680,7 +680,7 @@ export function StageOverview() {
                                    {stage.duration}
                                  </span>
                                </div>
-                               <p className="text-muted-foreground">{stage.description}</p>
+                               <p className="text-sm sm:text-base text-muted-foreground">{stage.description}</p>
                              </div>
                            </div>
                            <div className="flex-shrink-0">
@@ -700,7 +700,7 @@ export function StageOverview() {
                            animate={{ opacity: 1, height: 'auto' }}
                            exit={{ opacity: 0, height: 0 }}
                            transition={{ duration: 0.3 }}
-                           className="bg-card/50 p-6 space-y-6"
+                           className="bg-card/50 p-4 sm:p-6 space-y-4 sm:space-y-6"
                          >
                            {/* Inputs */}
                            <div>

@@ -450,7 +450,7 @@ export function BenefitsOutcomes() {
                   y: -4,
                   transition: { duration: 0.3 }
                 }}
-                className="p-6 rounded-xl border border-border bg-card/50 hover:bg-card transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/10"
+                className="p-4 sm:p-6 rounded-xl border border-border bg-card/50 hover:bg-card transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/10"
               >
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
