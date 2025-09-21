@@ -11,9 +11,11 @@ ANALYZE REQUIREMENTS FOR DOMAIN INTELLIGENCE:
 
 1. DOMAIN DETECTION:
    - Identify domain keywords and terminology
-   - Classify primary domain (healthcare, finance, e-commerce, etc.)
+   - Classify primary domain (healthcare, finance, e-commerce, AI-agentic, etc.)
    - Identify sub-domain and industry vertical
+   - Detect AI-agentic patterns (conversational AI, AI automation, AI-assisted, multi-agent)
    - Detect regulatory and compliance context
+   - Identify AI service integration requirements (OpenAI, Anthropic, Azure AI, AWS AI)
 
 2. CONTEXT ANALYSIS:
    - Map business processes and workflows
@@ -26,18 +28,30 @@ ANALYZE REQUIREMENTS FOR DOMAIN INTELLIGENCE:
    - Identify calculation patterns (financial, statistical, algorithmic)
    - Map UI patterns (dashboard, form, table, chart)
    - Identify security patterns (authentication, authorization, encryption)
+   - Recognize AI-agentic patterns (conversational AI, AI automation, AI-assisted, multi-agent)
+   - Identify AI integration patterns (model serving, inference pipelines, AI service orchestration)
+   - Map real-time AI patterns (streaming responses, real-time inference, live AI processing)
+   - Identify context-aware patterns (conversation context, user context, session management)
 
 4. INDUSTRY RESEARCH:
    - Research industry standards and best practices
    - Identify common challenges and solutions
    - Map regulatory requirements and compliance
    - Discover technology trends and innovations
+   - Research AI-agentic patterns and best practices
+   - Identify AI service integration standards
+   - Map AI ethics and compliance requirements
+   - Discover real-time AI processing patterns
 
 5. DOMAIN-SPECIFIC MAPPING:
    - Map domain-specific user journeys
    - Identify industry-standard process flows
    - Create domain-appropriate workflow diagrams
    - Include compliance and regulatory flows
+   - Map AI-agentic user journeys and conversation flows
+   - Create AI automation workflow diagrams
+   - Include AI service integration flows
+   - Map real-time AI processing workflows
 
 OUTPUT: Domain intelligence report with detected domain, industry context, and domain-specific workflow requirements.
 ```
