@@ -69,8 +69,8 @@ export function DocumentationLayout({ children }: DocumentationLayoutProps) {
             </div>
             
             <main className="flex-1 overflow-y-auto">
-              <div className="w-full px-2 sm:px-4 py-4 sm:py-8">
-                <div className="max-w-6xl mx-auto">
+              <div className="w-full px-1 sm:px-2 md:px-4 py-2 sm:py-4 md:py-8">
+                <div className="max-w-none sm:max-w-4xl md:max-w-5xl lg:max-w-6xl mx-auto">
                   {children}
                 </div>
               </div>

@@ -83,16 +83,16 @@ export function Hero() {
         ))}
       </div>
       
-      <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
-        <div className="text-center space-y-12 max-w-6xl mx-auto">
+      <div className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 relative z-10">
+        <div className="text-center space-y-8 sm:space-y-12 max-w-none sm:max-w-4xl md:max-w-5xl lg:max-w-6xl mx-auto">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center px-8 py-4 rounded-full glass-morphism text-foreground text-sm font-medium neon-glow"
+            className="inline-flex items-center px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full glass-morphism text-foreground text-xs sm:text-sm font-medium neon-glow"
           >
-            <Sparkles className="w-5 h-5 mr-3 text-yellow-400" />
+            <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-yellow-400" />
             Fast-Track Development Methodology
           </motion.div>
 
@@ -145,7 +145,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed px-4"
+            className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed px-2 sm:px-4"
           >
             Transform raw requirements into production-ready applications through our intelligent 7-stage development framework with domain intelligence and anti-hallucination safeguards.
           </motion.p>
@@ -185,11 +185,11 @@ export function Hero() {
               }
             }
           }}
-          className="text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-6 md:py-8 h-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 pulse-glow hover:scale-105 active:scale-95 rounded-lg font-semibold flex items-center justify-center gap-2 sm:gap-4 cursor-pointer"
+          className="text-sm sm:text-base md:text-lg lg:text-xl px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-3 sm:py-4 md:py-6 lg:py-8 h-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 pulse-glow hover:scale-105 active:scale-95 rounded-lg font-semibold flex items-center justify-center gap-2 sm:gap-4 cursor-pointer"
         >
-          <Rocket className="h-7 w-7" />
+          <Rocket className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7" />
           Get Started Now
-          <ArrowRight className="h-6 w-6" />
+          <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
         </button>
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -203,9 +203,9 @@ export function Hero() {
                   setIsDownloadOpen(true);
                   console.log('State set to true');
                 }}
-                className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 rounded-md text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-6 md:py-8 h-auto glass-morphism border-2 border-border text-foreground hover:bg-accent backdrop-blur-sm transition-all duration-300"
+                className="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 rounded-md text-sm sm:text-base md:text-lg lg:text-xl px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-3 sm:py-4 md:py-6 lg:py-8 h-auto glass-morphism border-2 border-border text-foreground hover:bg-accent backdrop-blur-sm transition-all duration-300"
               >
-                <Download className="mr-4 h-7 w-7" />
+                <Download className="mr-2 sm:mr-3 md:mr-4 h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7" />
                 Download Framework
               </button>
               
