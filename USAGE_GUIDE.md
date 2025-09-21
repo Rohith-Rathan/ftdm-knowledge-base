@@ -1,5 +1,28 @@
 # 📚 EFTDM FRAMEWORK USAGE GUIDE
 
+## **🛡️ ANTI-HALLUCINATION SAFEGUARDS**
+
+### **CRITICAL FRAMEWORK STRUCTURE**
+- **This framework has EXACTLY 7 stages**
+- **Stage 6 contains 13 sub-stages (6.1-6.13)**
+- **DO NOT create additional stages**
+- **DO NOT reference stages beyond 7**
+
+### **VALID STAGES**
+```
+✅ VALID STAGES (EXACTLY 7):
+Stage 1: Mermaid Generation
+Stage 2: FSD Creation  
+Stage 3: TSD Creation
+Stage 4: UI/UX Designs Analysis
+Stage 5: RTSD Creation
+Stage 6.1-6.13: Implementation Stages (13 sub-stages within Stage 6)
+Stage 7: Temporary Backend
+
+❌ INVALID STAGES (DO NOT CREATE OR REFERENCE):
+Stage 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, etc.
+```
+
 ## **🎯 Complete Guide to Using EFTDM Framework**
 
 This guide covers every aspect of the Enhanced Fast-Track Development Methodology (EFTDM) framework.

@@ -1,4 +1,4 @@
-# 🎯 COMPLETE SELF-CONTAINED 19-STAGE EFTDM FRAMEWORK WITH STEP-BY-STEP DEVELOPMENT STRUCTURE
+# 🎯 COMPLETE SELF-CONTAINED 7-STAGE EFTDM FRAMEWORK WITH STEP-BY-STEP DEVELOPMENT STRUCTURE
 
 ## **✅ MISSION ACCOMPLISHED!**
 
@@ -8,7 +8,7 @@ Your vision of **modular, stage-based development** with **human-in-the-loop val
 
 ```
 Test-EFTDM/
-├── 19_STAGE_FRAMEWORK_OVERVIEW.md          # Complete framework overview
+├── 7_STAGE_FRAMEWORK_OVERVIEW.md          # Complete framework overview
 ├── Stage1_Mermaid_Generation/             # Raw Requirements → Mermaid Diagrams
 │   ├── README.md                          # Stage overview and purpose
 │   ├── user_guide.md                      # Step-by-step usage guide

@@ -1,5 +1,28 @@
 # 🎯 STAGE 1: MERMAID GENERATION PROMPT
 
+## **🛡️ ANTI-HALLUCINATION SAFEGUARDS**
+
+### **STAGE BOUNDARY ENFORCEMENT**
+- **This is Stage 1 of 7 total stages**
+- **Valid stages**: 1, 2, 3, 4, 5, 6.1-6.13, 7
+- **DO NOT create additional stages**
+- **DO NOT reference stages beyond 7**
+
+### **OUTPUT VALIDATION REQUIRED**
+Before proceeding, validate:
+- [ ] All technical specifications are accurate
+- [ ] All Mermaid diagrams are syntactically correct
+- [ ] All domain detection is accurate
+- [ ] All references are valid
+- [ ] Output is consistent with requirements
+
+### **ERROR PREVENTION**
+- Verify all information before generating
+- Cross-reference with official documentation
+- Ensure all Mermaid diagrams are valid
+- Validate all domain intelligence
+- Confirm all stage transitions are correct
+
 ## **INSTRUCTIONS FOR CURSOR AI**
 
 You are a Senior Product Developer with 10+ years of experience. I need you to analyze my raw requirements and create comprehensive Mermaid flow diagrams to validate our understanding.

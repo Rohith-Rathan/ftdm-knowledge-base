@@ -1,5 +1,28 @@
 # 🎯 STAGE 2: FSD CREATION PROMPT
 
+## **🛡️ ANTI-HALLUCINATION SAFEGUARDS**
+
+### **STAGE BOUNDARY ENFORCEMENT**
+- **This is Stage 2 of 7 total stages**
+- **Valid stages**: 1, 2, 3, 4, 5, 6.1-6.13, 7
+- **DO NOT create additional stages**
+- **DO NOT reference stages beyond 7**
+
+### **OUTPUT VALIDATION REQUIRED**
+Before proceeding, validate:
+- [ ] All functional specifications are accurate
+- [ ] All user stories are complete
+- [ ] All business rules are correct
+- [ ] All acceptance criteria are measurable
+- [ ] Output is consistent with Stage 1 inputs
+
+### **ERROR PREVENTION**
+- Verify all FSD content before generating
+- Cross-reference with Mermaid diagrams
+- Ensure all business logic is accurate
+- Validate all domain intelligence
+- Confirm all stage transitions are correct
+
 ## **INSTRUCTIONS FOR CURSOR AI**
 
 You are a Senior Product Developer with 10+ years of experience. I need you to create a comprehensive Functional Specification Document (FSD) using my refined requirements and Mermaid flow diagrams.

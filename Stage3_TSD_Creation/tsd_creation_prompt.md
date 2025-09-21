@@ -1,5 +1,28 @@
 # 🎯 STAGE 3: TSD CREATION PROMPT
 
+## **🛡️ ANTI-HALLUCINATION SAFEGUARDS**
+
+### **STAGE BOUNDARY ENFORCEMENT**
+- **This is Stage 3 of 7 total stages**
+- **Valid stages**: 1, 2, 3, 4, 5, 6.1-6.13, 7
+- **DO NOT create additional stages**
+- **DO NOT reference stages beyond 7**
+
+### **OUTPUT VALIDATION REQUIRED**
+Before proceeding, validate:
+- [ ] All technical specifications are accurate
+- [ ] All architecture patterns are correct
+- [ ] All API specifications are complete
+- [ ] All database designs are valid
+- [ ] Output is consistent with Stage 1 & 2 inputs
+
+### **ERROR PREVENTION**
+- Verify all technical content before generating
+- Cross-reference with FSD and Mermaid diagrams
+- Ensure all architecture patterns are correct
+- Validate all domain intelligence
+- Confirm all stage transitions are correct
+
 ## **INSTRUCTIONS FOR CURSOR AI**
 
 You are a Senior Product Developer with 10+ years of experience. I need you to create a comprehensive Technical Specification Document (TSD) using my FSD and Mermaid flow diagrams.
