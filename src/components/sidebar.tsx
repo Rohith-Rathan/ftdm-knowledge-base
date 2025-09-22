@@ -97,7 +97,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
         initial={{ x: '-100%' }}
         animate={{ x: isOpen ? 0 : '-100%' }}
         transition={{ duration: 0.3, ease: 'easeInOut' }}
-        className="fixed inset-y-0 left-0 z-50 w-64 sm:w-72 bg-background border-r border-border lg:hidden"
+        className="fixed inset-y-0 left-0 z-[60] w-64 sm:w-72 bg-background border-r border-border lg:hidden"
       >
         <div className="flex h-full flex-col">
           {/* Header */}

@@ -101,6 +101,24 @@ html {
     user-select: text;
   }
   
+  /* Mobile hamburger menu fixes */
+  @media (max-width: 768px) {
+    .mobile-menu-button {
+      position: fixed !important;
+      top: 1rem !important;
+      left: 1rem !important;
+      z-index: 9999 !important;
+      background: hsl(var(--background)) !important;
+      border: 2px solid hsl(var(--border)) !important;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    .mobile-menu-button:hover {
+      background: hsl(var(--background)) !important;
+      transform: scale(1.05) !important;
+    }
+  }
+  
   /* Small screen optimizations (below 600px) */
   @media (max-width: 600px) {
     .container {

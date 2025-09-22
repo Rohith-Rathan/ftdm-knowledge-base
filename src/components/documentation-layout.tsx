@@ -57,18 +57,18 @@ export function DocumentationLayout({ children }: DocumentationLayoutProps) {
           {/* Main Content */}
           <div className="flex-1 min-w-0 flex flex-col">
             {/* Mobile Menu Button */}
-            <div className="lg:hidden fixed top-4 left-4 z-40">
+            <div className="lg:hidden fixed top-4 left-4 z-50">
               <Button
                 variant="outline"
                 size="icon"
                 onClick={() => setSidebarOpen(true)}
-                className="h-10 w-10 bg-background/80 backdrop-blur-sm border-border/50"
+                className="mobile-menu-button h-12 w-12"
               >
-                <Menu className="h-5 w-5" />
+                <Menu className="h-6 w-6" />
               </Button>
             </div>
             
-            <main className="flex-1 overflow-y-auto">
+            <main className="flex-1 overflow-y-auto pt-16 lg:pt-0">
               <div className="w-full px-2 sm:px-4 md:px-6 py-2 sm:py-4 md:py-8">
                 <div className="max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto">
                   {children}
