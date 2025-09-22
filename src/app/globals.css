@@ -94,8 +94,8 @@ html {
     user-select: text;
   }
   
-  /* Small screen optimizations (below 550px) */
-  @media (max-width: 550px) {
+  /* Small screen optimizations (below 600px) */
+  @media (max-width: 600px) {
     .container {
       padding-left: 0.5rem !important;
       padding-right: 0.5rem !important;
@@ -141,6 +141,22 @@ html {
     /* Force single column on all grid containers */
     .grid {
       grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+  }
+
+  /* Extra small screen optimizations (below 500px) */
+  @media (max-width: 500px) {
+    .container {
+      padding-left: 0.25rem !important;
+      padding-right: 0.25rem !important;
+    }
+    
+    .card-responsive {
+      padding: 0.5rem !important;
+    }
+    
+    .gap-responsive {
+      gap: 0.5rem !important;
     }
   }
 
