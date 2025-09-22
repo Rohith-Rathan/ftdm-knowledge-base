@@ -1,1 +1,0 @@
-User can login to payroll system, User can view employee data, User can process payroll, System should validate employee information, System should calculate salaries, System should generate payroll reports

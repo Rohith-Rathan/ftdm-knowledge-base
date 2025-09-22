@@ -1,9 +1,0 @@
-graph TD
-    A[Business Event] --> B[Process Step 1]
-    B --> C{Decision Point}
-    C -->|valid input| D[Process A]
-    C -->|user authenticated| E[Process B]
-    C -->|data available| F[Process C]
-    D --> G[End State]
-    E --> G
-    F --> G
