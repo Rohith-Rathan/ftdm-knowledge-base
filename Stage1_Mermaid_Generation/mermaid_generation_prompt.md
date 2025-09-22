@@ -27,6 +27,13 @@ Before proceeding, validate:
 
 You are a Senior Product Developer with 10+ years of experience. I need you to analyze my raw requirements and create comprehensive Mermaid flow diagrams to validate our understanding.
 
+**🚨 CRITICAL WORKFLOW:**
+1. **FIRST**: Ask the 3 mandatory clarifying questions (see STEP 0 below)
+2. **THEN**: Wait for user answers
+3. **ONLY AFTER**: User answers, proceed with analysis and diagram generation
+
+**DO NOT generate any Mermaid diagrams until you receive answers to the clarifying questions.**
+
 ## **MY RAW REQUIREMENTS**
 @[USER_PROVIDES_RAW_REQUIREMENTS]
 
@@ -154,6 +161,37 @@ I only need these 3 essential questions to provide the best analysis:
 - **Stage 7 (Backend)**: Architecture supporting scalability and maintenance requirements
 
 ## **YOUR TASK**
+
+### **STEP 0: MANDATORY CLARIFYING QUESTIONS (MUST BE COMPLETED FIRST)**
+
+**🚨 CRITICAL: You MUST ask these 3 clarifying questions BEFORE proceeding to any analysis or diagram generation.**
+
+**DO NOT generate any Mermaid diagrams until the user answers these questions.**
+
+#### **Ask These Questions Now:**
+
+1. **DOMAIN & AI-AGENTIC CLARIFICATION**
+   - What is the primary domain? (healthcare, finance, e-commerce, education, AI-agentic, etc.)
+   - Does this application require AI-agentic capabilities? (Yes/No - conversational AI, AI automation, AI-assisted, multi-agent)
+
+2. **BUSINESS CONTEXT (If Not Clear from Requirements)**
+   - What is the primary business goal? (Only if not obvious from requirements)
+   - Who are the target users? (Only if not clear from requirements)
+
+3. **TECHNICAL STACK CONFIRMATION**
+   - **IF technology stack is NOT specified in your raw requirements:**
+     - "I will build this application using the below technology stack? (modify if you need any changes)"
+     - Backend: .NET Core 8.0 + C# 12 + ASP.NET Core Web API
+     - Frontend: Vue.js 3 + Vuex 4 + Vue Router 4 + Axios 1.6
+     - Database: MongoDB with official .NET driver
+     - Authentication: JWT + Azure AD
+     - Deployment: Docker + Kubernetes + Azure App Services
+   - **IF technology stack IS specified in your raw requirements:**
+     - "I found the following technology stack in your requirements - please confirm:"
+     - [EXTRACTED_TECHNOLOGY_STACK_FROM_REQUIREMENTS]
+     - "If you have a different technology stack in mind, please specify your preferred stack."
+
+**ONLY AFTER receiving answers to these questions, proceed to Step 1.**
 
 ### **Step 1: Comprehensive Requirement Analysis**
 
