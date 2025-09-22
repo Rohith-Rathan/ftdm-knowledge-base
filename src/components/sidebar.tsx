@@ -97,7 +97,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
         initial={{ x: '-100%' }}
         animate={{ x: isOpen ? 0 : '-100%' }}
         transition={{ duration: 0.3, ease: 'easeInOut' }}
-        className="fixed inset-y-0 left-0 z-[60] w-64 sm:w-72 bg-background border-r border-border lg:hidden"
+        className="mobile-sidebar fixed inset-y-0 left-0 z-[60] w-64 sm:w-72 bg-background border-r border-border lg:hidden"
       >
         <div className="flex h-full flex-col">
           {/* Header */}
@@ -144,7 +144,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                             })
                           }
                         }}
-                        className="flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-colors cursor-pointer"
+                        className="nav-link flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-colors cursor-pointer"
                       >
                         <item.icon className="h-4 w-4" />
                         <span>{item.label}</span>
@@ -221,7 +221,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                             })
                           }
                         }}
-                        className="flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-colors cursor-pointer"
+                        className="nav-link flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-colors cursor-pointer"
                       >
                         <item.icon className="h-4 w-4" />
                         <span>{item.label}</span>
