@@ -264,6 +264,26 @@ html {
     min-width: 0 !important;
   }
   
+  /* Remove left margin on small screens */
+  .ml-11 {
+    margin-left: 0 !important;
+  }
+  
+  /* Make numbered circles full width and stack content below */
+  .flex.h-8.w-8.items-center.justify-center.rounded-full {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+    justify-content: center !important;
+  }
+  
+  /* Stack flex items vertically on small screens */
+  .flex.items-center {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
   /* Force text elements to be responsive */
   .text-xl {
     font-size: clamp(0.875rem, 2.5vw, 1.25rem) !important;
