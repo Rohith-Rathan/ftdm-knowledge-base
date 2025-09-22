@@ -94,23 +94,6 @@ html {
     user-select: text;
   }
   
-  /* Test Tailwind responsive classes */
-  .test-responsive {
-    background-color: red;
-  }
-  
-  @media (min-width: 640px) {
-    .test-responsive {
-      background-color: green;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .test-responsive {
-      background-color: blue;
-    }
-  }
-  
   /* Small screen optimizations (below 600px) */
   @media (max-width: 600px) {
     .container {
@@ -118,31 +101,19 @@ html {
       padding-right: 0.5rem !important;
     }
     
-    /* Force single column layouts - override ALL Tailwind breakpoints */
-    .grid-responsive,
-    .grid,
-    [class*="grid-cols-"] {
-      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    /* Only target specific responsive classes, don't override Tailwind */
+    .grid-responsive {
+      grid-template-columns: 1fr !important;
     }
     
-    /* Specifically target the problematic classes */
-    .grid.grid-cols-1.sm\\:grid-cols-2.lg\\:grid-cols-4,
-    .grid.grid-cols-1.sm\\:grid-cols-2.lg\\:grid-cols-3,
-    .grid.grid-cols-1.sm\\:grid-cols-2 {
-      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-    }
-    
-    /* Reduce card padding for specific components */
     .card-responsive {
       padding: 0.75rem !important;
     }
     
-    /* Reduce gaps for specific components */
     .gap-responsive {
       gap: 0.75rem !important;
     }
     
-    /* Ensure text is readable */
     .text-responsive {
       font-size: 0.875rem !important;
     }
