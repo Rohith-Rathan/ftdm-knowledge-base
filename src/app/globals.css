@@ -288,6 +288,33 @@ html {
     line-height: 1 !important;
   }
   
+  /* Keep larger numbered circles as circles and center text */
+  .flex.h-12.w-12.items-center.justify-center.rounded-full,
+  .flex.h-14.w-14.items-center.justify-center.rounded-full,
+  .flex.h-16.w-16.items-center.justify-center.rounded-full {
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    display: flex !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  /* Specific sizes for different breakpoints */
+  .flex.h-12.w-12.items-center.justify-center.rounded-full {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  
+  .flex.h-14.w-14.items-center.justify-center.rounded-full {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+  
+  .flex.h-16.w-16.items-center.justify-center.rounded-full {
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+  
   /* Stack flex items vertically on small screens */
   .flex.items-center {
     flex-direction: column !important;
