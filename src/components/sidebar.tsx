@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
+import { useTheme } from 'next-themes'
 import { 
   X, 
   ChevronRight,
@@ -47,7 +48,9 @@ import {
   Upload,
   RefreshCw,
   Copy,
-  ExternalLink
+  ExternalLink,
+  Sun,
+  Moon
 } from 'lucide-react'
 
 interface SidebarProps {
@@ -56,6 +59,11 @@ interface SidebarProps {
 }
 
 export function Sidebar({ isOpen, onClose }: SidebarProps) {
+  const { theme, setTheme } = useTheme()
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
   const navigationItems = [
     {
       title: 'Getting Started',
@@ -147,6 +155,28 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
               ))}
             </nav>
           </div>
+
+          {/* Theme Toggle */}
+          <div className="border-t border-border p-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleTheme}
+              className="w-full justify-start text-muted-foreground hover:text-foreground"
+            >
+              {theme === 'dark' ? (
+                <>
+                  <Sun className="h-4 w-4 mr-3" />
+                  Light Mode
+                </>
+              ) : (
+                <>
+                  <Moon className="h-4 w-4 mr-3" />
+                  Dark Mode
+                </>
+              )}
+            </Button>
+          </div>
         </div>
       </motion.div>
 
@@ -201,6 +231,28 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                 </div>
               ))}
             </nav>
+          </div>
+
+          {/* Theme Toggle */}
+          <div className="border-t border-border p-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleTheme}
+              className="w-full justify-start text-muted-foreground hover:text-foreground"
+            >
+              {theme === 'dark' ? (
+                <>
+                  <Sun className="h-4 w-4 mr-3" />
+                  Light Mode
+                </>
+              ) : (
+                <>
+                  <Moon className="h-4 w-4 mr-3" />
+                  Dark Mode
+                </>
+              )}
+            </Button>
           </div>
         </div>
       </div>
