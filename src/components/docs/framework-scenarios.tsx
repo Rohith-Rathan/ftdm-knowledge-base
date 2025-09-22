@@ -203,7 +203,7 @@ export function FrameworkScenarios() {
       >
         {/* Header */}
         <div className="text-center space-y-6">
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 text-foreground text-sm font-medium">
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-green-500/10 dark:bg-green-500/20 border border-green-500/20 dark:border-green-500/30 text-foreground text-sm font-medium">
             <Globe className="w-5 h-5 mr-3 text-green-400" />
             Framework Integration Scenarios
           </div>
@@ -360,7 +360,7 @@ export function FrameworkScenarios() {
                       <BookOpen className="h-5 w-5 mr-2" />
                       Example
                     </h5>
-                    <div className="p-4 rounded-lg bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20">
+                    <div className="p-4 rounded-lg bg-blue-500/5 dark:bg-blue-500/10 border border-blue-500/10 dark:border-blue-500/20">
                       <p className="text-muted-foreground leading-relaxed">{scenario.example}</p>
                     </div>
                   </div>
@@ -375,7 +375,7 @@ export function FrameworkScenarios() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="p-8 rounded-xl border-2 border-orange-500/30 bg-gradient-to-r from-orange-500/10 to-red-500/10"
+          className="p-8 rounded-xl border-2 border-orange-500/20 dark:border-orange-500/30 bg-orange-500/5 dark:bg-orange-500/10"
         >
           <div className="flex items-start space-x-4">
             <AlertTriangle className="h-8 w-8 text-orange-400 flex-shrink-0 mt-1" />

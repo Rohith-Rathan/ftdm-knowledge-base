@@ -83,7 +83,7 @@ export function QuickStart() {
       >
         {/* Header */}
         <div className="text-center space-y-6">
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 text-foreground text-sm font-medium">
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-green-500/10 dark:bg-green-500/20 border border-green-500/20 dark:border-green-500/30 text-foreground text-sm font-medium">
             <Rocket className="w-5 h-5 mr-3 text-green-400" />
             Quick Start Guide
           </div>

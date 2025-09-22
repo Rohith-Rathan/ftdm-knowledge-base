@@ -109,7 +109,7 @@ export function Introduction() {
       >
         {/* Header */}
         <div className="text-center space-y-6">
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 text-foreground text-sm font-medium">
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-blue-500/10 dark:bg-blue-500/20 border border-blue-500/20 dark:border-blue-500/30 text-foreground text-sm font-medium">
             <Star className="w-5 h-5 mr-3 text-yellow-400" />
             Fast-Track Development Methodology
           </div>
@@ -136,7 +136,7 @@ export function Introduction() {
               className="p-6 rounded-xl border border-border bg-card/50 hover:bg-card transition-colors"
             >
               <div className="flex items-start space-x-4">
-                <div className={`p-3 rounded-lg bg-gradient-to-r from-blue-500/20 to-purple-500/20`}>
+                <div className={`p-3 rounded-lg bg-blue-500/10 dark:bg-blue-500/20`}>
                   <feature.icon className={`h-6 w-6 ${feature.color}`} />
                 </div>
                 <div className="flex-1">

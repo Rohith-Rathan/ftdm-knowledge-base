@@ -272,7 +272,7 @@ export function AntiHallucinationSafeguards() {
       >
         {/* Header */}
         <div className="text-center space-y-6">
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 text-foreground text-sm font-medium">
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-red-500/10 dark:bg-red-500/20 border border-red-500/20 dark:border-red-500/30 text-foreground text-sm font-medium">
             <Shield className="w-5 h-5 mr-3 text-red-400" />
             Anti-Hallucination Safeguards
           </div>
@@ -393,7 +393,7 @@ export function AntiHallucinationSafeguards() {
               >
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <div className="p-3 rounded-lg bg-gradient-to-r from-blue-500/20 to-purple-500/20">
+                    <div className="p-3 rounded-lg bg-blue-500/10 dark:bg-blue-500/20">
                       <phase.icon className="h-6 w-6 text-blue-400" />
                     </div>
                     <div>
@@ -421,7 +421,7 @@ export function AntiHallucinationSafeguards() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="p-8 rounded-xl border-2 border-green-500/30 bg-gradient-to-r from-green-500/10 to-blue-500/10"
+          className="p-8 rounded-xl border-2 border-green-500/20 dark:border-green-500/30 bg-green-500/5 dark:bg-green-500/10"
         >
           <div className="flex items-start space-x-4">
             <Shield className="h-8 w-8 text-green-400 flex-shrink-0 mt-1" />
