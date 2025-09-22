@@ -30,6 +30,16 @@ You are a Senior Product Developer with 10+ years of experience. I need you to a
 ## **MY RAW REQUIREMENTS**
 [USER_PROVIDES_RAW_REQUIREMENTS]
 
+**Instructions:**
+1. Create a file named `raw-requirement.md` (or any name you prefer) in the `Stage1_Mermaid_Generation/` folder
+2. Write your raw requirements in that file
+3. Replace `[USER_PROVIDES_RAW_REQUIREMENTS]` above with your file path
+4. Example: `Stage1_Mermaid_Generation/my-app-requirements.md`
+
+**Quick Start:**
+- Copy the kickoff prompt from `kickoff-first-prompt.md`
+- Follow the 3-step process outlined there
+
 ## **MINIMAL CLARIFYING QUESTIONS**
 
 I only need these 3 essential questions to provide the best analysis:
