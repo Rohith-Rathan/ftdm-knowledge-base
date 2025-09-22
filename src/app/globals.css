@@ -315,6 +315,29 @@ html {
     height: 4rem !important;
   }
   
+  /* Keep button icons and text on same line with proper wrapping */
+  .flex.items-center.space-x-2 {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  /* Ensure button text wraps properly while keeping icon inline */
+  .flex.items-center.space-x-2 span {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    flex-shrink: 1 !important;
+    min-width: 0 !important;
+  }
+  
+  /* Keep icons fixed size and inline */
+  .flex.items-center.space-x-2 svg {
+    flex-shrink: 0 !important;
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  
   /* Stack flex items vertically on small screens */
   .flex.items-center {
     flex-direction: column !important;
