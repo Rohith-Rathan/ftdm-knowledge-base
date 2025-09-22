@@ -70,7 +70,7 @@ export function FrameworkScenarios() {
       icon: Building2,
       color: 'text-blue-600',
       bgColor: 'bg-blue-500/10 dark:bg-blue-500/20',
-      borderColor: 'border-blue-200',
+      borderColor: 'border-blue-500/20 dark:border-blue-500/30',
       gradient: 'from-blue-500 to-blue-600',
       projectStructure: [
         '[project_name]/',
@@ -115,7 +115,7 @@ export function FrameworkScenarios() {
       icon: Layers,
       color: 'text-green-600',
       bgColor: 'bg-green-500/10 dark:bg-green-500/20',
-      borderColor: 'border-green-200',
+      borderColor: 'border-green-500/20 dark:border-green-500/30',
       gradient: 'from-green-500 to-green-600',
       projectStructure: [
         '[project_name]/',
@@ -167,7 +167,7 @@ export function FrameworkScenarios() {
       icon: Rocket,
       color: 'text-purple-600',
       bgColor: 'bg-purple-500/10 dark:bg-purple-500/20',
-      borderColor: 'border-purple-200',
+      borderColor: 'border-purple-500/20 dark:border-purple-500/30',
       gradient: 'from-purple-500 to-purple-600',
       projectStructure: [
         '[project_name]/',

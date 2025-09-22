@@ -72,7 +72,7 @@ export function AntiHallucinationSafeguards() {
       icon: Lock,
       color: 'text-red-600',
       bgColor: 'bg-red-500/10 dark:bg-red-500/20',
-      borderColor: 'border-red-200',
+      borderColor: 'border-red-500/20 dark:border-red-500/30',
       gradient: 'from-red-500 to-red-600',
       details: 'Prevents the framework from creating or referencing stages beyond the defined 7 stages. Ensures strict adherence to the framework structure.',
       implementation: [
@@ -99,7 +99,7 @@ export function AntiHallucinationSafeguards() {
       icon: CheckCircle,
       color: 'text-green-600',
       bgColor: 'bg-green-500/10 dark:bg-green-500/20',
-      borderColor: 'border-green-200',
+      borderColor: 'border-green-500/20 dark:border-green-500/30',
       gradient: 'from-green-500 to-green-600',
       details: 'Validates all generated outputs for technical accuracy, completeness, and consistency with requirements.',
       implementation: [
@@ -124,7 +124,7 @@ export function AntiHallucinationSafeguards() {
       icon: Eye,
       color: 'text-blue-600',
       bgColor: 'bg-blue-500/10 dark:bg-blue-500/20',
-      borderColor: 'border-blue-200',
+      borderColor: 'border-blue-500/20 dark:border-blue-500/30',
       gradient: 'from-blue-500 to-blue-600',
       details: 'Ensures consistency across all stages and validates that outputs from one stage align with inputs for the next stage.',
       implementation: [
@@ -148,7 +148,7 @@ export function AntiHallucinationSafeguards() {
       icon: AlertTriangle,
       color: 'text-orange-600',
       bgColor: 'bg-orange-500/10 dark:bg-orange-500/20',
-      borderColor: 'border-orange-200',
+      borderColor: 'border-orange-500/20 dark:border-orange-500/30',
       gradient: 'from-orange-500 to-orange-600',
       details: 'Implements comprehensive error detection and prevention mechanisms to avoid common AI mistakes and hallucinations.',
       implementation: [
@@ -172,7 +172,7 @@ export function AntiHallucinationSafeguards() {
       icon: Zap,
       color: 'text-purple-600',
       bgColor: 'bg-purple-500/10 dark:bg-purple-500/20',
-      borderColor: 'border-purple-200',
+      borderColor: 'border-purple-500/20 dark:border-purple-500/30',
       gradient: 'from-purple-500 to-purple-600',
       details: 'Automated validation scripts that run at each stage to ensure quality and consistency.',
       implementation: [
