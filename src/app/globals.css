@@ -286,6 +286,12 @@ html {
     min-width: 0 !important;
   }
   
+  /* Target the specific content div structure in dropdown cards */
+  .border-2.rounded-xl.overflow-hidden .flex.items-center.space-x-4 > div:last-child > div {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+  
   /* Ensure dropdown icon stays fixed size */
   .border-2.rounded-xl.overflow-hidden .flex-shrink-0 {
     flex-shrink: 0 !important;
