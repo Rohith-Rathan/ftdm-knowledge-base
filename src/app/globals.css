@@ -192,6 +192,37 @@ html {
     min-width: 100% !important;
     max-width: 100% !important;
   }
+  
+  /* Force text wrapping and content flow */
+  p, h1, h2, h3, h4, h5, h6, span, div, section, article {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Force all text elements to wrap */
+  * {
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+  
+  /* Override any max-width constraints on text elements */
+  p, h1, h2, h3, h4, h5, h6, span, div {
+    max-width: none !important;
+  }
+  
+  /* Force text to wrap within container */
+  .debug-content p, .debug-content h1, .debug-content h2, .debug-content h3, 
+  .debug-content h4, .debug-content h5, .debug-content h6, .debug-content span, 
+  .debug-content div {
+    max-width: 100% !important;
+    width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+  }
 }
   
   /* Extra small screens (320px-480px) - keep same styling */
