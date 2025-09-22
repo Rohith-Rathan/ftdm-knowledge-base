@@ -262,6 +262,24 @@ html {
   .text-sm {
     font-size: clamp(0.75rem, 2vw, 0.875rem) !important;
   }
+  
+  /* Specific responsive fixes for common paragraph classes */
+  .text-muted-foreground {
+    font-size: clamp(0.75rem, 2vw, 0.875rem) !important;
+    line-height: 1.5 !important;
+  }
+  
+  .leading-relaxed {
+    line-height: 1.5 !important;
+  }
+  
+  /* Force all paragraph elements to be responsive */
+  p.text-sm, p.text-muted-foreground, p.leading-relaxed {
+    font-size: clamp(0.75rem, 2vw, 0.875rem) !important;
+    line-height: 1.5 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
 }
   
   /* Extra small screens (320px-480px) - smaller fonts */
@@ -288,6 +306,18 @@ html {
     
     .text-lg {
       font-size: clamp(0.75rem, 2.8vw, 1rem) !important;
+    }
+    
+    .text-sm {
+      font-size: clamp(0.7rem, 2.5vw, 0.8rem) !important;
+    }
+    
+    .text-muted-foreground {
+      font-size: clamp(0.7rem, 2.5vw, 0.8rem) !important;
+    }
+    
+    p.text-sm, p.text-muted-foreground, p.leading-relaxed {
+      font-size: clamp(0.7rem, 2.5vw, 0.8rem) !important;
     }
     .mobile-menu-button {
       top: 0.5rem !important;
