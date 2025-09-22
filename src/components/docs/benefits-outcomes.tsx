@@ -106,7 +106,7 @@ export function BenefitsOutcomes() {
       category: 'Development Speed',
       icon: Zap,
       color: 'text-yellow-400',
-      bgColor: 'bg-yellow-500/10 dark:bg-yellow-500/20',
+      bgColor: 'bg-gradient-to-br from-yellow-500/10 to-orange-500/10 dark:from-yellow-500/20 dark:to-orange-500/20',
       borderColor: 'border-yellow-500/20 dark:border-yellow-500/30',
       items: [
         {
@@ -133,7 +133,7 @@ export function BenefitsOutcomes() {
       category: 'Quality & Reliability',
       icon: Shield,
       color: 'text-green-400',
-      bgColor: 'bg-green-500/10 dark:bg-green-500/20',
+      bgColor: 'bg-gradient-to-br from-green-500/10 to-blue-500/10 dark:from-green-500/20 dark:to-blue-500/20',
       borderColor: 'border-green-500/20 dark:border-green-500/30',
       items: [
         {
@@ -160,7 +160,7 @@ export function BenefitsOutcomes() {
       category: 'Domain Intelligence',
       icon: Brain,
       color: 'text-purple-400',
-      bgColor: 'bg-purple-500/10 dark:bg-purple-500/20',
+      bgColor: 'bg-gradient-to-br from-purple-500/10 to-pink-500/10 dark:from-purple-500/20 dark:to-pink-500/20',
       borderColor: 'border-purple-500/20 dark:border-purple-500/30',
       items: [
         {
@@ -187,7 +187,7 @@ export function BenefitsOutcomes() {
       category: 'Universal Compatibility',
       icon: Globe,
       color: 'text-blue-400',
-      bgColor: 'bg-blue-500/10 dark:bg-blue-500/20',
+      bgColor: 'bg-gradient-to-br from-blue-500/10 to-cyan-500/10 dark:from-blue-500/20 dark:to-cyan-500/20',
       borderColor: 'border-blue-500/20 dark:border-blue-500/30',
       items: [
         {
