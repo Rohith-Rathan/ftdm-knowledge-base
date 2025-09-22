@@ -394,7 +394,7 @@ export function BenefitsOutcomes() {
                 <h3 className="text-3xl font-bold text-foreground">{category.category}</h3>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {category.items.map((item, itemIndex) => (
                   <motion.div
                     key={itemIndex}
@@ -439,7 +439,7 @@ export function BenefitsOutcomes() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {outcomes.map((outcome, index) => (
               <motion.div
                 key={index}
@@ -454,7 +454,7 @@ export function BenefitsOutcomes() {
               >
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <div className="p-3 rounded-lg bg-gradient-to-r from-blue-500/20 to-purple-500/20">
+                    <div className="p-3 rounded-lg bg-blue-500/10 dark:bg-blue-500/20">
                       <outcome.icon className={`h-6 w-6 ${outcome.color}`} />
                     </div>
                     <div>
@@ -489,7 +489,7 @@ export function BenefitsOutcomes() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {userSuccess.map((factor, index) => (
               <motion.div
                 key={index}
@@ -532,7 +532,7 @@ export function BenefitsOutcomes() {
             <h3 className="text-3xl font-bold text-foreground">
               The TRUE Power of the Framework
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
               <div className="space-y-4">
                 <h4 className="text-xl font-bold text-foreground">User Provides:</h4>
                 <div className="space-y-2">
