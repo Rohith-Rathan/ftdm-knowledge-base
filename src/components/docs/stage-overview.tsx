@@ -702,6 +702,12 @@ export function StageOverview() {
                            transition={{ duration: 0.3 }}
                            className="bg-card/50 p-4 sm:p-6 space-y-4 sm:space-y-6"
                          >
+                           {/* Details */}
+                           <div>
+                             <h5 className="text-lg font-bold text-foreground mb-3">Stage Details</h5>
+                             <p className="text-muted-foreground leading-relaxed">{stage.description}</p>
+                           </div>
+
                            {/* Inputs */}
                            <div>
                              <h5 className="text-lg font-bold text-foreground mb-3 flex items-center">
