@@ -28,13 +28,13 @@ Before proceeding, validate:
 You are a Senior Product Developer with 10+ years of experience. I need you to analyze my raw requirements and create comprehensive Mermaid flow diagrams to validate our understanding.
 
 ## **MY RAW REQUIREMENTS**
-[USER_PROVIDES_RAW_REQUIREMENTS]
+@test-requirements.md
 
 **Instructions:**
 1. Create a file named `raw-requirement.md` (or any name you prefer) in the `Stage1_Mermaid_Generation/` folder
 2. Write your raw requirements in that file
-3. Replace `[USER_PROVIDES_RAW_REQUIREMENTS]` above with your file path
-4. Example: `Stage1_Mermaid_Generation/my-app-requirements.md`
+3. Replace `[USER_PROVIDES_RAW_REQUIREMENTS]` above with your file name (without path)
+4. Example: `@my-app-requirements.md`
 
 **Quick Start:**
 - Copy the kickoff prompt from `kickoff-first-prompt.md`

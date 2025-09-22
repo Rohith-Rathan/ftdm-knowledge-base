@@ -49,7 +49,7 @@ export function Stage1Kickoff() {
 ## Additional Context
 [Any other important information]`
 
-  const kickoffCommand = `Hi, take the prompt from @mermaid_generation_prompt.md`
+  const kickoffCommand = `Hi, take the prompt from @mermaid_generation_prompt.md and read the requirements from @[YOUR_FILE_NAME]`
 
   const directPromptTemplate = `I need you to analyze my raw requirements and create comprehensive Mermaid flow diagrams for Stage 1 of the EFTDM framework.
 
@@ -191,18 +191,18 @@ I'm ready to start Stage 1.`
                     <li>Open the file <code className="bg-background/50 px-1 rounded">Stage1_Mermaid_Generation/mermaid_generation_prompt.md</code></li>
                     <li>Find the line that says <code className="bg-background/50 px-1 rounded">## **MY RAW REQUIREMENTS**</code></li>
                     <li>Look for <code className="bg-background/50 px-1 rounded">[USER_PROVIDES_RAW_REQUIREMENTS]</code></li>
-                    <li>Replace it with the path to your requirements file</li>
+                    <li>Replace it with your file name using @ syntax</li>
                   </ol>
                   
                   <div className="bg-background/50 rounded p-3">
                     <p className="text-sm text-muted-foreground mb-2">Example:</p>
                     <code className="text-sm text-foreground">
-                      Stage1_Mermaid_Generation/my-app-requirements.md
+                      @my-app-requirements.md
                     </code>
                   </div>
                   
                   <p className="text-sm text-muted-foreground">
-                    Make sure the file path matches exactly where you saved your requirements file in Step 1.
+                    Use the @ syntax with just the filename (no path needed).
                   </p>
                 </div>
               </div>
@@ -241,16 +241,20 @@ I'm ready to start Stage 1.`
                   
                   <ol className="list-decimal list-inside space-y-2 text-sm text-muted-foreground">
                     <li>Open Cursor AI chat</li>
-                    <li>Copy the command below</li>
+                    <li>Copy the command below (replace [YOUR_FILE_NAME] with your actual filename)</li>
                     <li>Paste it in the chat</li>
                     <li>Press Enter to send</li>
                   </ol>
                   
                   <div className="bg-background/50 rounded p-3">
                     <code className="text-lg text-foreground font-mono">
-                      {kickoffCommand}
+                      Hi, take the prompt from @mermaid_generation_prompt.md and read the requirements from @[YOUR_FILE_NAME]
                     </code>
                   </div>
+                  
+                  <p className="text-sm text-muted-foreground">
+                    Replace <code className="bg-background/50 px-1 rounded">[YOUR_FILE_NAME]</code> with your actual filename (e.g., <code className="bg-background/50 px-1 rounded">@my-app-requirements.md</code>)
+                  </p>
                   
                   <p className="text-sm text-muted-foreground">
                     Stage 1 will then ask you 3 clarifying questions about your project. Answer them, and it will generate your diagrams!

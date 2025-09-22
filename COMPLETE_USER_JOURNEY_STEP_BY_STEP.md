@@ -49,18 +49,17 @@ Stage 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, etc.
 ## **🎯 STEP 2: User Input (One Time Only)**
 
 ### **2.1: User Prepares Raw Requirements**
-- User writes raw requirements document
+- User creates `raw-requirement.md` file with requirements
 - Example: "I need a payroll system for my company with 50 employees"
 
-### **2.2: User Pastes Stage 1 Prompt**
+### **2.2: User Updates Stage 1 Prompt**
 - User opens `Stage1_Mermaid_Generation/mermaid_generation_prompt.md`
-- User copies the entire prompt into Cursor AI
-- User provides raw requirements to Cursor AI
+- User replaces `[USER_PROVIDES_RAW_REQUIREMENTS]` with `@[filename].md`
+- Example: `@my-app-requirements.md`
 
-### **2.3: User Answers 3 Clarifying Questions**
-- **Domain**: "Finance"
-- **AI-Agentic**: "No"
-- **Business Context**: "Automate payroll processing for 50 employees"
+### **2.3: User Executes Stage 1**
+- User sends: `Hi, take the prompt from @mermaid_generation_prompt.md and read the requirements from @[filename].md`
+- User answers 3 clarifying questions about their project
 
 ### **2.4: User Confirms Technology Stack**
 - **Framework shows**: "I will build this application using the below technology stack? (modify if you need any changes)"

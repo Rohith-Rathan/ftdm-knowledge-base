@@ -10,15 +10,17 @@
 ### **Step 2: Update the Prompt**
 1. Open `mermaid_generation_prompt.md`
 2. Find the line: `## **MY RAW REQUIREMENTS**`
-3. Replace `[USER_PROVIDES_RAW_REQUIREMENTS]` with your file path
-4. Example: `Stage1_Mermaid_Generation/my-app-requirements.md`
+3. Replace `[USER_PROVIDES_RAW_REQUIREMENTS]` with your file name (without path)
+4. Example: `@my-app-requirements.md`
 
 ### **Step 3: Execute Stage 1**
 Copy and paste this exact message in Cursor:
 
 ```
-Hi, take the prompt from @mermaid_generation_prompt.md
+Hi, take the prompt from @mermaid_generation_prompt.md and read the requirements from @[YOUR_FILE_NAME]
 ```
+
+**Replace `[YOUR_FILE_NAME]` with your actual file name (e.g., `@my-app-requirements.md`)**
 
 ## **📁 File Structure Example**
 
