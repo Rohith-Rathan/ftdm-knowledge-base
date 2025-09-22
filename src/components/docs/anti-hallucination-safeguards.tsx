@@ -195,8 +195,8 @@ export function AntiHallucinationSafeguards() {
       description: 'Consistent documentation across all files',
       icon: BookOpen,
       color: 'text-cyan-600',
-      bgColor: 'bg-cyan-50',
-      borderColor: 'border-cyan-200',
+      bgColor: 'bg-cyan-500/10 dark:bg-cyan-500/20',
+      borderColor: 'border-cyan-500/20 dark:border-cyan-500/30',
       gradient: 'from-cyan-500 to-cyan-600',
       details: 'Ensures all documentation is accurate, consistent, and up-to-date across all framework files.',
       implementation: [
