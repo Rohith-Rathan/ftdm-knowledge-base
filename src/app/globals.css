@@ -101,18 +101,40 @@ html {
       padding-right: 0.5rem !important;
     }
     
-    /* Force single column layouts */
-    .grid-responsive {
-      grid-template-columns: 1fr !important;
+    /* Force single column layouts - Multiple approaches */
+    .grid-responsive,
+    .grid,
+    [class*="grid-cols-"],
+    .grid-cols-1,
+    .grid-cols-2,
+    .grid-cols-3,
+    .grid-cols-4,
+    .sm\\:grid-cols-2,
+    .lg\\:grid-cols-3,
+    .lg\\:grid-cols-4 {
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
     }
     
-    /* Reduce card padding */
-    .card-responsive {
+    /* Reduce card padding - Multiple approaches */
+    .card-responsive,
+    .p-3,
+    .p-4,
+    .p-5,
+    .p-6,
+    .sm\\:p-4,
+    .sm\\:p-5,
+    .lg\\:p-6 {
       padding: 0.75rem !important;
     }
     
-    /* Reduce gaps */
-    .gap-responsive {
+    /* Reduce gaps - Multiple approaches */
+    .gap-responsive,
+    .gap-3,
+    .gap-4,
+    .gap-5,
+    .gap-6,
+    .sm\\:gap-4,
+    .lg\\:gap-6 {
       gap: 0.75rem !important;
     }
     
@@ -121,26 +143,19 @@ html {
       font-size: 0.875rem !important;
     }
     
-    /* Force responsive behavior on all grids */
-    .grid {
-      grid-template-columns: 1fr !important;
-    }
-    
-    /* Force responsive behavior on specific grid classes */
-    .grid-cols-2,
-    .grid-cols-3,
-    .grid-cols-4 {
-      grid-template-columns: 1fr !important;
-    }
-    
-    /* Force responsive behavior on all grid variants */
-    [class*="grid-cols-"] {
-      grid-template-columns: 1fr !important;
-    }
-    
-    /* Force single column on all grid containers */
-    .grid {
+    /* Force all grid layouts to single column - Ultimate override */
+    *[class*="grid"] {
       grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+    
+    /* Force all padding classes to be responsive */
+    *[class*="p-"] {
+      padding: 0.75rem !important;
+    }
+    
+    /* Force all gap classes to be responsive */
+    *[class*="gap-"] {
+      gap: 0.75rem !important;
     }
   }
 
