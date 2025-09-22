@@ -87,16 +87,18 @@ Stage 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, etc.
   - Business analysis (50 employees, payroll processing)
   - Technology stack confirmation (.NET Core 8.0 + Vue.js 3 + MongoDB + Azure)
   - Mermaid generation (6 comprehensive diagrams)
+  - **Visual preview display** (diagrams shown in AI response)
+  - **File generation** (MMD + PNG files created automatically)
 - **Framework Output**: 
   - **Refined Requirements** (clarified and detailed requirements)
-  - **6 Mermaid Diagrams** (displayed in response)
+  - **6 Mermaid Diagrams** (displayed in AI response for visual verification)
   - **6 MMD Files** (saved in `Stage1_Mermaid_Generation/diagrams/`)
-  - **6 Image Files** (saved in `Stage1_Mermaid_Generation/diagrams/images/`)
+  - **6 PNG Image Files** (saved in `Stage1_Mermaid_Generation/diagrams/images/`)
 
 #### **Stage 1 Completion Summary:**
-- **✅ What Stage 1 Accomplished**: Domain detection, requirements refinement, Mermaid diagrams, visual files
-- **📋 Generated Outputs**: Refined requirements, 6 Mermaid diagrams, MMD files, image files
-- **🔍 Please Review**: Requirements, diagrams, images, domain detection
+- **✅ What Stage 1 Accomplished**: Domain detection, requirements refinement, Mermaid diagrams with visual previews, MMD files, PNG image files
+- **📋 Generated Outputs**: Refined requirements, 6 visual Mermaid diagrams, 6 MMD files, 6 PNG image files
+- **🔍 Please Review**: Requirements, visual diagrams (in response), image files (in folder)
 - **➡️ Next Steps**: **"Shall I proceed to Stage 2: FSD Creation?"**
 
 **User says**: "proceed to Stage 2"

@@ -1,0 +1,8 @@
+graph TD
+    A[Root Decision] --> B{Condition 1?}
+    B -->|Yes| C[Action A]
+    B -->|No| D{Condition 2?}
+    D -->|Yes| E[Action B]
+    D -->|No| F{Condition 3?}
+    F -->|Yes| G[Action C]
+    F -->|No| H[Default Action]

@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # enhanced-mermaid-generator.py
-# Enhanced Mermaid Diagram Generation with Proper File Persistence
+# Enhanced Mermaid Diagram Generation with Proper File Persistence and Image Generation
 
 import re
 import json
 import os
+import subprocess
+import sys
 from pathlib import Path
 from datetime import datetime, timedelta
 
@@ -12,6 +14,131 @@ def ensure_directory_exists(directory_path):
     """Ensure directory exists, create if it doesn't"""
     Path(directory_path).mkdir(parents=True, exist_ok=True)
     return directory_path
+
+def check_mermaid_cli():
+    """Check if Mermaid CLI is available"""
+    try:
+        result = subprocess.run(['mmdc', '--version'], capture_output=True, text=True)
+        return result.returncode == 0
+    except FileNotFoundError:
+        return False
+
+def install_mermaid_cli():
+    """Install Mermaid CLI if not available"""
+    try:
+        print("📦 Installing Mermaid CLI...")
+        subprocess.run(['npm', 'install', '-g', '@mermaid-js/mermaid-cli'], check=True)
+        print("✅ Mermaid CLI installed successfully!")
+        return True
+    except subprocess.CalledProcessError:
+        print("❌ Failed to install Mermaid CLI")
+        return False
+
+def generate_image_from_mmd(mmd_file_path, output_dir):
+    """Generate PNG image from MMD file using Mermaid CLI"""
+    try:
+        # Extract filename without extension
+        filename = Path(mmd_file_path).stem
+        output_file = os.path.join(output_dir, f"{filename}.png")
+        
+        # Run mermaid CLI to generate image
+        cmd = ['mmdc', '-i', mmd_file_path, '-o', output_file, '-t', 'neutral', '-b', 'white']
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        
+        if result.returncode == 0:
+            print(f"✅ Generated image: {output_file}")
+            return True
+        else:
+            print(f"❌ Failed to generate image: {result.stderr}")
+            return False
+            
+    except Exception as e:
+        print(f"❌ Error generating image: {str(e)}")
+        return False
+
+def generate_image_from_mmd_online(mmd_file_path, output_dir):
+    """Generate PNG image from MMD file using online Mermaid API (fallback)"""
+    try:
+        import requests
+        import base64
+        
+        # Read MMD content
+        with open(mmd_file_path, 'r', encoding='utf-8') as f:
+            mmd_content = f.read()
+        
+        # Extract filename without extension
+        filename = Path(mmd_file_path).stem
+        output_file = os.path.join(output_dir, f"{filename}.png")
+        
+        # Use Mermaid online API
+        url = "https://mermaid.ink/img/" + base64.b64encode(mmd_content.encode()).decode()
+        
+        response = requests.get(url)
+        if response.status_code == 200:
+            with open(output_file, 'wb') as f:
+                f.write(response.content)
+            print(f"✅ Generated image (online): {output_file}")
+            return True
+        else:
+            print(f"❌ Failed to generate image online: HTTP {response.status_code}")
+            return False
+            
+    except ImportError:
+        print("❌ requests library not available for online image generation")
+        return False
+    except Exception as e:
+        print(f"❌ Error generating image online: {str(e)}")
+        return False
+
+def generate_images_from_mmd_files(mmd_dir, images_dir):
+    """Generate images for all MMD files"""
+    ensure_directory_exists(images_dir)
+    
+    # Check if Mermaid CLI is available
+    if not check_mermaid_cli():
+        print("⚠️  Mermaid CLI not found. Attempting to install...")
+        if not install_mermaid_cli():
+            print("⚠️  CLI installation failed. Trying online method...")
+            return generate_images_online(mmd_dir, images_dir)
+    
+    success_count = 0
+    total_files = 0
+    
+    # Find all MMD files
+    for filename in os.listdir(mmd_dir):
+        if filename.endswith('.mmd'):
+            total_files += 1
+            mmd_path = os.path.join(mmd_dir, filename)
+            if generate_image_from_mmd(mmd_path, images_dir):
+                success_count += 1
+    
+    print(f"📊 Image generation: {success_count}/{total_files} files")
+    return success_count > 0
+
+def generate_images_online(mmd_dir, images_dir):
+    """Generate images using online Mermaid API as fallback"""
+    try:
+        import requests
+        print("🌐 Using online Mermaid API for image generation...")
+        
+        success_count = 0
+        total_files = 0
+        
+        # Find all MMD files
+        for filename in os.listdir(mmd_dir):
+            if filename.endswith('.mmd'):
+                total_files += 1
+                mmd_path = os.path.join(mmd_dir, filename)
+                if generate_image_from_mmd_online(mmd_path, images_dir):
+                    success_count += 1
+        
+        print(f"📊 Online image generation: {success_count}/{total_files} files")
+        return success_count > 0
+        
+    except ImportError:
+        print("❌ Cannot generate images - neither CLI nor online method available")
+        print("💡 Install requests: pip install requests")
+        return False
 
 def analyze_requirements(file_path):
     """Analyze raw requirements and extract flow information"""
@@ -225,14 +352,23 @@ def main():
     except Exception as e:
         print(f"❌ Error saving analysis: {str(e)}")
     
+    # Generate images from MMD files
+    print("\n🖼️  Generating images from MMD files...")
+    images_dir = os.path.join(diagrams_dir, 'images')
+    image_success = generate_images_from_mmd_files(diagrams_dir, images_dir)
+    
     # Summary
     print(f"\n🎉 Mermaid diagrams generation completed!")
-    print(f"📊 Successfully generated: {success_count}/{len(diagrams) + 1} files")
+    print(f"📊 Successfully generated: {success_count}/{len(diagrams) + 1} MMD files")
+    if image_success:
+        print(f"🖼️  Successfully generated: Image files in {images_dir}")
+    else:
+        print(f"⚠️  Image generation failed - MMD files available for manual conversion")
     print(f"📁 All files saved to: {diagrams_dir}")
     print(f"🔗 Ready for FSD integration!")
     
     # List generated files
-    print(f"\n📋 Generated files:")
+    print(f"\n📋 Generated MMD files:")
     for filename in diagrams.keys():
         file_path = os.path.join(diagrams_dir, filename)
         if os.path.exists(file_path):
@@ -240,6 +376,17 @@ def main():
             print(f"   ✅ {filename} ({size} bytes)")
         else:
             print(f"   ❌ {filename} (missing)")
+    
+    # List generated image files
+    if os.path.exists(images_dir):
+        print(f"\n🖼️  Generated image files:")
+        for filename in os.listdir(images_dir):
+            if filename.endswith('.png'):
+                file_path = os.path.join(images_dir, filename)
+                size = os.path.getsize(file_path)
+                print(f"   ✅ {filename} ({size} bytes)")
+    
+    return success_count > 0
 
 if __name__ == "__main__":
     main()

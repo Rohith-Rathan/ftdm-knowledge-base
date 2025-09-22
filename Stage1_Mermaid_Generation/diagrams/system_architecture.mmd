@@ -1,0 +1,8 @@
+graph TD
+    A[Frontend - Vue.js 3] --> B[API Gateway]
+    B --> C[Authentication Service]
+    B --> D[Business Logic Service]
+    C --> E[Azure AD]
+    D --> F[MongoDB Database]
+    G[Load Balancer] --> A
+    H[External APIs] --> B
