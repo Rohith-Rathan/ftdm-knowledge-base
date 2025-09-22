@@ -101,21 +101,63 @@ html {
     user-select: text;
   }
   
-  /* Mobile hamburger menu fixes */
-  @media (max-width: 768px) {
+  /* Mobile hamburger menu fixes for 320px-768px range */
+  @media (min-width: 320px) and (max-width: 767px) {
     .mobile-menu-button {
       position: fixed !important;
-      top: 1rem !important;
-      left: 1rem !important;
+      top: 0.75rem !important;
+      left: 0.75rem !important;
       z-index: 9999 !important;
       background: hsl(var(--background)) !important;
       border: 2px solid hsl(var(--border)) !important;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+      width: 3rem !important;
+      height: 3rem !important;
+      min-width: 3rem !important;
+      min-height: 3rem !important;
     }
     
     .mobile-menu-button:hover {
       background: hsl(var(--background)) !important;
       transform: scale(1.05) !important;
+    }
+    
+    .mobile-menu-button svg {
+      width: 1.25rem !important;
+      height: 1.25rem !important;
+    }
+  }
+  
+  /* Extra small screens (320px-480px) */
+  @media (min-width: 320px) and (max-width: 480px) {
+    .mobile-menu-button {
+      top: 0.5rem !important;
+      left: 0.5rem !important;
+      width: 2.75rem !important;
+      height: 2.75rem !important;
+    }
+    
+    .mobile-menu-button svg {
+      width: 1.125rem !important;
+      height: 1.125rem !important;
+    }
+  }
+  
+  /* Ensure button is always visible and clickable */
+  @media (min-width: 320px) and (max-width: 767px) {
+    .mobile-menu-button {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      cursor: pointer !important;
+      touch-action: manipulation !important;
+      -webkit-tap-highlight-color: transparent !important;
+    }
+    
+    /* Prevent any layout shifts */
+    .mobile-menu-button:focus {
+      outline: 2px solid hsl(var(--primary)) !important;
+      outline-offset: 2px !important;
     }
   }
   
