@@ -94,6 +94,23 @@ html {
     user-select: text;
   }
   
+  /* Test Tailwind responsive classes */
+  .test-responsive {
+    background-color: red;
+  }
+  
+  @media (min-width: 640px) {
+    .test-responsive {
+      background-color: green;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .test-responsive {
+      background-color: blue;
+    }
+  }
+  
   /* Small screen optimizations (below 600px) */
   @media (max-width: 600px) {
     .container {

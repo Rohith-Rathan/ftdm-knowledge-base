@@ -524,6 +524,15 @@ export function StageOverview() {
         transition={{ duration: 0.6 }}
         className="space-y-16"
       >
+        {/* Test responsive classes */}
+        <div className="test-responsive p-4 text-white text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="bg-white text-black p-2">Test 1</div>
+            <div className="bg-white text-black p-2">Test 2</div>
+            <div className="bg-white text-black p-2">Test 3</div>
+          </div>
+        </div>
+        
         {/* Header */}
         <div className="text-center space-y-6">
           <div className="inline-flex items-center px-6 py-3 rounded-full bg-purple-500/10 dark:bg-purple-500/20 border border-purple-500/20 dark:border-purple-500/30 text-foreground text-sm font-medium">
