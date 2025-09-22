@@ -1,32 +1,32 @@
 {
   "user_actions": [
     "login",
-    "browse",
-    "select",
-    "submit",
-    "review"
+    "view",
+    "process"
   ],
   "decision_points": [
     "valid input",
     "user authenticated",
-    "data available",
-    "permission granted"
+    "data available"
   ],
   "validation_rules": [
-    "input validation",
-    "authentication check",
-    "authorization verify"
+    "employee information"
   ],
   "system_interactions": [
-    "process request",
-    "store data",
-    "send notification",
-    "update status"
+    "validate employee information",
+    "calculate salaries",
+    "generate payroll reports"
   ],
   "data_entities": [
     "user",
     "session",
-    "data",
-    "audit_log"
+    "data"
+  ],
+  "business_processes": [
+    "payroll"
+  ],
+  "integrations": [
+    "external API",
+    "database"
   ]
 }

@@ -344,6 +344,36 @@ This will automatically:
 4. **Update saved files** with refinements
 5. **Iterate until perfect** representation of your vision
 
+#### **Iterative Refinement Process:**
+If user requests changes to requirements or diagrams:
+
+**Option 1: Requirements Changes**
+- User provides updated requirements
+- Run: `./scripts/iterative-mermaid-refinement.sh`
+- System will backup existing files and generate new ones
+
+**Option 2: Specific Diagram Changes**
+- User specifies which diagram needs changes
+- Create custom modifications in `custom_diagrams.json`
+- Run: `./scripts/enhanced-iterative-mermaid-generator.py --custom-diagrams custom_diagrams.json`
+
+**Option 3: Complete Regeneration**
+- User provides completely new requirements
+- System replaces all files with new versions
+- Maintains backup of previous versions
+
+#### **Refinement Commands:**
+```bash
+# For requirement changes
+./scripts/iterative-mermaid-refinement.sh
+
+# For custom diagram modifications
+python3 scripts/enhanced-iterative-mermaid-generator.py --requirements "new requirements" --custom-diagrams custom_diagrams.json
+
+# For complete regeneration
+python3 scripts/enhanced-iterative-mermaid-generator.py --requirements "updated requirements"
+```
+
 ### **Step 5: Final Validation**
 - [ ] Requirements are crystal clear
 - [ ] User Journey Flow accurately represents user experience
