@@ -780,7 +780,8 @@ export function StageOverview() {
         <div className="space-y-8">
           <div className="text-center">
             <h3 className="text-3xl font-bold text-foreground mb-4">Default Technology Stack</h3>
-            <p className="text-lg text-muted-foreground">Enterprise-grade technologies for production-ready applications</p>
+            <p className="text-lg text-muted-foreground mb-2">Enterprise-grade technologies for production-ready applications</p>
+            <p className="text-sm text-muted-foreground italic">Note: You can change this technology stack based on your requirements</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

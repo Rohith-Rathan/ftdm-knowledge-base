@@ -53,7 +53,8 @@ export function QuickStart() {
         'Frontend: Vue.js 3 + Vuex 4 + Vue Router 4 + Axios 1.6',
         'Database: MongoDB with official .NET driver',
         'Authentication: JWT + Azure AD',
-        'Deployment: Docker + Kubernetes + Azure App Services'
+        'Deployment: Docker + Kubernetes + Azure App Services',
+        'Note: You can customize any technology based on your requirements'
       ]
     },
     {
