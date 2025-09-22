@@ -69,7 +69,7 @@ export function FrameworkScenarios() {
       description: 'Enhance existing project (Lovable, Replit, Figma, Base44) with the same requirement that was used to create it.',
       icon: Building2,
       color: 'text-blue-600',
-      bgColor: 'bg-blue-50',
+      bgColor: 'bg-blue-500/10 dark:bg-blue-500/20',
       borderColor: 'border-blue-200',
       gradient: 'from-blue-500 to-blue-600',
       projectStructure: [
@@ -114,7 +114,7 @@ export function FrameworkScenarios() {
       description: 'Add new features or modules to the existing codebase.',
       icon: Layers,
       color: 'text-green-600',
-      bgColor: 'bg-green-50',
+      bgColor: 'bg-green-500/10 dark:bg-green-500/20',
       borderColor: 'border-green-200',
       gradient: 'from-green-500 to-green-600',
       projectStructure: [
@@ -166,7 +166,7 @@ export function FrameworkScenarios() {
       description: 'Create a new application from scratch with complete control over architecture and design.',
       icon: Rocket,
       color: 'text-purple-600',
-      bgColor: 'bg-purple-50',
+      bgColor: 'bg-purple-500/10 dark:bg-purple-500/20',
       borderColor: 'border-purple-200',
       gradient: 'from-purple-500 to-purple-600',
       projectStructure: [
