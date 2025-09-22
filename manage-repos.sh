@@ -18,12 +18,19 @@ sync_clean() {
     
     # Copy essential files only
     echo "  📋 Copying essential framework files..."
-    cp -r "$MASTER_DIR/frameworks" .
-    cp -r "$MASTER_DIR/scripts" .
-    cp -r "$MASTER_DIR/Stage"* .
-    cp -r "$MASTER_DIR/templates" .
+    rsync -av --delete "$MASTER_DIR/frameworks/" ./frameworks/
+    rsync -av --delete "$MASTER_DIR/scripts/" ./scripts/
+    rsync -av --delete "$MASTER_DIR/templates/" ./templates/
     cp "$MASTER_DIR/README.md" .
     cp "$MASTER_DIR/USAGE_GUIDE.md" .
+    
+    # Copy Stage directories (handle multiple Stage directories)
+    for stage_dir in "$MASTER_DIR"/Stage*; do
+        if [ -d "$stage_dir" ]; then
+            stage_name=$(basename "$stage_dir")
+            rsync -av --delete "$stage_dir/" "./$stage_name/"
+        fi
+    done
     
     # Add and commit changes
     git add .
