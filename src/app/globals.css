@@ -95,7 +95,21 @@ html {
   }
   
   /* Small screen optimizations (below 600px) */
-  @media (max-width: 600px) {
+  @media (max-width: 600px), (max-device-width: 600px), screen and (max-width: 600px) {
+    /* Debug indicator - remove in production */
+    body::before {
+      content: "MOBILE MODE ACTIVE" !important;
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      background: red !important;
+      color: white !important;
+      padding: 4px 8px !important;
+      font-size: 12px !important;
+      z-index: 9999 !important;
+      display: block !important;
+    }
+    
     .container {
       padding-left: 0.5rem !important;
       padding-right: 0.5rem !important;
@@ -148,19 +162,29 @@ html {
       grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
     }
     
-    /* Force all padding classes to be responsive */
-    *[class*="p-"] {
+    /* Force padding classes to be responsive - but preserve text padding */
+    *[class*="p-"]:not([class*="text-"]):not([class*="font-"]) {
       padding: 0.75rem !important;
     }
     
-    /* Force all gap classes to be responsive */
+    /* Force gap classes to be responsive */
     *[class*="gap-"] {
       gap: 0.75rem !important;
     }
+    
+    /* Ensure proper font sizes are maintained */
+    .text-xs { font-size: 0.75rem !important; }
+    .text-sm { font-size: 0.875rem !important; }
+    .text-base { font-size: 1rem !important; }
+    .text-lg { font-size: 1.125rem !important; }
+    .text-xl { font-size: 1.25rem !important; }
+    .text-2xl { font-size: 1.5rem !important; }
+    .text-3xl { font-size: 1.875rem !important; }
+    .text-4xl { font-size: 2.25rem !important; }
   }
 
   /* Extra small screen optimizations (below 500px) */
-  @media (max-width: 500px) {
+  @media (max-width: 500px), (max-device-width: 500px) {
     .container {
       padding-left: 0.25rem !important;
       padding-right: 0.25rem !important;
