@@ -272,6 +272,25 @@ html {
     min-width: auto !important;
   }
   
+  /* Make dropdown card content flex properly */
+  .border-2.rounded-xl.overflow-hidden .flex.items-center.justify-between {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  
+  /* Make the content div flex-1 to take available space */
+  .border-2.rounded-xl.overflow-hidden .flex.items-center.space-x-4 > div:last-child {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+  
+  /* Ensure dropdown icon stays fixed size */
+  .border-2.rounded-xl.overflow-hidden .flex-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  
   /* Remove left margin on small screens */
   .ml-11 {
     margin-left: 0 !important;
