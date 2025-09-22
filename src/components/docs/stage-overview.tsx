@@ -526,7 +526,7 @@ export function StageOverview() {
       >
         {/* Header */}
         <div className="text-center space-y-6">
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-foreground text-sm font-medium">
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-purple-500/10 dark:bg-purple-500/20 border border-purple-500/20 dark:border-purple-500/30 text-foreground text-sm font-medium">
             <Layers className="w-5 h-5 mr-3 text-purple-400" />
             Framework Overview
           </div>
@@ -602,8 +602,8 @@ export function StageOverview() {
                     <h5 className="text-lg font-bold text-foreground mb-3">Framework Inputs</h5>
                     <div className="flex flex-wrap gap-2">
                       {stage.inputs.map((input, idx) => (
-                        <div key={idx} className="flex items-center space-x-2 px-3 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 border border-blue-500/30">
-                          <ArrowRight className="h-4 w-4 text-blue-400" />
+                        <div key={idx} className="flex items-center space-x-2 px-3 py-2 rounded-full bg-blue-500/10 dark:bg-blue-500/20 border border-blue-500/20 dark:border-blue-500/30">
+                          <ArrowRight className="h-4 w-4 text-blue-500 dark:text-blue-400" />
                           <span className="text-sm text-muted-foreground">{input}</span>
                         </div>
                       ))}
@@ -630,7 +630,7 @@ export function StageOverview() {
                     <h5 className="text-lg font-bold text-foreground mb-3">Framework Process</h5>
                     <div className="flex flex-wrap gap-2">
                       {stage.process.map((step, idx) => (
-                        <div key={idx} className="flex items-center space-x-2 px-3 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30">
+                        <div key={idx} className="flex items-center space-x-2 px-3 py-2 rounded-full bg-blue-500/10 dark:bg-blue-500/20 border border-blue-500/20 dark:border-blue-500/30">
                           <div className="flex-shrink-0 w-5 h-5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center text-white text-xs font-bold">
                             {idx + 1}
                           </div>
@@ -645,7 +645,7 @@ export function StageOverview() {
                     <h5 className="text-lg font-bold text-foreground mb-3">Anti-Hallucination Safeguards</h5>
                     <div className="flex flex-wrap gap-2">
                       {stage.safeguards.map((safeguard, idx) => (
-                        <span key={idx} className="px-3 py-1 rounded-full bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 text-sm text-muted-foreground">
+                        <span key={idx} className="px-3 py-1 rounded-full bg-green-500/10 dark:bg-green-500/20 border border-green-500/20 dark:border-green-500/30 text-sm text-muted-foreground">
                           <Shield className="h-4 w-4 inline mr-2" />
                           {safeguard}
                         </span>
@@ -731,8 +731,8 @@ export function StageOverview() {
                              </h5>
                              <div className="flex flex-wrap gap-2">
                                {stage.inputs.map((input, idx) => (
-                                 <div key={idx} className="flex items-center space-x-2 px-3 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 border border-blue-500/30">
-                                   <ArrowRight className="h-4 w-4 text-blue-400" />
+                                 <div key={idx} className="flex items-center space-x-2 px-3 py-2 rounded-full bg-blue-500/10 dark:bg-blue-500/20 border border-blue-500/20 dark:border-blue-500/30">
+                                   <ArrowRight className="h-4 w-4 text-blue-500 dark:text-blue-400" />
                                    <span className="text-sm text-muted-foreground">{input}</span>
                                  </div>
                                ))}
@@ -747,7 +747,7 @@ export function StageOverview() {
                              </h5>
                              <div className="flex flex-wrap gap-2">
                                {stage.process.map((step, idx) => (
-                                 <div key={idx} className="flex items-center space-x-2 px-3 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30">
+                                 <div key={idx} className="flex items-center space-x-2 px-3 py-2 rounded-full bg-blue-500/10 dark:bg-blue-500/20 border border-blue-500/20 dark:border-blue-500/30">
                                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center text-white text-xs font-bold">
                                      {idx + 1}
                                    </div>
@@ -783,7 +783,7 @@ export function StageOverview() {
                              </h5>
                              <div className="flex flex-wrap gap-2">
                                {stage.safeguards.map((safeguard, idx) => (
-                                 <span key={idx} className="px-3 py-1 rounded-full bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 text-sm text-muted-foreground">
+                                 <span key={idx} className="px-3 py-1 rounded-full bg-green-500/10 dark:bg-green-500/20 border border-green-500/20 dark:border-green-500/30 text-sm text-muted-foreground">
                                    <Shield className="h-4 w-4 inline mr-2" />
                                    {safeguard}
                                  </span>
@@ -807,32 +807,32 @@ export function StageOverview() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="p-6 rounded-xl border border-border bg-card/50 text-center">
-              <div className="p-4 rounded-lg bg-gradient-to-r from-blue-500/20 to-blue-600/20 mx-auto w-fit mb-4">
-                <Server className="h-8 w-8 text-blue-400" />
+              <div className="p-4 rounded-lg bg-blue-500/10 dark:bg-blue-500/20 mx-auto w-fit mb-4">
+                <Server className="h-8 w-8 text-blue-500 dark:text-blue-400" />
               </div>
               <h4 className="text-lg font-bold text-foreground mb-2">Backend</h4>
               <p className="text-sm text-muted-foreground">.NET Core 8.0 + C# 12 + ASP.NET Core Web API</p>
             </div>
 
             <div className="p-6 rounded-xl border border-border bg-card/50 text-center">
-              <div className="p-4 rounded-lg bg-gradient-to-r from-green-500/20 to-green-600/20 mx-auto w-fit mb-4">
-                <Monitor className="h-8 w-8 text-green-400" />
+              <div className="p-4 rounded-lg bg-green-500/10 dark:bg-green-500/20 mx-auto w-fit mb-4">
+                <Monitor className="h-8 w-8 text-green-500 dark:text-green-400" />
               </div>
               <h4 className="text-lg font-bold text-foreground mb-2">Frontend</h4>
               <p className="text-sm text-muted-foreground">Vue.js 3 + Vuex 4 + Vue Router 4 + Axios</p>
             </div>
 
             <div className="p-6 rounded-xl border border-border bg-card/50 text-center">
-              <div className="p-4 rounded-lg bg-gradient-to-r from-purple-500/20 to-purple-600/20 mx-auto w-fit mb-4">
-                <Database className="h-8 w-8 text-purple-400" />
+              <div className="p-4 rounded-lg bg-purple-500/10 dark:bg-purple-500/20 mx-auto w-fit mb-4">
+                <Database className="h-8 w-8 text-purple-500 dark:text-purple-400" />
               </div>
               <h4 className="text-lg font-bold text-foreground mb-2">Database</h4>
               <p className="text-sm text-muted-foreground">MongoDB with official .NET driver</p>
             </div>
 
             <div className="p-6 rounded-xl border border-border bg-card/50 text-center">
-              <div className="p-4 rounded-lg bg-gradient-to-r from-orange-500/20 to-orange-600/20 mx-auto w-fit mb-4">
-                <Cloud className="h-8 w-8 text-orange-400" />
+              <div className="p-4 rounded-lg bg-orange-500/10 dark:bg-orange-500/20 mx-auto w-fit mb-4">
+                <Cloud className="h-8 w-8 text-orange-500 dark:text-orange-400" />
               </div>
               <h4 className="text-lg font-bold text-foreground mb-2">Deployment</h4>
               <p className="text-sm text-muted-foreground">Docker + Kubernetes + Azure App Services</p>
