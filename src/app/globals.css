@@ -360,8 +360,9 @@ html {
     margin-right: 0.75rem !important;
   }
   
-  /* Keep flex items in row direction and centered */
-  .flex.items-center {
+  /* Keep flex items in row direction and centered - only for specific layouts */
+  .flex.items-center.space-x-3,
+  .flex.items-center.space-x-4 {
     flex-direction: row !important;
     align-items: center !important;
   }
