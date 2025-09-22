@@ -294,6 +294,19 @@ html {
     align-items: flex-start !important;
   }
   
+  /* Center content in badge/pill elements */
+  .inline-flex.items-center.px-6.py-3.rounded-full {
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  
+  /* Center content in any pill-style badges */
+  .inline-flex.items-center {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
   /* Force text elements to be responsive */
   .text-xl {
     font-size: clamp(0.875rem, 2.5vw, 1.25rem) !important;
