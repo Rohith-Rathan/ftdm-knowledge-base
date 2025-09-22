@@ -805,8 +805,8 @@ export function StageOverview() {
             <p className="text-sm text-muted-foreground italic">Note: You can change this technology stack based on your requirements</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 grid-responsive gap-responsive">
-            <div className="p-3 sm:p-4 lg:p-6 rounded-xl border border-border bg-card/50 text-center card-responsive">
+          <div className="grid grid-cols-1 max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 max-sm:gap-2 sm:gap-4 lg:gap-6">
+            <div className="p-3 max-sm:p-2 sm:p-4 lg:p-6 rounded-xl border border-border bg-card/50 text-center">
               <div className="p-3 sm:p-4 rounded-lg bg-blue-500/10 dark:bg-blue-500/20 mx-auto w-fit mb-4">
                 <Server className="h-8 w-8 text-blue-500 dark:text-blue-400" />
               </div>
@@ -814,7 +814,7 @@ export function StageOverview() {
               <p className="text-sm text-muted-foreground">.NET Core 8.0 + C# 12 + ASP.NET Core Web API</p>
             </div>
 
-            <div className="p-3 sm:p-4 lg:p-6 rounded-xl border border-border bg-card/50 text-center card-responsive">
+            <div className="p-3 max-sm:p-2 sm:p-4 lg:p-6 rounded-xl border border-border bg-card/50 text-center">
               <div className="p-3 sm:p-4 rounded-lg bg-green-500/10 dark:bg-green-500/20 mx-auto w-fit mb-4">
                 <Monitor className="h-8 w-8 text-green-500 dark:text-green-400" />
               </div>
@@ -822,7 +822,7 @@ export function StageOverview() {
               <p className="text-sm text-muted-foreground">Vue.js 3 + Vuex 4 + Vue Router 4 + Axios</p>
             </div>
 
-            <div className="p-3 sm:p-4 lg:p-6 rounded-xl border border-border bg-card/50 text-center card-responsive">
+            <div className="p-3 max-sm:p-2 sm:p-4 lg:p-6 rounded-xl border border-border bg-card/50 text-center">
               <div className="p-3 sm:p-4 rounded-lg bg-purple-500/10 dark:bg-purple-500/20 mx-auto w-fit mb-4">
                 <Database className="h-8 w-8 text-purple-500 dark:text-purple-400" />
               </div>
@@ -830,7 +830,7 @@ export function StageOverview() {
               <p className="text-sm text-muted-foreground">MongoDB with official .NET driver</p>
             </div>
 
-            <div className="p-3 sm:p-4 lg:p-6 rounded-xl border border-border bg-card/50 text-center card-responsive">
+            <div className="p-3 max-sm:p-2 sm:p-4 lg:p-6 rounded-xl border border-border bg-card/50 text-center">
               <div className="p-3 sm:p-4 rounded-lg bg-orange-500/10 dark:bg-orange-500/20 mx-auto w-fit mb-4">
                 <Cloud className="h-8 w-8 text-orange-500 dark:text-orange-400" />
               </div>

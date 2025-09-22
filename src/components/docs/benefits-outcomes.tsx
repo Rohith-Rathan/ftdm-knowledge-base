@@ -394,14 +394,14 @@ export function BenefitsOutcomes() {
                 <h3 className="text-3xl font-bold text-foreground">{category.category}</h3>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 grid-responsive gap-responsive">
+              <div className="grid grid-cols-1 max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-sm:gap-2 sm:gap-4 lg:gap-6">
                 {category.items.map((item, itemIndex) => (
                   <motion.div
                     key={itemIndex}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: (categoryIndex * 0.1) + (itemIndex * 0.05) }}
-                    className={`p-4 sm:p-5 lg:p-6 rounded-xl border-2 ${category.borderColor} ${category.bgColor} hover:shadow-lg transition-all duration-300 card-responsive`}
+                    className={`p-4 max-sm:p-2 sm:p-5 lg:p-6 rounded-xl border-2 ${category.borderColor} ${category.bgColor} hover:shadow-lg transition-all duration-300`}
                   >
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
@@ -439,7 +439,7 @@ export function BenefitsOutcomes() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 grid-responsive gap-responsive">
+          <div className="grid grid-cols-1 max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-sm:gap-2 sm:gap-4 lg:gap-6">
             {outcomes.map((outcome, index) => (
               <motion.div
                 key={index}
@@ -450,7 +450,7 @@ export function BenefitsOutcomes() {
                   y: -4,
                   transition: { duration: 0.3 }
                 }}
-                className="p-3 sm:p-4 lg:p-6 rounded-xl border border-border bg-card/50 hover:bg-card transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/10 card-responsive"
+                className="p-3 max-sm:p-2 sm:p-4 lg:p-6 rounded-xl border border-border bg-card/50 hover:bg-card transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/10"
               >
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
@@ -489,7 +489,7 @@ export function BenefitsOutcomes() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 grid-responsive gap-responsive">
+          <div className="grid grid-cols-1 max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-sm:gap-2 sm:gap-4 lg:gap-6">
             {userSuccess.map((factor, index) => (
               <motion.div
                 key={index}

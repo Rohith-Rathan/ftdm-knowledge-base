@@ -100,23 +100,6 @@ html {
       padding-left: 0.5rem !important;
       padding-right: 0.5rem !important;
     }
-    
-    /* Only target specific responsive classes, don't override Tailwind */
-    .grid-responsive {
-      grid-template-columns: 1fr !important;
-    }
-    
-    .card-responsive {
-      padding: 0.75rem !important;
-    }
-    
-    .gap-responsive {
-      gap: 0.75rem !important;
-    }
-    
-    .text-responsive {
-      font-size: 0.875rem !important;
-    }
   }
 
   /* Extra small screen optimizations (below 500px) */
