@@ -51,6 +51,19 @@ export function Stage1Kickoff() {
 
   const kickoffCommand = `Hi, take the prompt from @mermaid_generation_prompt.md`
 
+  const directPromptTemplate = `I need you to analyze my raw requirements and create comprehensive Mermaid flow diagrams for Stage 1 of the EFTDM framework.
+
+## **MY RAW REQUIREMENTS**
+[PASTE YOUR REQUIREMENTS HERE]
+
+Please:
+1. Analyze my requirements and ask the 3 critical clarifying questions
+2. Generate 6 comprehensive Mermaid diagrams with visual previews
+3. Create both MMD and PNG files automatically
+4. Provide iterative refinement options
+
+I'm ready to start Stage 1.`
+
   return (
     <section id="stage1-kickoff" className="py-16">
       <motion.div
@@ -242,6 +255,58 @@ export function Stage1Kickoff() {
                   <p className="text-sm text-muted-foreground">
                     Stage 1 will then ask you 3 clarifying questions about your project. Answer them, and it will generate your diagrams!
                   </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Alternative Approach */}
+            <div className="space-y-4">
+              <h4 className="text-xl font-bold text-foreground flex items-center">
+                <Play className="h-6 w-6 mr-3 text-orange-500" />
+                Alternative: Direct Prompt Approach (Simpler)
+              </h4>
+              
+              <div className="ml-11 space-y-3">
+                <p className="text-muted-foreground">
+                  If you prefer a simpler approach without file setup, you can use this direct prompt:
+                </p>
+                
+                <div className="bg-muted/50 rounded-lg p-4 space-y-3">
+                  <div className="flex items-center justify-between">
+                    <h5 className="font-semibold text-foreground flex items-center">
+                      <Code className="h-4 w-4 mr-2 text-orange-500" />
+                      Direct Prompt Template:
+                    </h5>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => copyToClipboard(directPromptTemplate, 'direct')}
+                      className="flex items-center space-x-2"
+                    >
+                      <Copy className="h-4 w-4" />
+                      <span>{copied === 'direct' ? 'Copied!' : 'Copy Template'}</span>
+                    </Button>
+                  </div>
+                  
+                  <div className="bg-background/50 rounded p-3 overflow-x-auto">
+                    <pre className="text-sm text-foreground whitespace-pre-wrap">
+                      {directPromptTemplate}
+                    </pre>
+                  </div>
+                  
+                  <p className="text-sm text-muted-foreground">
+                    Replace <code className="bg-background/50 px-1 rounded">[PASTE YOUR REQUIREMENTS HERE]</code> with your actual requirements and send to Cursor AI.
+                  </p>
+                </div>
+                
+                <div className="bg-gradient-to-r from-orange-500/10 to-yellow-500/10 rounded-lg p-4">
+                  <h5 className="font-semibold text-foreground mb-2">Benefits of Direct Approach:</h5>
+                  <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                    <li>No file setup required</li>
+                    <li>Immediate analysis and diagram generation</li>
+                    <li>Faster to get started</li>
+                    <li>Same quality results</li>
+                  </ul>
                 </div>
               </div>
             </div>
