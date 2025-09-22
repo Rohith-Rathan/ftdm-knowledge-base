@@ -101,9 +101,18 @@ html {
       padding-right: 0.5rem !important;
     }
     
-    /* Force single column layouts for specific components */
-    .grid-responsive {
-      grid-template-columns: 1fr !important;
+    /* Force single column layouts - override ALL Tailwind breakpoints */
+    .grid-responsive,
+    .grid,
+    [class*="grid-cols-"] {
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+    
+    /* Specifically target the problematic classes */
+    .grid.grid-cols-1.sm\\:grid-cols-2.lg\\:grid-cols-4,
+    .grid.grid-cols-1.sm\\:grid-cols-2.lg\\:grid-cols-3,
+    .grid.grid-cols-1.sm\\:grid-cols-2 {
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
     }
     
     /* Reduce card padding for specific components */
