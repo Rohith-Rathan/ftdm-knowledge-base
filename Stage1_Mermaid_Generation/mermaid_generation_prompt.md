@@ -28,7 +28,7 @@ Before proceeding, validate:
 You are a Senior Product Developer with 10+ years of experience. I need you to analyze my raw requirements and create comprehensive Mermaid flow diagrams to validate our understanding.
 
 ## **MY RAW REQUIREMENTS**
-@test-requirements.md
+@[USER_PROVIDES_RAW_REQUIREMENTS]
 
 **Instructions:**
 1. Create a file named `raw-requirement.md` (or any name you prefer) in the `Stage1_Mermaid_Generation/` folder
