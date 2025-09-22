@@ -186,8 +186,11 @@ def analyze_requirements(file_path):
     # Extract user actions
     user_actions = re.findall(r'user\s+(?:can\s+)?(?:should\s+)?(?:must\s+)?(\w+)', content, re.IGNORECASE)
     
-    # Extract decision points
-    decision_points = re.findall(r'(?:if|when|whether)\s+([^,\.]+)', content, re.IGNORECASE)
+    # Extract decision points (improved regex)
+    decision_points = re.findall(r'(?:if|when|whether)\s+([^,\.\n]+)', content, re.IGNORECASE)
+    
+    # Clean up decision points
+    decision_points = [d.strip() for d in decision_points if d.strip() and len(d.strip()) > 3]
     
     # Extract validation rules
     validation_rules = re.findall(r'(?:validate|check|ensure)\s+([^,\.]+)', content, re.IGNORECASE)
@@ -245,6 +248,26 @@ def generate_system_architecture_diagram():
     
     return diagram
 
+def sanitize_mermaid_text(text):
+    """Sanitize text for Mermaid diagram compatibility"""
+    if not text:
+        return "condition"
+    
+    # Remove newlines and extra whitespace
+    text = re.sub(r'\s+', ' ', text.strip())
+    
+    # Limit length to prevent diagram issues
+    if len(text) > 30:
+        text = text[:27] + "..."
+    
+    # Escape special Mermaid characters
+    text = text.replace('"', "'").replace('\n', ' ').replace('\r', ' ')
+    
+    # Remove any remaining problematic characters
+    text = re.sub(r'[^\w\s\-\.]', '', text)
+    
+    return text or "condition"
+
 def generate_business_process_diagram(decisions):
     """Generate business process Mermaid diagram"""
     
@@ -252,7 +275,10 @@ def generate_business_process_diagram(decisions):
     diagram += "    A[Business Event] --> B[Process Step 1]\n"
     diagram += "    B --> C{Decision Point}\n"
     
-    for i, decision in enumerate(decisions[:3]):  # Limit to 3 decisions
+    # Use sanitized decisions
+    sanitized_decisions = [sanitize_mermaid_text(d) for d in decisions[:3]]
+    
+    for i, decision in enumerate(sanitized_decisions):
         if i == 0:
             diagram += f"    C -->|{decision}| D[Process A]\n"
         elif i == 1:

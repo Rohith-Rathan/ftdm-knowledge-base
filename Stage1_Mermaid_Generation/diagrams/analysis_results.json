@@ -1,0 +1,23 @@
+{
+  "user_actions": [
+    "Roles",
+    "management",
+    "Journey"
+  ],
+  "decision_points": [
+    "you prefer the file-based approach (from the website instructions):"
+  ],
+  "validation_rules": [
+    "labor law compliance and audit readiness\n- Insights: Provide data-driven insights for better resource allocation\n- Cost Control: Monitor project costs and prevent budget overruns\n\nTechnical Requirements:\n- Platform: Web application with mobile-responsive design\n- Performance: Support 50+ concurrent users"
+  ],
+  "system_interactions": [
+    "handle employee time tracking"
+  ],
+  "data_entities": [
+    "comprehensive Mermaid flow diagrams for Stage 1 of the EFTDM framework",
+    "both MMD and PNG files automatically\n4",
+    "Files Automatically**:\n   - 6 MMD files\n   - 6 PNG image files\n   - Analysis results\n   - Generation report\n\n5",
+    "`raw-requirement",
+    "`mermaid_generation_prompt"
+  ]
+}
