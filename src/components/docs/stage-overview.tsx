@@ -557,18 +557,20 @@ export function StageOverview() {
                 className={`${stage.bgColor} p-4 sm:p-6 cursor-pointer`}
                 onClick={() => setExpandedStage(expandedStage === stage.id ? null : stage.id)}
               >
-                <div className="flex items-center justify-between w-full">
-                  <div className={`p-3 sm:p-4 rounded-lg ${stage.bgColor} flex-shrink-0`}>
-                    <stage.icon className={`h-6 w-6 sm:h-8 sm:w-8 ${stage.color}`} />
-                  </div>
-                  <div className="flex-1 px-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground">Stage {stage.id} - {stage.title}</h3>
-                      <span className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r ${stage.gradient} text-white flex-shrink-0`}>
-                        {stage.duration}
-                      </span>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-4">
+                    <div className={`p-3 sm:p-4 rounded-lg ${stage.bgColor}`}>
+                      <stage.icon className={`h-6 w-6 sm:h-8 sm:w-8 ${stage.color}`} />
                     </div>
-                    <p className="text-sm sm:text-base text-muted-foreground">{stage.description}</p>
+                    <div>
+                      <div className="flex items-center space-x-3 mb-2">
+                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground">Stage {stage.id} - {stage.title}</h3>
+                        <span className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r ${stage.gradient} text-white`}>
+                          {stage.duration}
+                        </span>
+                      </div>
+                      <p className="text-sm sm:text-base text-muted-foreground">{stage.description}</p>
+                    </div>
                   </div>
                   <div className="flex-shrink-0">
                     {expandedStage === stage.id ? (
@@ -681,18 +683,20 @@ export function StageOverview() {
                          className={`${stage.bgColor} p-4 sm:p-6 cursor-pointer`}
                          onClick={() => setExpandedImplementationStage(expandedImplementationStage === stage.id ? null : stage.id)}
                        >
-                         <div className="flex items-center justify-between w-full">
-                           <div className={`p-3 sm:p-4 rounded-lg ${stage.bgColor} flex-shrink-0`}>
-                             <stage.icon className={`h-6 w-6 sm:h-8 sm:w-8 ${stage.color}`} />
-                           </div>
-                           <div className="flex-1 px-4">
-                             <div className="flex items-center justify-between mb-2">
-                               <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground">Stage {stage.id} - {stage.title}</h3>
-                               <span className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r ${stage.gradient} text-white flex-shrink-0`}>
-                                 {stage.duration}
-                               </span>
+                         <div className="flex items-center justify-between">
+                           <div className="flex items-center space-x-4">
+                             <div className={`p-3 sm:p-4 rounded-lg ${stage.bgColor}`}>
+                               <stage.icon className={`h-6 w-6 sm:h-8 sm:w-8 ${stage.color}`} />
                              </div>
-                             <p className="text-sm sm:text-base text-muted-foreground">{stage.description}</p>
+                             <div>
+                               <div className="flex items-center space-x-3 mb-2">
+                                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground">Stage {stage.id} - {stage.title}</h3>
+                                 <span className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r ${stage.gradient} text-white`}>
+                                   {stage.duration}
+                                 </span>
+                               </div>
+                               <p className="text-sm sm:text-base text-muted-foreground">{stage.description}</p>
+                             </div>
                            </div>
                            <div className="flex-shrink-0">
                              {expandedImplementationStage === stage.id ? (
