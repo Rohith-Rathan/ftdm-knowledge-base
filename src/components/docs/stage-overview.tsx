@@ -562,7 +562,7 @@ export function StageOverview() {
                     <div className={`p-3 sm:p-4 rounded-lg ${stage.bgColor}`}>
                       <stage.icon className={`h-6 w-6 sm:h-8 sm:w-8 ${stage.color}`} />
                     </div>
-                    <div>
+                    <div className="flex-1 min-w-0">
                       <div className="flex items-center space-x-3 mb-2">
                         <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground">Stage {stage.id} - {stage.title}</h3>
                         <span className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r ${stage.gradient} text-white`}>
@@ -688,7 +688,7 @@ export function StageOverview() {
                              <div className={`p-3 sm:p-4 rounded-lg ${stage.bgColor}`}>
                                <stage.icon className={`h-6 w-6 sm:h-8 sm:w-8 ${stage.color}`} />
                              </div>
-                             <div>
+                             <div className="flex-1 min-w-0">
                                <div className="flex items-center space-x-3 mb-2">
                                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground">Stage {stage.id} - {stage.title}</h3>
                                  <span className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r ${stage.gradient} text-white`}>

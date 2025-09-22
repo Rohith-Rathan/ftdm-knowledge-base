@@ -280,43 +280,6 @@ html {
     width: 100% !important;
   }
   
-  /* Make the content div flex-1 to take available space - target the actual content div */
-  .border-2.rounded-xl.overflow-hidden .flex.items-center.space-x-4 > div:last-child {
-    flex: 1 !important;
-    min-width: 0 !important;
-    width: 100% !important;
-  }
-  
-  /* Target the specific content div structure in dropdown cards - more specific targeting */
-  .border-2.rounded-xl.overflow-hidden .flex.items-center.space-x-4 > div:last-child > div {
-    flex: 1 !important;
-    min-width: 0 !important;
-    width: 100% !important;
-  }
-  
-  /* Additional targeting for the inner content div that contains title and description */
-  .border-2.rounded-xl.overflow-hidden .flex.items-center.space-x-4 > div:last-child > div > div {
-    flex: 1 !important;
-    min-width: 0 !important;
-    width: 100% !important;
-  }
-  
-  /* CRITICAL FIX: Target the actual content div that contains title and description */
-  .border-2.rounded-xl.overflow-hidden .flex.items-center.justify-between .flex.items-center.space-x-4 > div:last-child {
-    flex: 1 !important;
-    min-width: 0 !important;
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-  }
-  
-  /* Ensure the main flex container takes full width */
-  .border-2.rounded-xl.overflow-hidden .flex.items-center.justify-between {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  
   /* Ensure dropdown icon stays fixed size */
   .border-2.rounded-xl.overflow-hidden .flex-shrink-0 {
     flex-shrink: 0 !important;
