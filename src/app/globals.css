@@ -97,8 +97,8 @@ html {
   /* Small screen optimizations (below 550px) */
   @media (max-width: 550px) {
     .container {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
     }
     
     /* Force single column layouts */
@@ -119,6 +119,28 @@ html {
     /* Ensure text is readable */
     .text-responsive {
       font-size: 0.875rem !important;
+    }
+    
+    /* Force responsive behavior on all grids */
+    .grid {
+      grid-template-columns: 1fr !important;
+    }
+    
+    /* Force responsive behavior on specific grid classes */
+    .grid-cols-2,
+    .grid-cols-3,
+    .grid-cols-4 {
+      grid-template-columns: 1fr !important;
+    }
+    
+    /* Force responsive behavior on all grid variants */
+    [class*="grid-cols-"] {
+      grid-template-columns: 1fr !important;
+    }
+    
+    /* Force single column on all grid containers */
+    .grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
     }
   }
 
