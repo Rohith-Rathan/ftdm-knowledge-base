@@ -264,11 +264,7 @@ html {
     min-width: 0 !important;
   }
   
-  /* Remove min-width: 0 ONLY for dropdown card containers */
-  .border-2.rounded-xl.overflow-hidden .flex-1 {
-    min-width: auto !important;
-  }
-  
+  /* Remove min-width: 0 ONLY for dropdown card text elements */
   .border-2.rounded-xl.overflow-hidden .flex-1 h3,
   .border-2.rounded-xl.overflow-hidden .flex-1 p,
   .border-2.rounded-xl.overflow-hidden .flex-1 span,
