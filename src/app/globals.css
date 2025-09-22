@@ -360,9 +360,11 @@ html {
     margin-right: 0.75rem !important;
   }
   
-  /* Keep flex items in row direction and centered - only for specific layouts */
-  .flex.items-center.space-x-3,
-  .flex.items-center.space-x-4 {
+  /* Keep flex items in row direction and centered - only for numbered circle + heading layouts */
+  .flex.items-center.space-x-3:has(.flex.h-8.w-8.items-center.justify-center.rounded-full),
+  .flex.items-center.space-x-3:has(.flex.h-12.w-12.items-center.justify-center.rounded-full),
+  .flex.items-center.space-x-3:has(.flex.h-14.w-14.items-center.justify-center.rounded-full),
+  .flex.items-center.space-x-3:has(.flex.h-16.w-16.items-center.justify-center.rounded-full) {
     flex-direction: row !important;
     align-items: center !important;
   }
