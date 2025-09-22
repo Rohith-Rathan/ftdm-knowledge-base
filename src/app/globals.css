@@ -151,8 +151,41 @@ html {
   }
 }
 
-/* Production responsive behavior below 640px */
+/* DEBUG: Visual indicators for responsive behavior below 640px */
 @media (max-width: 639px) {
+  body::before {
+    content: "DEBUG: Below 640px - Testing responsive behavior";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ff0000;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 9999;
+    text-align: center;
+  }
+  
+  /* Red border for main container */
+  main {
+    border: 3px solid #ff0000 !important;
+    background: rgba(255, 0, 0, 0.1) !important;
+  }
+  
+  /* Orange border for content wrapper */
+  .content-wrapper {
+    border: 3px solid #ff8800 !important;
+    background: rgba(255, 136, 0, 0.1) !important;
+  }
+  
+  /* Green border for content container */
+  .content-container {
+    border: 3px solid #00ff00 !important;
+    background: rgba(0, 255, 0, 0.1) !important;
+  }
+  
   /* Ensure text wraps properly on small screens */
   p, h1, h2, h3, h4, h5, h6, span, div, section, article {
     word-wrap: break-word;
