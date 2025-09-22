@@ -62,7 +62,6 @@ html {
   /* Prevent horizontal overflow */
   html, body {
     overflow-x: hidden;
-    min-width: 0 !important;
   }
   
   /* Ensure text doesn't overflow containers */
@@ -75,26 +74,6 @@ html {
   /* Ensure all containers respect viewport width */
   * {
     box-sizing: border-box;
-    min-width: 0 !important;
-  }
-  
-  /* Force containers to be flexible below 400px */
-  .container, main, div {
-    min-width: 0 !important;
-    max-width: 100% !important;
-  }
-  
-  /* Aggressive width constraint removal */
-  @media (max-width: 600px) {
-    * {
-      min-width: 0 !important;
-      max-width: 100% !important;
-    }
-    
-    html, body {
-      min-width: 0 !important;
-      width: 100% !important;
-    }
   }
   
   /* Force proper mobile rendering */
@@ -252,58 +231,6 @@ html {
     .container {
       padding-left: 0.5rem !important;
       padding-right: 0.5rem !important;
-    }
-  }
-  
-  /* All small screens - ensure no width constraints */
-  @media (max-width: 500px) {
-    html, body {
-      min-width: 0 !important;
-      width: 100% !important;
-    }
-    
-    .container, main, div {
-      min-width: 0 !important;
-      width: 100% !important;
-      max-width: 100% !important;
-    }
-    
-    /* Force all elements to be flexible */
-    * {
-      min-width: 0 !important;
-      max-width: 100% !important;
-    }
-    
-    /* Reduce padding for small screens */
-    .container {
-      padding-left: 0.25rem !important;
-      padding-right: 0.25rem !important;
-    }
-  }
-  
-  /* Ultra small screens (below 320px) - force flexibility */
-  @media (max-width: 320px) {
-    html, body {
-      min-width: 0 !important;
-      width: 100% !important;
-    }
-    
-    .container, main, div {
-      min-width: 0 !important;
-      width: 100% !important;
-      max-width: 100% !important;
-    }
-    
-    /* Force all elements to be flexible */
-    * {
-      min-width: 0 !important;
-      max-width: 100% !important;
-    }
-    
-    /* Reduce padding even more for very small screens */
-    .container {
-      padding-left: 0.25rem !important;
-      padding-right: 0.25rem !important;
     }
   }
 
