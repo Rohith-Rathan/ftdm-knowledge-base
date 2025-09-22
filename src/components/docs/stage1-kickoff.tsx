@@ -287,50 +287,6 @@ export function Stage1Kickoff() {
               </div>
             </div>
 
-            {/* Benefits */}
-            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-border p-6">
-              <h4 className="text-lg font-bold text-foreground mb-4">
-                Why This Approach Works Best
-              </h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-muted-foreground">
-                <div className="space-y-2">
-                  <p><strong className="text-foreground">Clean Separation:</strong> Requirements are separate from prompt logic</p>
-                  <p><strong className="text-foreground">Reusable:</strong> Same prompt works for any project</p>
-                </div>
-                <div className="space-y-2">
-                  <p><strong className="text-foreground">Organized:</strong> Easy to manage multiple projects</p>
-                  <p><strong className="text-foreground">Professional:</strong> Follows documentation best practices</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Ready to Start */}
-            <div className="text-center space-y-4 pt-6 border-t border-border">
-              <h4 className="text-xl font-bold text-foreground">
-                Ready to Generate Your Diagrams?
-              </h4>
-              <p className="text-muted-foreground">
-                Follow the 3 steps above, and Stage 1 will automatically generate 6 comprehensive Mermaid diagrams with visual previews and persistent files.
-              </p>
-              <div className="flex items-center justify-center space-x-6 text-sm text-muted-foreground">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>Visual Previews</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>MMD Files</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>PNG Images</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>Iterative Refinement</span>
-                </div>
-              </div>
-            </div>
           </div>
         </motion.div>
       </motion.div>
