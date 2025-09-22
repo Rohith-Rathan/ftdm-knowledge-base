@@ -110,25 +110,40 @@ def generate_images_from_mmd_files(mmd_dir, images_dir):
     """Generate images for all MMD files"""
     ensure_directory_exists(images_dir)
     
+    print(f"🔍 Looking for MMD files in: {mmd_dir}")
+    print(f"📁 Images will be saved to: {images_dir}")
+    
     # Check if Mermaid CLI is available
     cli_available, cli_type = check_mermaid_cli()
+    print(f"🎨 Mermaid CLI status: {'Available' if cli_available else 'Not available'} ({cli_type})")
+    
     if not cli_available:
         print("⚠️  Mermaid CLI not found. Attempting to install...")
         if not install_mermaid_cli():
             print("⚠️  CLI installation failed. Trying online method...")
             return generate_images_online(mmd_dir, images_dir)
         cli_type = 'local'  # After local installation
+        print("✅ Mermaid CLI installed successfully")
     
     success_count = 0
     total_files = 0
     
     # Find all MMD files
-    for filename in os.listdir(mmd_dir):
-        if filename.endswith('.mmd'):
-            total_files += 1
-            mmd_path = os.path.join(mmd_dir, filename)
-            if generate_image_from_mmd(mmd_path, images_dir, cli_type):
-                success_count += 1
+    if not os.path.exists(mmd_dir):
+        print(f"❌ MMD directory does not exist: {mmd_dir}")
+        return False
+        
+    mmd_files = [f for f in os.listdir(mmd_dir) if f.endswith('.mmd')]
+    print(f"📋 Found {len(mmd_files)} MMD files: {mmd_files}")
+    
+    for filename in mmd_files:
+        total_files += 1
+        mmd_path = os.path.join(mmd_dir, filename)
+        print(f"🖼️  Processing: {filename}")
+        if generate_image_from_mmd(mmd_path, images_dir, cli_type):
+            success_count += 1
+        else:
+            print(f"⚠️  Failed to generate image for: {filename}")
     
     print(f"📊 Image generation: {success_count}/{total_files} files")
     return success_count > 0
@@ -328,6 +343,35 @@ def save_diagram(directory, filename, content):
         print(f"❌ Error saving {file_path}: {str(e)}")
         return False
 
+def find_requirements_file():
+    """Find the requirements file in Stage1_Mermaid_Generation directory"""
+    stage1_dir = 'Stage1_Mermaid_Generation'
+    
+    # Common requirement file patterns
+    patterns = [
+        'raw-requirement.md',
+        'requirements.md', 
+        'raw_requirements.txt',
+        'requirements.txt',
+        'my-requirements.md',
+        'project-requirements.md'
+    ]
+    
+    # Look for files matching patterns
+    for pattern in patterns:
+        file_path = os.path.join(stage1_dir, pattern)
+        if os.path.exists(file_path):
+            return file_path
+    
+    # Look for any .md or .txt file in Stage1_Mermaid_Generation
+    if os.path.exists(stage1_dir):
+        for filename in os.listdir(stage1_dir):
+            if filename.endswith(('.md', '.txt')) and not filename.startswith(('mermaid_', 'kickoff_', 'stage1_', 'troubleshooting', 'user_guide', 'validation_')):
+                return os.path.join(stage1_dir, filename)
+    
+    # Default fallback
+    return 'raw_requirements.txt'
+
 def main():
     """Main function to generate all Mermaid diagrams"""
     
@@ -338,9 +382,13 @@ def main():
     diagrams_dir = ensure_directory_exists('Stage1_Mermaid_Generation/diagrams')
     print(f"📁 Diagrams directory: {diagrams_dir}")
     
+    # Find requirements file
+    requirements_file = find_requirements_file()
+    print(f"📋 Using requirements file: {requirements_file}")
+    
     # Analyze requirements
     print("\n📋 Analyzing requirements...")
-    requirements = analyze_requirements('raw_requirements.txt')
+    requirements = analyze_requirements(requirements_file)
     
     # Generate diagrams
     print("\n🎨 Generating Mermaid diagrams...")
