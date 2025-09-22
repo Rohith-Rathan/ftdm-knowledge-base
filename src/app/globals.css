@@ -265,10 +265,10 @@ html {
   }
   
   /* Remove min-width: 0 ONLY for dropdown card text elements */
-  .border-2.rounded-xl.overflow-hidden .flex-1 h3,
-  .border-2.rounded-xl.overflow-hidden .flex-1 p,
-  .border-2.rounded-xl.overflow-hidden .flex-1 span,
-  .border-2.rounded-xl.overflow-hidden .flex-1 div {
+  .border-2.rounded-xl.overflow-hidden h3,
+  .border-2.rounded-xl.overflow-hidden p,
+  .border-2.rounded-xl.overflow-hidden span,
+  .border-2.rounded-xl.overflow-hidden div {
     min-width: auto !important;
   }
   
