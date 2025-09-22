@@ -172,18 +172,52 @@ html {
   main {
     border: 3px solid #ff0000 !important;
     background: rgba(255, 0, 0, 0.1) !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
   }
   
   /* Orange border for content wrapper */
   .content-wrapper {
     border: 3px solid #ff8800 !important;
     background: rgba(255, 136, 0, 0.1) !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
   }
   
   /* Green border for content container */
   .content-container {
     border: 3px solid #00ff00 !important;
     background: rgba(0, 255, 0, 0.1) !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Force all parent containers to full width */
+  body, html, #__next, div[class*="flex"] {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Debug the root flex container */
+  div[class*="flex flex-1"] {
+    border: 3px solid #0000ff !important;
+    background: rgba(0, 0, 255, 0.1) !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Debug the h-screen container */
+  div[class*="h-screen"] {
+    border: 3px solid #800080 !important;
+    background: rgba(128, 0, 128, 0.1) !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
   }
   
   /* Ensure text wraps properly on small screens */
