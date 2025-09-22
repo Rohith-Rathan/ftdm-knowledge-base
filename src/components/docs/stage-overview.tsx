@@ -537,7 +537,7 @@ export function StageOverview() {
             </span>
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-full sm:max-w-4xl mx-auto leading-relaxed">
             Our intelligent framework transforms raw requirements into production-ready applications through a structured, automated process with domain intelligence and anti-hallucination safeguards.
           </p>
         </div>

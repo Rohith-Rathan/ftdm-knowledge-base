@@ -283,7 +283,7 @@ export function AntiHallucinationSafeguards() {
             </span>
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-full sm:max-w-4xl mx-auto leading-relaxed">
             FTDM Framework includes comprehensive safeguards to prevent AI hallucination and ensure maximum reliability and accuracy in all generated outputs.
           </p>
         </div>

@@ -72,7 +72,7 @@ export function Stage1Kickoff() {
             </span>
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-full sm:max-w-3xl mx-auto">
             Follow these step-by-step instructions to kickoff Stage 1 and generate your Mermaid diagrams
           </p>
         </div>

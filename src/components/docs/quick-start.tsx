@@ -94,7 +94,7 @@ export function QuickStart() {
             </span>
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-full sm:max-w-4xl mx-auto leading-relaxed">
             Follow these simple steps to transform your raw requirements into a production-ready application with minimal effort.
           </p>
         </div>

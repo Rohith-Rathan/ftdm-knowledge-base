@@ -372,7 +372,7 @@ export function BenefitsOutcomes() {
             </span>
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-full sm:max-w-4xl mx-auto leading-relaxed">
             Experience the power of FTDM Framework through comprehensive benefits and guaranteed outcomes for your development projects.
           </p>
         </div>
@@ -532,7 +532,7 @@ export function BenefitsOutcomes() {
             <h3 className="text-3xl font-bold text-foreground">
               The TRUE Power of the Framework
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto grid-responsive gap-responsive">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-full sm:max-w-4xl mx-auto grid-responsive gap-responsive">
               <div className="space-y-4">
                 <h4 className="text-xl font-bold text-foreground">User Provides:</h4>
                 <div className="space-y-2">

@@ -84,7 +84,7 @@ export function FrameworkFlowVisualization() {
               Framework Flow Visualization
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-full sm:max-w-4xl mx-auto leading-relaxed">
             Visualize the complete 7-stage development process from raw requirements to production-ready application.
           </p>
         </div>

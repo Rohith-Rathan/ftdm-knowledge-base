@@ -214,7 +214,7 @@ export function FrameworkScenarios() {
             </span>
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-full sm:max-w-4xl mx-auto leading-relaxed">
             FTDM Framework works seamlessly with existing projects from any platform. Choose your scenario and see how the framework adapts to your needs.
           </p>
         </div>
