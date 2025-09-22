@@ -360,10 +360,15 @@ html {
     margin-right: 0.75rem !important;
   }
   
-  /* Stack flex items vertically on small screens */
+  /* Keep flex items in row direction and centered */
   .flex.items-center {
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+  
+  /* Remove bottom margin from numbered circles */
+  .flex.h-8.w-8.items-center.justify-center.rounded-full {
+    margin-bottom: 0 !important;
   }
   
   /* Center content in badge/pill elements */
