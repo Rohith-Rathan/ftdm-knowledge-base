@@ -147,7 +147,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed px-2 sm:px-4"
           >
-            Transform raw requirements into production-ready applications through our intelligent 7-stage development framework with domain intelligence and anti-hallucination safeguards.
+            Skip months of development - setup in 5 minutes, build in hours! Our intelligent 7-stage framework transforms raw requirements into production-ready applications with domain intelligence and anti-hallucination safeguards.
           </motion.p>
 
           {/* CTA Buttons */}

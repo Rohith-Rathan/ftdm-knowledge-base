@@ -16,7 +16,7 @@ export function Footer() {
               <span className="text-2xl font-bold gradient-text">FTDM Framework</span>
             </div>
             <p className="text-gray-300 text-lg">
-              Transform raw requirements into production-ready applications through our intelligent 7-stage development framework.
+              Skip months of development - setup in 5 minutes, build in hours! Our intelligent 7-stage framework transforms raw requirements into production-ready applications.
             </p>
           </div>
           

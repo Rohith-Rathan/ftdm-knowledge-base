@@ -121,7 +121,7 @@ export function Introduction() {
           </h1>
           
           <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Transform raw requirements into production-ready applications through our intelligent 7-stage development framework with domain intelligence and anti-hallucination safeguards.
+            Skip months of development - setup in 5 minutes, build in hours! Our intelligent 7-stage framework transforms raw requirements into production-ready applications with domain intelligence and anti-hallucination safeguards.
           </p>
         </div>
 
