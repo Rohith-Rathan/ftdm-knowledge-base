@@ -18,31 +18,47 @@ def ensure_directory_exists(directory_path):
 def check_mermaid_cli():
     """Check if Mermaid CLI is available"""
     try:
+        # First try global installation
         result = subprocess.run(['mmdc', '--version'], capture_output=True, text=True)
-        return result.returncode == 0
+        if result.returncode == 0:
+            return True, 'global'
     except FileNotFoundError:
-        return False
+        pass
+    
+    try:
+        # Then try local installation via npx
+        result = subprocess.run(['npx', 'mmdc', '--version'], capture_output=True, text=True)
+        if result.returncode == 0:
+            return True, 'local'
+    except FileNotFoundError:
+        pass
+    
+    return False, None
 
 def install_mermaid_cli():
     """Install Mermaid CLI if not available"""
     try:
-        print("📦 Installing Mermaid CLI...")
-        subprocess.run(['npm', 'install', '-g', '@mermaid-js/mermaid-cli'], check=True)
+        print("📦 Installing Mermaid CLI locally...")
+        subprocess.run(['npm', 'install', '@mermaid-js/mermaid-cli'], check=True)
         print("✅ Mermaid CLI installed successfully!")
         return True
     except subprocess.CalledProcessError:
         print("❌ Failed to install Mermaid CLI")
         return False
 
-def generate_image_from_mmd(mmd_file_path, output_dir):
+def generate_image_from_mmd(mmd_file_path, output_dir, cli_type='local'):
     """Generate PNG image from MMD file using Mermaid CLI"""
     try:
         # Extract filename without extension
         filename = Path(mmd_file_path).stem
         output_file = os.path.join(output_dir, f"{filename}.png")
         
-        # Run mermaid CLI to generate image
-        cmd = ['mmdc', '-i', mmd_file_path, '-o', output_file, '-t', 'neutral', '-b', 'white']
+        # Choose command based on installation type
+        if cli_type == 'global':
+            cmd = ['mmdc', '-i', mmd_file_path, '-o', output_file, '-t', 'neutral', '-b', 'white']
+        else:
+            cmd = ['npx', 'mmdc', '-i', mmd_file_path, '-o', output_file, '-t', 'neutral', '-b', 'white']
+        
         result = subprocess.run(cmd, capture_output=True, text=True)
         
         if result.returncode == 0:
@@ -95,11 +111,13 @@ def generate_images_from_mmd_files(mmd_dir, images_dir):
     ensure_directory_exists(images_dir)
     
     # Check if Mermaid CLI is available
-    if not check_mermaid_cli():
+    cli_available, cli_type = check_mermaid_cli()
+    if not cli_available:
         print("⚠️  Mermaid CLI not found. Attempting to install...")
         if not install_mermaid_cli():
             print("⚠️  CLI installation failed. Trying online method...")
             return generate_images_online(mmd_dir, images_dir)
+        cli_type = 'local'  # After local installation
     
     success_count = 0
     total_files = 0
@@ -109,7 +127,7 @@ def generate_images_from_mmd_files(mmd_dir, images_dir):
         if filename.endswith('.mmd'):
             total_files += 1
             mmd_path = os.path.join(mmd_dir, filename)
-            if generate_image_from_mmd(mmd_path, images_dir):
+            if generate_image_from_mmd(mmd_path, images_dir, cli_type):
                 success_count += 1
     
     print(f"📊 Image generation: {success_count}/{total_files} files")

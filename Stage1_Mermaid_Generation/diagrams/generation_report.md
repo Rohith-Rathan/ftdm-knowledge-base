@@ -12,7 +12,11 @@
 
 ### PNG Image Files
 - business_process.png
+- data_flow.png
+- decision_tree.png
+- gantt_chart.png
 - system_architecture.png
+- user_journey.png
 
 ## Usage Instructions
 
