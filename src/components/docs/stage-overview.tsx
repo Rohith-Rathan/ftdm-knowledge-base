@@ -53,19 +53,21 @@ export function StageOverview() {
       color: 'text-blue-600',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
-      outputs: ['Refined Requirements', '6 Mermaid Diagrams', 'MMD Files', 'Image Files'],
-      details: 'Transforms raw requirements into crystal clear specifications with comprehensive visual diagrams for universal understanding.',
+      outputs: ['Refined Requirements', '6 Visual Mermaid Diagrams', '6 MMD Files', '6 PNG Image Files'],
+      details: 'Transforms raw requirements into crystal clear specifications with comprehensive visual diagrams displayed in AI response and persistent files for verification and sharing. Supports iterative refinement with automatic file replacement and backup system.',
       gradient: 'from-blue-500 to-blue-600',
       duration: '5-10 minutes',
       inputs: ['Raw Requirements', '3 Clarifying Questions', 'Technology Stack Confirmation'],
       process: [
         'Analyze raw requirements for completeness',
         'Generate 6 comprehensive Mermaid diagrams',
-        'Create both MMD and image formats',
+        'Display diagrams in AI response for visual verification',
+        'Create both MMD and PNG image formats',
         'Apply domain intelligence patterns',
+        'Support iterative refinement with file replacement',
         'Validate outputs against quality gates'
       ],
-      safeguards: ['Stage Boundary Enforcement', 'Output Validation', 'Error Prevention', 'Consistency Validation']
+      safeguards: ['Stage Boundary Enforcement', 'Output Validation', 'Error Prevention', 'Iterative Refinement Support', 'File Backup System']
     },
     {
       id: 2,

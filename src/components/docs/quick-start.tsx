@@ -63,6 +63,9 @@ export function QuickStart() {
       description: 'Framework handles everything else automatically',
       details: [
         '7 automated stages with user confirmation',
+        'Visual Mermaid diagrams displayed in AI response',
+        'MMD and PNG files generated for verification',
+        'Iterative refinement support for requirement changes',
         'Domain intelligence integration',
         'Quality gates and validation',
         'Production-ready application generation'
