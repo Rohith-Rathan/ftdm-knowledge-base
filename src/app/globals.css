@@ -276,6 +276,16 @@ html {
     padding: 0.75rem !important;
     margin-bottom: 0.75rem !important;
     justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    display: flex !important;
+  }
+  
+  /* Ensure text in numbered circles is centered */
+  .flex.h-8.w-8.items-center.justify-center.rounded-full.text-white {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   
   /* Stack flex items vertically on small screens */
