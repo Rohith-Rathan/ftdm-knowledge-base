@@ -250,14 +250,17 @@ html {
     max-width: 100%;
   }
   
-  /* Fix flex-1 containers with text content */
-  .flex-1 {
+  /* Fix flex-1 containers with text content - exclude card layouts */
+  .flex-1:not(.bg-green-500):not(.bg-blue-500):not(.bg-purple-500):not(.bg-pink-500):not(.bg-orange-500):not(.bg-indigo-500):not(.bg-teal-500):not(.bg-red-500):not(.bg-yellow-500):not(.bg-cyan-500):not(.bg-amber-500):not(.bg-rose-500):not(.bg-fuchsia-500):not(.bg-lime-500):not(.bg-sky-500):not(.bg-violet-500):not(.bg-emerald-500) {
     min-width: 0 !important;
     flex: 1 1 0% !important;
   }
-  
-  /* Ensure text in flex containers wraps properly */
-  .flex-1 h3, .flex-1 p, .flex-1 span, .flex-1 div {
+
+  /* Ensure text in flex containers wraps properly - exclude card layouts */
+  .flex-1:not(.bg-green-500):not(.bg-blue-500):not(.bg-purple-500):not(.bg-pink-500):not(.bg-orange-500):not(.bg-indigo-500):not(.bg-teal-500):not(.bg-red-500):not(.bg-yellow-500):not(.bg-cyan-500):not(.bg-amber-500):not(.bg-rose-500):not(.bg-fuchsia-500):not(.bg-lime-500):not(.bg-sky-500):not(.bg-violet-500):not(.bg-emerald-500) h3, 
+  .flex-1:not(.bg-green-500):not(.bg-blue-500):not(.bg-purple-500):not(.bg-pink-500):not(.bg-orange-500):not(.bg-indigo-500):not(.bg-teal-500):not(.bg-red-500):not(.bg-yellow-500):not(.bg-cyan-500):not(.bg-amber-500):not(.bg-rose-500):not(.bg-fuchsia-500):not(.bg-lime-500):not(.bg-sky-500):not(.bg-violet-500):not(.bg-emerald-500) p, 
+  .flex-1:not(.bg-green-500):not(.bg-blue-500):not(.bg-purple-500):not(.bg-pink-500):not(.bg-orange-500):not(.bg-indigo-500):not(.bg-teal-500):not(.bg-red-500):not(.bg-yellow-500):not(.bg-cyan-500):not(.bg-amber-500):not(.bg-rose-500):not(.bg-fuchsia-500):not(.bg-lime-500):not(.bg-sky-500):not(.bg-violet-500):not(.bg-emerald-500) span, 
+  .flex-1:not(.bg-green-500):not(.bg-blue-500):not(.bg-purple-500):not(.bg-pink-500):not(.bg-orange-500):not(.bg-indigo-500):not(.bg-teal-500):not(.bg-red-500):not(.bg-yellow-500):not(.bg-cyan-500):not(.bg-amber-500):not(.bg-rose-500):not(.bg-fuchsia-500):not(.bg-lime-500):not(.bg-sky-500):not(.bg-violet-500):not(.bg-emerald-500) div {
     word-wrap: break-word !important;
     overflow-wrap: break-word !important;
     max-width: 100% !important;
