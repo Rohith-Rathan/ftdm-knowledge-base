@@ -64,6 +64,13 @@ html {
     overflow-x: hidden;
   }
   
+  /* Ensure text doesn't overflow containers */
+  p, h1, h2, h3, h4, h5, h6, span, div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  
   /* Ensure all containers respect viewport width */
   * {
     box-sizing: border-box;
