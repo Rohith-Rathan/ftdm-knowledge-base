@@ -250,6 +250,20 @@ html {
     max-width: 100%;
   }
   
+  /* Fix flex-1 containers with text content */
+  .flex-1 {
+    min-width: 0 !important;
+    flex: 1 1 0% !important;
+  }
+  
+  /* Ensure text in flex containers wraps properly */
+  .flex-1 h3, .flex-1 p, .flex-1 span, .flex-1 div {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+  
   /* Force text elements to be responsive */
   .text-xl {
     font-size: clamp(0.875rem, 2.5vw, 1.25rem) !important;
