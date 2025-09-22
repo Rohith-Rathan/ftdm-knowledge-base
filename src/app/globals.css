@@ -151,77 +151,14 @@ html {
   }
 }
 
-/* DEBUG: Visual indicator for responsive behavior below 620px */
-@media (max-width: 620px) {
-  body::before {
-    content: "DEBUG: Below 620px - Container should be full width";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #ff0000;
-    color: white;
-    padding: 8px;
-    font-size: 12px;
-    font-weight: bold;
-    z-index: 9999;
-    text-align: center;
-  }
-  
-  /* Force all containers to full width */
-  main, div[class*="flex"], div[class*="w-full"] {
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-  }
-  
-  /* Debug container widths */
-  .debug-container {
-    border: 3px solid #00ff00 !important;
-    background: rgba(0, 255, 0, 0.1) !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-  }
-  
-  /* Debug content widths */
-  .debug-content {
-    border: 3px solid #0000ff !important;
-    background: rgba(0, 0, 255, 0.1) !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-  }
-  
-  /* Force text wrapping and content flow */
+/* Production responsive behavior below 640px */
+@media (max-width: 639px) {
+  /* Ensure text wraps properly on small screens */
   p, h1, h2, h3, h4, h5, h6, span, div, section, article {
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    hyphens: auto !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-  }
-  
-  /* Force all text elements to wrap */
-  * {
-    word-break: break-word !important;
-    overflow-wrap: anywhere !important;
-  }
-  
-  /* Override any max-width constraints on text elements */
-  p, h1, h2, h3, h4, h5, h6, span, div {
-    max-width: none !important;
-  }
-  
-  /* Force text to wrap within container */
-  .debug-content p, .debug-content h1, .debug-content h2, .debug-content h3, 
-  .debug-content h4, .debug-content h5, .debug-content h6, .debug-content span, 
-  .debug-content div {
-    max-width: 100% !important;
-    width: 100% !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    white-space: normal !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    box-sizing: border-box;
   }
 }
   
