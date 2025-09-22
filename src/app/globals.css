@@ -168,16 +168,29 @@ html {
     text-align: center;
   }
   
+  /* Force all containers to full width */
+  main, div[class*="flex"], div[class*="w-full"] {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  
   /* Debug container widths */
   .debug-container {
     border: 3px solid #00ff00 !important;
     background: rgba(0, 255, 0, 0.1) !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
   }
   
   /* Debug content widths */
   .debug-content {
     border: 3px solid #0000ff !important;
     background: rgba(0, 0, 255, 0.1) !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
   }
 }
   
