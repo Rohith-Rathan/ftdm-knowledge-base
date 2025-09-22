@@ -4,6 +4,7 @@ import { DocumentationLayout } from '@/components/documentation-layout'
 import { Introduction } from '@/components/docs/introduction'
 import { FrameworkFlowVisualization } from '@/components/docs/framework-flow-visualization'
 import { QuickStart } from '@/components/docs/quick-start'
+import { Stage1Kickoff } from '@/components/docs/stage1-kickoff'
 import { StageOverview } from '@/components/docs/stage-overview'
 import { FrameworkScenarios } from '@/components/docs/framework-scenarios'
 import { AntiHallucinationSafeguards } from '@/components/docs/anti-hallucination-safeguards'
@@ -15,6 +16,7 @@ export default function Home() {
       <Introduction />
       <FrameworkFlowVisualization />
       <QuickStart />
+      <Stage1Kickoff />
       <StageOverview />
       <FrameworkScenarios />
       <AntiHallucinationSafeguards />
