@@ -284,12 +284,20 @@ html {
   .border-2.rounded-xl.overflow-hidden .flex.items-center.space-x-4 > div:last-child {
     flex: 1 !important;
     min-width: 0 !important;
+    width: 100% !important;
   }
   
   /* Target the specific content div structure in dropdown cards */
   .border-2.rounded-xl.overflow-hidden .flex.items-center.space-x-4 > div:last-child > div {
     flex: 1 !important;
     min-width: 0 !important;
+    width: 100% !important;
+  }
+  
+  /* Ensure the main flex container takes full width */
+  .border-2.rounded-xl.overflow-hidden .flex.items-center.justify-between {
+    width: 100% !important;
+    max-width: 100% !important;
   }
   
   /* Ensure dropdown icon stays fixed size */
