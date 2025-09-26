@@ -18,12 +18,26 @@ Your task is to perform Phase 3: Project Setup & Architecture for the **{PROJECT
 
 ## **REQUIREMENTS**
 
-1. **Create the complete project structure** from scratch
+1. **Execute the development folder setup script** to create the complete project structure
 2. **Set up the development environment** with all necessary tools
 3. **Initialize all necessary configurations** for development
 4. **Create the foundational architecture** based on FSD requirements
 5. **Set up version control and documentation** structure
 6. **Prepare for actual development** to begin
+
+## **CRITICAL: SCRIPT EXECUTION**
+
+**MANDATORY FIRST STEP**: Before proceeding with any other tasks, you MUST execute the development folder setup script:
+
+```bash
+# Make the script executable
+chmod +x scripts/setup-development-folder.sh
+
+# Execute the script with the project name
+./scripts/setup-development-folder.sh {PROJECT_NAME}
+```
+
+This script will create the complete `{PROJECT_NAME}_development/` folder structure alongside the EFTDM framework.
 
 ## **PROJECT SETUP REQUIREMENTS**
 
