@@ -18,6 +18,8 @@ Copy and paste this exact message in Cursor:
 
 ```
 Hi, take the prompt from @mermaid_generation_prompt.md and read the requirements from @[YOUR_FILE_NAME]
+
+**CRITICAL: Follow the mandatory workflow in the prompt - ask the 3 clarifying questions FIRST before any analysis or diagram generation.**
 ```
 
 **Replace `[YOUR_FILE_NAME]` with your actual file name (e.g., `@my-app-requirements.md`)**
@@ -74,10 +76,13 @@ Create your `raw-requirement.md` file with this structure:
 After you paste the kickoff prompt, Stage 1 will:
 
 1. **Read your requirements** from the specified file
-2. **Ask 3 clarifying questions** (Domain, Business Context, Tech Stack)
-3. **Generate 6 Mermaid diagrams** with visual previews
-4. **Create MMD and PNG files** automatically
-5. **Provide iterative refinement** options
+2. **MANDATORY: Ask 3 clarifying questions FIRST** (Domain, Business Context, Tech Stack)
+3. **WAIT for your answers** to all 3 questions
+4. **ONLY AFTER** receiving answers, **Generate 6 Mermaid diagrams** with visual previews
+5. **Create MMD and PNG files** automatically
+6. **Provide iterative refinement** options
+
+**CRITICAL: The AI will NOT proceed to diagram generation until you answer the 3 clarifying questions.**
 
 ## **✅ Benefits of This Approach**
 
@@ -103,15 +108,16 @@ Before starting Stage 1:
 
 - [ ] Created `raw-requirement.md` with your requirements
 - [ ] Updated `mermaid_generation_prompt.md` with correct file path
-- [ ] Ready to answer 3 clarifying questions
+- [ ] **CRITICAL**: Ready to answer 3 clarifying questions FIRST
 - [ ] Have your project context clear
+- [ ] Understand that AI will NOT generate diagrams until you answer questions
 
 ## **🚀 Ready to Start?**
 
 1. Create your requirements file
 2. Update the prompt file path
 3. Paste: `Hi, take the prompt from @mermaid_generation_prompt.md`
-4. Answer the 3 clarifying questions
-5. Review and refine the generated diagrams
+4. **MANDATORY**: Answer the 3 clarifying questions FIRST
+5. **ONLY AFTER** answering questions, review and refine the generated diagrams
 
 **That's it! Stage 1 will handle the rest automatically.**

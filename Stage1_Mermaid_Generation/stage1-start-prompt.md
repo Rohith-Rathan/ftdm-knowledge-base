@@ -14,8 +14,30 @@ I need you to analyze my raw requirements and create comprehensive Mermaid flow 
 ## **MY RAW REQUIREMENTS**
 [PASTE YOUR REQUIREMENTS HERE]
 
-Please:
-1. Analyze my requirements and ask the 3 critical clarifying questions
+**CRITICAL WORKFLOW - MANDATORY EXECUTION ORDER:**
+
+**STEP 0: MANDATORY CLARIFYING QUESTIONS (MUST BE COMPLETED FIRST)**
+- **STOP**: Do not proceed to any analysis or diagram generation
+- **ASK**: The 3 mandatory clarifying questions below
+- **WAIT**: For user answers to all 3 questions
+- **ONLY AFTER**: Receiving complete answers, proceed to Step 1
+
+**MANDATORY QUESTIONS TO ASK NOW:**
+1. **DOMAIN & AI-AGENTIC CLARIFICATION**
+   - What is the primary domain? (healthcare, finance, e-commerce, education, AI-agentic, etc.)
+   - Does this application require AI-agentic capabilities? (Yes/No - conversational AI, AI automation, AI-assisted, multi-agent)
+
+2. **BUSINESS CONTEXT (If Not Clear from Requirements)**
+   - What is the primary business goal? (Only if not obvious from requirements)
+   - Who are the target users? (Only if not clear from requirements)
+
+3. **TECHNICAL STACK CONFIRMATION**
+   - What technology stack do you prefer? (If not specified, I'll use: .NET Core 8.0 + Vue.js 3 + MongoDB)
+
+**DO NOT generate any Mermaid diagrams until you receive answers to these questions.**
+
+After receiving answers, then:
+1. Analyze my requirements comprehensively
 2. Generate 6 comprehensive Mermaid diagrams with visual previews
 3. Create both MMD and PNG files automatically
 4. Provide iterative refinement options
