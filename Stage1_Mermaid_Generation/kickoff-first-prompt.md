@@ -3,7 +3,7 @@
 ## **📋 How to Use This Prompt**
 
 ### **Step 1: Prepare Your Requirements**
-1. Create a file named `raw-requirement.md` (or any name you prefer)
+1. Create a requirements file (e.g., `raw-requirement.md` or `my-project-requirements.md`)
 2. Write your raw requirements in that file
 3. Save it in the `Stage1_Mermaid_Generation/` folder
 
@@ -22,7 +22,19 @@ Hi, take the prompt from @mermaid_generation_prompt.md and read the requirements
 **CRITICAL: Follow the mandatory workflow in the prompt - ask the 3 clarifying questions FIRST before any analysis or diagram generation.**
 ```
 
-**Replace `[YOUR_FILE_NAME]` with your actual file name (e.g., `@my-app-requirements.md`)**
+**Replace `[YOUR_FILE_NAME]` with your actual file name.**
+
+**Examples:**
+- If you created `raw-requirement.md` → use `@raw-requirement.md`
+- If you created `my-app-requirements.md` → use `@my-app-requirements.md`
+- If you created `project-specs.md` → use `@project-specs.md`
+
+**Complete example:**
+```
+Hi, take the prompt from @mermaid_generation_prompt.md and read the requirements from @raw-requirement.md
+```
+
+**The file name can be anything you want — just use the same name in both steps.**
 
 ## **📁 File Structure Example**
 
