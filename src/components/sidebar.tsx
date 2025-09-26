@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { useTheme } from 'next-themes'
@@ -64,6 +64,35 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
+
+  // Handle initial hash navigation on page load
+  useEffect(() => {
+    const handleHashNavigation = () => {
+      const hash = window.location.hash.substring(1)
+      if (hash) {
+        const element = document.getElementById(hash)
+        if (element) {
+          // Small delay to ensure page is fully loaded
+          setTimeout(() => {
+            element.scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            })
+          }, 100)
+        }
+      }
+    }
+
+    // Handle initial load
+    handleHashNavigation()
+
+    // Handle browser back/forward navigation
+    window.addEventListener('hashchange', handleHashNavigation)
+    
+    return () => {
+      window.removeEventListener('hashchange', handleHashNavigation)
+    }
+  }, [])
   const navigationItems = [
     {
       title: 'Getting Started',
@@ -136,6 +165,8 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                         onClick={(e) => {
                           e.preventDefault()
                           onClose() // Close mobile sidebar first
+                          // Update URL hash
+                          window.history.pushState(null, '', `#${item.id}`)
                           const element = document.getElementById(item.id)
                           if (element) {
                             element.scrollIntoView({ 
@@ -213,6 +244,8 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                         href={`#${item.id}`}
                         onClick={(e) => {
                           e.preventDefault()
+                          // Update URL hash
+                          window.history.pushState(null, '', `#${item.id}`)
                           const element = document.getElementById(item.id)
                           if (element) {
                             element.scrollIntoView({ 
