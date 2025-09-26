@@ -16,8 +16,8 @@ export default function Home() {
       <Introduction />
       <FrameworkFlowVisualization />
       <QuickStart />
-      <Stage1Kickoff />
       <StageOverview />
+      <Stage1Kickoff />
       <FrameworkScenarios />
       <AntiHallucinationSafeguards />
       <BenefitsOutcomes />

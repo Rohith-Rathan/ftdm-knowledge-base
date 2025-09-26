@@ -71,13 +71,13 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
         { id: 'introduction', label: 'Introduction', icon: BookOpen },
         { id: 'framework-flow-visualization', label: 'Framework Flow', icon: Workflow },
         { id: 'quick-start', label: 'Quick Start', icon: Rocket },
-        { id: 'stage1-kickoff', label: 'Stage 1 Kickoff', icon: FileText },
       ]
     },
     {
       title: 'Framework Stages',
       items: [
         { id: 'stage-overview', label: 'Stage Overview', icon: Layers },
+        { id: 'stage1-kickoff', label: 'Kickoff Prompt to start Stage 1', icon: FileText },
       ]
     },
     {
