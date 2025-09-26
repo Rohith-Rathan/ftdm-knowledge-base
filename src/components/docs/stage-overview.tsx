@@ -37,7 +37,8 @@ import {
   Globe,
   Lock,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  Copy
 } from 'lucide-react'
 
 export function StageOverview() {
@@ -541,6 +542,53 @@ export function StageOverview() {
             Our intelligent framework transforms raw requirements into production-ready applications through a structured, automated process with domain intelligence and anti-hallucination safeguards.
           </p>
         </div>
+
+        {/* Kickoff Prompt to start Stage 1 */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 dark:from-blue-500/20 dark:to-purple-500/20 border border-blue-500/20 dark:border-blue-500/30 rounded-xl p-6 sm:p-8"
+        >
+          <div className="text-center space-y-4">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/20 dark:bg-blue-500/30 text-blue-400 text-sm font-medium">
+              <Rocket className="w-4 h-4 mr-2" />
+              Quick Start
+            </div>
+            
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground">
+              Kickoff Prompt to start Stage 1
+            </h3>
+            
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Ready to begin? Use this prompt to start Stage 1 and generate your Mermaid diagrams
+            </p>
+            
+            <div className="bg-card border border-border rounded-lg p-4 max-w-2xl mx-auto">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-sm font-medium text-foreground">Copy this prompt:</span>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => {
+                    navigator.clipboard.writeText('Hi, take the prompt from @mermaid_generation_prompt.md and read the requirements from @[YOUR_FILE_NAME]')
+                  }}
+                  className="text-xs"
+                >
+                  <Copy className="w-3 h-3 mr-1" />
+                  Copy
+                </Button>
+              </div>
+              <code className="text-sm text-foreground break-all">
+                Hi, take the prompt from @mermaid_generation_prompt.md and read the requirements from @[YOUR_FILE_NAME]
+              </code>
+            </div>
+            
+            <p className="text-xs text-muted-foreground">
+              Replace [YOUR_FILE_NAME] with your requirements file name (e.g., @my-project-requirements.md)
+            </p>
+          </div>
+        </motion.div>
 
         {/* Main Stages */}
         <div className="space-y-8">
